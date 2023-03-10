@@ -2,7 +2,7 @@ import SwaggerUI, { SwaggerUIOptions } from 'swagger-ui';
 
 import 'swagger-ui/dist/swagger-ui.css';
 
-import { getCSRFToken } from '#shared/utils/getCSRFToken';
+import { getCSRFToken } from '../utils/getCSRFToken';
 
 const url: string | undefined = document.querySelector<HTMLMetaElement>("[name='api-spec-url']")?.content;
 const serverUrl: string | undefined = document.querySelector<HTMLMetaElement>("[name='api-server-url']")?.content;

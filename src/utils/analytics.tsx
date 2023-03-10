@@ -4,7 +4,7 @@ import {
 } from 'react-router-dom';
 import { AnalyticsBrowser, Context } from '@segment/analytics-next';
 import { RouteComponentProps } from 'react-router';
-import { ConsoleRoutes, CONSOLE_BASE_ROUTE } from '../routes';
+import { ConsoleRoutes, CONSOLE_BASE_ROUTE } from '../routes/routes';
 
 export enum AnalyticsAppNames {
   Auth = 'auth',

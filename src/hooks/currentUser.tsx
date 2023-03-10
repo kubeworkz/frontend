@@ -1,7 +1,7 @@
 import React, { createContext, PropsWithChildren, useContext } from 'react';
 import { logout as serverLogout } from '#api_client/utils';
 import { apiService, BillingAccount, BillingSubscriptionType } from '#api_client/publicv2';
-import { navigateToLoginPage } from '../../console/utils/navigateToLoginPage';
+import { navigateToLoginPage } from '../utils/navigateToLoginPage';
 
 interface UserData {
   id: string;

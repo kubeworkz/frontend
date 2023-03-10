@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { AnyLink, AnyLinkConfig } from '#shared/components/AnyLink/AnyLink';
+import { AnyLink, AnyLinkConfig } from '../../AnyLink/AnyLink';
 import { AppearanceProps, AppearanceStatus } from '#shared/types/Props';
 import classNames from 'classnames';
-import { IconName, SvgIcon } from '#shared/components/SvgIcon/SvgIcon';
+import { IconName, SvgIcon } from '../..//SvgIcon/SvgIcon';
 import styles from './ActionsDropdownItem.module.css';
 
 interface ActionsDropdownItemProps extends

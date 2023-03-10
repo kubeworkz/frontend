@@ -1,8 +1,8 @@
 import React from 'react';
-import { ConsoleRoutes } from '#shared/routes';
-import { IconName } from '#shared/components/SvgIcon/SvgIcon';
-import { ProjectItemBreadcrumbLabel } from '../components/BreadcrumbsLabels/ProjectItemBreadcrumbLabel';
-import { BranchItemBreadcrumbLabel } from '../components/BreadcrumbsLabels/BranchItemBreadcrumbsLabel';
+import { ConsoleRoutes } from '../../routes/routes';
+import { IconName } from '../../components/SvgIcon/SvgIcon';
+import { ProjectItemBreadcrumbLabel } from '../../components/BreadcrumbsLabels/ProjectItemBreadcrumbLabel';
+import { BranchItemBreadcrumbLabel } from '../../components/BreadcrumbsLabels/BranchItemBreadcrumbsLabel';
 
 export const ROUTES_NAMES: Record<ConsoleRoutes, React.ReactNode> = {
   [ConsoleRoutes.Root]: 'Neon',

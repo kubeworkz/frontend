@@ -1,8 +1,8 @@
 import React from 'react';
-import { ErrorProps } from '#shared/components/Error/Error';
-import { PageError } from '#shared/components/PageError/PageError';
+import { ErrorProps } from '../components/Error/Error';
+import { PageError } from '../components/PageError/PageError';
 import { StaticRouter } from 'react-router';
-import { LayoutCentered } from '#shared/components/Layout/LayoutCentered/LayoutCentered';
+import { LayoutCentered } from '../components/Layout/LayoutCentered/LayoutCentered';
 
 export const Error = (props: ErrorProps) => (
   <StaticRouter>

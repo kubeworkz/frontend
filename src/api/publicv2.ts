@@ -1,5 +1,5 @@
-import { API_V2_HOST } from '#api_client/config';
-import { getCSRFToken } from '#shared/utils/getCSRFToken';
+import { API_V2_HOST } from './config';
+import { getCSRFToken } from '../utils/getCSRFToken';
 import {
   Api,
   ContentType,
@@ -13,4 +13,4 @@ export const apiService = new Api({
   },
 });
 
-export * from '#api_client/generated/api_public_v2';
+export * from './generated/api_public_v2';

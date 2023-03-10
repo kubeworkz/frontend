@@ -2,15 +2,15 @@ import React, {
   createContext, useCallback, useEffect,
 } from 'react';
 
-import { createUseContext } from '#shared/hooks/utils';
+import { createUseContext } from '../../hooks/utils';
 
 import {
   apiService, Branch, Endpoint, Project,
-} from '#api_client/publicv2';
-import { createErrorText, useThrottledApiRequest } from '#api_client/utils';
-import { useBranches } from '#shared/hooks/projectBranches';
-import { useResource } from '#shared/utils/useResource';
-import { useSubscription } from '#shared/hooks/actionCable';
+} from '../../api/publicv2';
+import { createErrorText, useThrottledApiRequest } from '../../api/utils';
+import { useBranches } from '../../hooks/projectBranches';
+import { useResource } from '../../utils/useResource';
+import { useSubscription } from '../../hooks/actionCable';
 
 export interface EndpointOption {
   value: Endpoint['id'];

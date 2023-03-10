@@ -1,7 +1,7 @@
 import React, {
   createContext, PropsWithChildren,
 } from 'react';
-import { createUseContext } from '#shared/hooks/utils';
+import { createUseContext } from '../hooks/utils';
 
 export interface Region {
   id: string;

@@ -6,9 +6,9 @@ import {
   ConnectionURIsResponse, DatabasesResponse, EndpointsResponse, OperationsResponse,
   ProjectResponse,
   RoleResponse, RolesResponse,
-} from '#api_client/generated/api_public_v2';
-import { NewItemModalRole } from '#shared/components/NewItemModal/NewItemModalRole/NewItemModalRole';
-import { NewItemModalBranch } from '#shared/components/NewItemModal/NewItemModalBranch/NewItemModalBranch';
+} from '../api/generated/api_public_v2';
+import { NewItemModalRole } from '../components/NewItemModal/NewItemModalRole/NewItemModalRole';
+import { NewItemModalBranch } from '../components/NewItemModal/NewItemModalBranch/NewItemModalBranch';
 import { NewItemModalProject } from '../components/NewItemModal/NewItemModalProject/NewItemModalProject';
 
 export type ProjectData = ProjectResponse &

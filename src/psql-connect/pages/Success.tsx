@@ -1,11 +1,11 @@
 import React from 'react';
-import { PageError } from '#shared/components/PageError/PageError';
-import { Button } from '#shared/components/Button/Button';
+import { PageError } from '../../components/PageError/PageError';
+import { Button } from '../../components/Button/Button';
 import { generatePath } from 'react-router-dom';
 import {
   ExternalLinkDocumentation,
-} from '#shared/components/ExternalLink/ExternalLink';
-import { ConsoleRoutes, CONSOLE_BASE_ROUTE } from '#shared/routes';
+} from '../../components/ExternalLink/ExternalLink';
+import { ConsoleRoutes, CONSOLE_BASE_ROUTE } from '../../routes/routes';
 import { useConnectAppContext } from '../context/connectApp';
 
 import img from '../assets/connection_succeed.webp';

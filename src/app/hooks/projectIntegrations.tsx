@@ -1,18 +1,18 @@
 import React, { createContext, useCallback, useMemo } from 'react';
 
-import { createUseContext } from '#shared/hooks/utils';
+import { createUseContext } from '../../hooks/utils';
 import {
   apiService,
   ExternalIntegration,
   OAuthApplication,
-} from '#api_client/publicv2';
-import { useRequest } from '#shared/hooks/request';
+} from '../../api/publicv2';
+import { useRequest } from '../../hooks/request';
 import {
   ConfirmationPreset,
   createConfirmation,
   useConfirmation,
-} from '#shared/components/Confirmation/ConfirmationProvider';
-import { apiErrorToaster } from '#api_client/utils';
+} from '../../components/Confirmation/ConfirmationProvider';
+import { apiErrorToaster } from '../../api/utils';
 
 export type ProjectIntegrations = {
   integrations: (OAuthApplication | ExternalIntegration)[];

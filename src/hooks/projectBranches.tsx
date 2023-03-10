@@ -1,12 +1,12 @@
 import React, { createContext, useCallback, useEffect } from 'react';
 
-import { createUseContext } from '#shared/hooks/utils';
+import { createUseContext } from '../hooks/utils';
 
 import {
   apiService, Branch, Project,
-} from '#api_client/publicv2';
-import { createErrorText, useThrottledApiRequest } from '#api_client/utils';
-import { useResource } from '#shared/utils/useResource';
+} from '../api/publicv2';
+import { createErrorText, useThrottledApiRequest } from '../api/utils';
+import { useResource } from '../utils/useResource';
 import { useSubscription } from './actionCable';
 
 export interface BranchSelectOption {

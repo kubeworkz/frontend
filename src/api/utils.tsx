@@ -1,10 +1,10 @@
 import axios, { AxiosError, CancelTokenSource } from 'axios';
-import { getCSRFToken } from '#shared/utils/getCSRFToken';
+import { getCSRFToken } from '../utils/getCSRFToken';
 import { toast } from 'react-toastify';
-import { ToastError } from '#shared/components/Toast/Toast';
+import { ToastError } from '../components/Toast/Toast';
 import React, { useRef, useState } from 'react';
 import { debounce, throttle } from 'throttle-debounce';
-import { conformsTo } from '#shared/utils/set';
+import { conformsTo } from '../utils/set';
 
 const csrf = getCSRFToken();
 const SESSION_COOKIE = 'zenith';

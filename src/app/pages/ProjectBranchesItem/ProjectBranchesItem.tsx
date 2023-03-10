@@ -2,15 +2,15 @@ import React from 'react';
 import {
   apiService,
   Branch,
-} from '#api_client/publicv2';
+} from '../../../api/publicv2';
 import { generatePath, useParams } from 'react-router-dom';
-import { createErrorText } from '#api_client/utils';
-import { useResource } from '#shared/utils/useResource';
-import { ConsoleRoutes } from '#shared/routes';
+import { createErrorText } from '../../../api/utils';
+import { useResource } from '../../../utils/useResource';
+import { ConsoleRoutes } from '../../../routes/routes';
 import { useHistory } from 'react-router';
-import { PageError } from '#shared/components/PageError/PageError';
-import { useNewItemModals } from '#shared/hooks/useNewItem';
-import { useBranches } from '#shared/hooks/projectBranches';
+import { PageError } from '../../../components/PageError/PageError';
+import { useNewItemModals } from '../../../hooks/useNewItem';
+import { useBranches } from '../../../hooks/projectBranches';
 // import {
 //   BranchViewColumns,
 //   BranchViewColumnsSkeleton,
@@ -20,7 +20,7 @@ import { useProjectEndpoints } from '../../hooks/projectEndpoints';
 import {
   BranchView,
   BranchViewSkeleton,
-} from '../../components/BranchView/BranchView';
+} from '../../../components/BranchView/BranchView';
 
 export const ProjectBranchesItem = () => {
   const { branchId, projectId } = useParams<{ branchId: string; projectId: string }>();

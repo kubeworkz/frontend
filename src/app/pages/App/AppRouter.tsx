@@ -4,17 +4,17 @@ import {
 } from 'react-router-dom';
 import { RouteComponentProps } from 'react-router';
 
-import { PageError } from '#shared/components/PageError/PageError';
-import { BillingSubscriptionType, Project } from '#api_client/publicv2';
-import { MODAL_ENROLL_TO_PRO_QUERY_KEY } from '#shared/components/EnrollToPro/enrollToProContext';
-import { TrackingRoute } from '#shared/utils/analytics';
-import { ConsoleRoutes, ConsoleRoutesObsolete } from '#shared/routes';
-import { useNewItemModals } from '#shared/hooks/useNewItem';
-import { LayoutWithSideNavProps } from '#shared/components/Layout/LayoutWithSideNav/LayoutWithSideNav';
-import notFoundImg from '#shared/assets/images/error_hdd.webp';
-import { Button } from '#shared/components/Button/Button';
-import { useCurrentUser } from '#shared/hooks/currentUser';
-import { ConsoleLayout } from '../../components/ConsoleLayout/ConsoleLayout';
+import { PageError } from '../../../components/PageError/PageError';
+import { BillingSubscriptionType, Project } from '../../../api/publicv2';
+import { MODAL_ENROLL_TO_PRO_QUERY_KEY } from '../../../components/EnrollToPro/enrollToProContext';
+import { TrackingRoute } from '../../../utils/analytics';
+import { ConsoleRoutes, ConsoleRoutesObsolete } from '../../../routes/routes';
+import { useNewItemModals } from '../../../hooks/useNewItem';
+import { LayoutWithSideNavProps } from '../../../components/Layout/LayoutWithSideNav/LayoutWithSideNav';
+import notFoundImg from '/assets/images/error_hdd.webp';
+import { Button } from '../../../components/Button/Button';
+import { useCurrentUser } from '../../../hooks/currentUser';
+import { ConsoleLayout } from '../../../components/ConsoleLayout/ConsoleLayout';
 import { Projects } from '../Projects/Projects';
 
 import { ProjectsItemProvider, useProjectsItemContext } from '../../hooks/projectsItem';
@@ -36,7 +36,7 @@ import { Insights } from '../Insights/Insights';
 import { BillingPage } from '../Billing/Billing';
 import { ProjectIntegrations } from '../ProjectIntegrations/ProjectIntegrations';
 import { useProjectsContext } from '../../hooks/projectsContext';
-import { PsqlConnectBanner } from '../../components/PsqlConnectBanner/PsqlConnectBanner';
+import { PsqlConnectBanner } from '../../../components/PsqlConnectBanner/PsqlConnectBanner';
 
 const PsqlBannerIfNecessary = () => {
   const { list } = useProjectsContext();

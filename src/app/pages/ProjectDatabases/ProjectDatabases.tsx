@@ -1,14 +1,14 @@
 import React from 'react';
-import { DataTable } from '#shared/components/DataTable/DataTable';
-import { Database } from '#api_client/publicv2';
-import { IconButton } from '#shared/components/Button/IconButton/IconButton';
-import { BranchSelectOption, useBranches } from '#shared/hooks/projectBranches';
+import { DataTable } from '../../../components/DataTable/DataTable';
+import { Database } from '../../../api/publicv2';
+import { IconButton } from '../../../components/Button/IconButton/IconButton';
+import { BranchSelectOption, useBranches } from '../../../hooks/projectBranches';
 import { useProjectDatabases } from '../../hooks/projectDatabases';
 import { useProjectsItemContext } from '../../hooks/projectsItem';
-import { DatabaseCreateButton } from '../../components/CreateButton/DatabaseCreateButton/DatabaseCreateButton';
-import { withDisableOnTransition } from '../../components/withDisableOnTransition/withDisableOnTransition';
+import { DatabaseCreateButton } from '../../../components/CreateButton/DatabaseCreateButton/DatabaseCreateButton';
+import { withDisableOnTransition } from '../../../components/withDisableOnTransition/withDisableOnTransition';
 import { useSelectedBranch } from '../../hooks/selectedBranchProvider';
-import { BranchSelect } from '../../components/BranchSelect/BranchSelect';
+import { BranchSelect } from '../../../components/BranchSelect/BranchSelect';
 
 import styles from './ProjectDatabases.module.css';
 

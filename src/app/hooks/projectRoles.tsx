@@ -6,18 +6,18 @@ import {
   apiService,
   RoleCreateRequest,
   RoleResponse,
-} from '#api_client/publicv2';
-import { createUseContext } from '#shared/hooks/utils';
+} from '../../api/publicv2';
+import { createUseContext } from '../../hooks/utils';
 import {
   ConfirmationPreset,
   createConfirmation,
   useConfirmation,
-} from '#shared/components/Confirmation/ConfirmationProvider';
-import { debounceApiRequest, apiErrorToaster, createErrorText } from '#api_client/utils';
+} from '../../components/Confirmation/ConfirmationProvider';
+import { debounceApiRequest, apiErrorToaster, createErrorText } from '../../api/utils';
 import { AxiosResponse } from 'axios';
-import { BranchScopeProps } from '#shared/types/Props';
-import { useResource } from '#shared/utils/useResource';
-import { useNewItemsCallbacks } from '#shared/hooks/useNewItem';
+import { BranchScopeProps } from '../../types/Props';
+import { useResource } from '../../utils/useResource';
+import { useNewItemsCallbacks } from '../../hooks/useNewItem';
 
 export interface RoleOption {
   role: Role;

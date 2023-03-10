@@ -8,11 +8,11 @@ import React, {
   useState,
 } from 'react';
 
-import { apiService, StatementResult } from '#api_client/publicv2';
-import { createUseContext } from '#shared/hooks/utils';
+import { apiService, StatementResult } from '../../../api/publicv2';
+import { createUseContext } from '../../../hooks/utils';
 
-import { camelCase, CamelCase } from '#shared/utils/camelCase';
-import { useCancelToken } from '#api_client/utils';
+import { camelCase, CamelCase } from '../../../utils/camelCase';
+import { useCancelToken } from '../../../api/utils';
 import {
   DatabaseOption,
   useProjectDatabases,

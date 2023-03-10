@@ -5,16 +5,16 @@ import React from 'react';
 import {
   ExternalIntegration,
   OAuthApplication,
-} from '#api_client/publicv2';
+} from '../../../api/publicv2';
 import {
   SettingsHeader,
-} from '#shared/components/Settings/Settings';
-import { Error } from '#shared/components/Error/Error';
+} from '../../../components/Settings/Settings';
+import { Error } from '../../../components/Error/Error';
 import {
   DataTable,
   DataTableColumn,
-} from '#shared/components/DataTable/DataTable';
-import { createActionsCol } from '#shared/components/DataTable/utils';
+} from '../../../components/DataTable/DataTable';
+import { createActionsCol } from '../../../components/DataTable/utils';
 
 import { useProjectsItemContext } from '../../hooks/projectsItem';
 import { ProjectIntegrationsProvider, useProjectIntegrations } from '../../hooks/projectIntegrations';

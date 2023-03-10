@@ -1,14 +1,14 @@
-import { AnyLink } from '#shared/components/AnyLink/AnyLink';
+import { AnyLink } from '../../components/AnyLink/AnyLink';
 import {
   DOCUMENTATION_URL_API_SPEC,
   DOCUMENTATION_URL_IMPORT_DATA_TO_NEON,
   DOCUMENTATION_URL_QUICKSTART_GUIDE,
-} from '#shared/config';
+} from '../../config/config';
 import { generatePath } from 'react-router-dom';
-import { CodeBlock, HighlightedCodeBlock } from '#shared/components/Code/Code';
+import { CodeBlock, HighlightedCodeBlock } from '../../components/Code/Code';
 import React from 'react';
-import { OnboardingContent } from '#shared/components/Layout/Onboarding/Onboarding';
-import { ConsoleRoutes } from '#shared/routes';
+import { OnboardingContent } from '../../components/Layout/Onboarding/Onboarding';
+import { ConsoleRoutes } from '../../routes/routes';
 import { useProjectsItemContext } from '../hooks/projectsItem';
 
 const SqlStepContent = () => {

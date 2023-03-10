@@ -1,25 +1,25 @@
 import React from 'react';
 
-import { Button } from '#shared/components/Button/Button';
-import { AnyLink } from '#shared/components/AnyLink/AnyLink';
-import { DOCUMENTATION_URL } from '#shared/config';
+import { Button } from '../../../components/Button/Button';
+import { AnyLink } from '../../../components/AnyLink/AnyLink';
+import { DOCUMENTATION_URL } from '../../../config/config';
 
-import { Alert } from '#shared/components/Alert/Alert';
-import { apiErrorToaster } from '#api_client/utils';
+import { Alert } from '../../../components/Alert/Alert';
+import { apiErrorToaster } from '../../../api/utils';
 import {
   SettingsDesc,
   SettingsHeader,
   SettingsPageHeader,
   SettingsSection,
-} from '#shared/components/Settings/Settings';
+} from '../../../components/Settings/Settings';
 import {
   ModalForm,
   ModalFormActions,
   ModalFormBody, ModalFormCancelButton, ModalFormSubmitButton,
-} from '#shared/components/Modal/ModalForm/ModalForm';
-import { ApiKeyForm } from '../../components/ApiKeyForm/ApiKeyForm';
-import { ApiKeysList } from '../../components/ApiKeysList/ApiKeysList';
-import { ApiKeyFormFields } from '../../components/ApiKeyForm/ApiKeyFormFields';
+} from '../../../components/Modal/ModalForm/ModalForm';
+import { ApiKeyForm } from '../../../components/ApiKeyForm/ApiKeyForm';
+import { ApiKeysList } from '../../../components/ApiKeysList/ApiKeysList';
+import { ApiKeyFormFields } from '../../../components/ApiKeyForm/ApiKeyFormFields';
 import { useApiKeys } from './apiKeys';
 
 export const UserSettingsApiKeys = () => {

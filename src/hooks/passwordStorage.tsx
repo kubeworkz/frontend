@@ -2,7 +2,7 @@ import React, {
   createContext, PropsWithChildren, useCallback, useContext, useState,
 } from 'react';
 
-import { Role, apiService } from '#api_client/publicv2';
+import { Role, apiService } from '../api/publicv2';
 
 interface PasswordStorageContextInterface {
   getPassword(projectId: string, branchId: string, roleName: string): string | undefined;

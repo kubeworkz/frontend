@@ -1,11 +1,11 @@
 import React from 'react';
-import { PageError } from '#shared/components/PageError/PageError';
+import { PageError } from '../../components/PageError/PageError';
 // import { Button } from '#shared/components/Button/Button';
 import {
   ExternalLinkDocumentation,
   ExternalLinkSupport,
   // ExternalLinkWebsite
-} from '#shared/components/ExternalLink/ExternalLink';
+} from '../../components/ExternalLink/ExternalLink';
 import { useConnectAppContext } from '../context/connectApp';
 import img from '../assets/connection_failed.webp';
 

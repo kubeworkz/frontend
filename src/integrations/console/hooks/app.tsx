@@ -1,11 +1,11 @@
 import React, {
   createContext, PropsWithChildren,
 } from 'react';
-import { CurrentUserInfoResponse } from '#api_client/publicv2';
-import { createUseContext } from '#shared/hooks/utils';
-import { PgSettingInternal, PgSettingsProvider } from '#shared/hooks/pgSettings';
-import { Settings, SettingsProvider } from '#shared/hooks/settings';
-import { PasswordStorageProvider } from '#shared/hooks/passwordStorage';
+import { CurrentUserInfoResponse } from '../../../api/publicv2';
+import { createUseContext } from '../../../hooks/utils';
+import { PgSettingInternal, PgSettingsProvider } from '../../../hooks/pgSettings';
+import { Settings, SettingsProvider } from '../../../hooks/settings';
+import { PasswordStorageProvider } from '../../../hooks/passwordStorage';
 import { AppCacheProvider } from './cache';
 
 export type FeatureName = 'usageConsumption' | 'branching' | 'computeInsights' | 'integrations' | 'regions' | 'autoscaling_ui' | 'provisioner_ui' | 'autoscaling_ui_next' | 'syntheticStorageSizeUI' | 'freeTierV2' | 'projectSharingUI' | 'endpointPoolerHiddenUI';

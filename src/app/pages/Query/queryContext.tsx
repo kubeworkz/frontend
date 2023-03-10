@@ -3,14 +3,14 @@ import React, {
 } from 'react';
 import axios, { CancelTokenSource } from 'axios';
 import { toast } from 'react-toastify';
-import { apiErrorToaster } from '#api_client/utils';
+import { apiErrorToaster } from '../../../api/utils';
 import {
   SavedQuery, QueryHistoryItem, apiService, Role, QueryResponse, Branch,
-} from '#api_client/publicv2';
-import { AnalyticsAction, useAnalytics } from '#shared/utils/analytics';
-import { ToastError } from '#shared/components/Toast/Toast';
-import { createUseContext } from '#shared/hooks/utils';
-import { ConfirmationPreset, createConfirmation, useConfirmation } from '#shared/components/Confirmation/ConfirmationProvider';
+} from '../../../api/publicv2';
+import { AnalyticsAction, useAnalytics } from '../../../utils/analytics';
+import { ToastError } from '../../../components/Toast/Toast';
+import { createUseContext } from '../../../hooks/utils';
+import { ConfirmationPreset, createConfirmation, useConfirmation } from '../../../components/Confirmation/ConfirmationProvider';
 import { getQueryFromStore } from '../../utils/queryStorage';
 import { DatabaseOption, useProjectDatabases } from '../../hooks/projectDatabases';
 import { useProjectsItemContext } from '../../hooks/projectsItem';

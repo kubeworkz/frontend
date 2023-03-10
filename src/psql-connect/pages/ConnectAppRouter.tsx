@@ -1,7 +1,7 @@
 import React from 'react';
 import { Switch } from 'react-router-dom';
-import { TrackingRoute } from '#shared/utils/analytics';
-import { LayoutCentered } from '#shared/components/Layout/LayoutCentered/LayoutCentered';
+import { TrackingRoute } from '../../utils/analytics';
+import { LayoutCentered } from '../../components/Layout/LayoutCentered/LayoutCentered';
 import { PsqlConnectRoutes } from '../config/routes';
 import { Projects } from './Projects';
 import { ProjectNew } from './ProjectNew';

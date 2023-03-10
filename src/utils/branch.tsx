@@ -1,7 +1,7 @@
 import React from 'react';
-import { Branch, Project } from '#api_client/publicv2';
-import { mbAsGB, bytesAsGB } from '#shared/utils/sizeHelpers';
-import { humanReadableBytes } from '#shared/utils/units';
+import { Branch, Project } from '../api/publicv2';
+import { mbAsGB, bytesAsGB } from '../utils/sizeHelpers';
+import { humanReadableBytes } from '../utils/units';
 
 export const renderDataSize = (b: Pick<Branch, 'logical_size'>, p?: Pick<Project, 'branch_logical_size_limit'>) => (b.logical_size ? (
   <>

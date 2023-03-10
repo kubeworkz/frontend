@@ -1,7 +1,7 @@
 import React, { PropsWithChildren, useState } from 'react';
 import {
   AdminPageserver, AdminUser, AdminSafekeeper, internalApiService,
-} from '#api_client/internal';
+} from '../../api/internal';
 
 interface CreateCacheOptions<T, D> {
   load(id: T): Promise<D>;

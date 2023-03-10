@@ -1,5 +1,5 @@
-import { Project } from '#api_client/publicv2';
-import { createCacheContext } from '#shared/hooks/cache';
+import { Project } from '../../api/publicv2';
+import { createCacheContext } from '../../hooks/cache';
 
 type AppCache = { project?: Project };
 

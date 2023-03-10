@@ -4,9 +4,9 @@ import {
   ApiKeyCreateResponse,
   ApiKeysListResponseItem,
   apiService as apiV2Service,
-} from '#api_client/publicv2';
-import { useConfirmation } from '#shared/components/Confirmation/ConfirmationProvider';
-import { apiErrorToaster } from '#api_client/utils';
+} from '../../../api/publicv2';
+import { useConfirmation } from '../../../components/Confirmation/ConfirmationProvider';
+import { apiErrorToaster } from '../../../api/utils';
 
 export const useApiKeys = () => {
   const { confirm } = useConfirmation();

@@ -3,10 +3,10 @@ import React from 'react';
 import '#shared/styles/basic.css';
 import '#shared/styles/theme.light.scss';
 
-import { PageError } from '#shared/components/PageError/PageError';
-import { AnyLink } from '#shared/components/AnyLink/AnyLink';
-import { Button } from '#shared/components/Button/Button';
-import { LayoutCentered } from '#shared/components/Layout/LayoutCentered/LayoutCentered';
+import { PageError } from '../../components/PageError/PageError';
+import { AnyLink } from '../../components/AnyLink/AnyLink';
+import { Button } from '../../components/Button/Button';
+import { LayoutCentered } from '../../components/Layout/LayoutCentered/LayoutCentered';
 
 import img from '../assets/maintenance.webp';
 

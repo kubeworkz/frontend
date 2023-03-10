@@ -9,7 +9,7 @@ import { format } from 'sql-formatter';
 import {
   DataTable,
   DataTableColumn,
-} from '#shared/components/DataTable/DataTable';
+} from '../../../components/DataTable/DataTable';
 
 import { useProjectsItemContext } from '../../hooks/projectsItem';
 import styles from './Insights.module.css';

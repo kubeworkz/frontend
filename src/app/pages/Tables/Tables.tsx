@@ -1,17 +1,17 @@
 import React from 'react';
 
-import { PageError } from '#shared/components/PageError/PageError';
-import { CenteredLoader } from '#shared/components/Loader/Loader';
-import { useBranches } from '#shared/hooks/projectBranches';
+import { PageError } from '../../../components/PageError/PageError';
+import { CenteredLoader } from '../../../components/Loader/Loader';
+import { useBranches } from '../../../hooks/projectBranches';
 import axios from 'axios';
-import { createErrorText } from '#api_client/utils';
-import { TablesControls } from '../../components/Tables/TablesControls';
-import { TablesColumns } from '../../components/Tables/TablesColumns';
-import { TablesTitleBar } from '../../components/Tables/TablesTitle';
+import { createErrorText } from '../../../api/utils';
+import { TablesControls } from '../../../components/Tables/TablesControls';
+import { TablesColumns } from '../../../components/Tables/TablesColumns';
+import { TablesTitleBar } from '../../../components/Tables/TablesTitle';
 
-import { TablesResult } from '../../components/Tables/TablesResult';
-import { TablesPagination } from '../../components/Tables/TablesPagination';
-import { BranchCreateButton } from '../../components/CreateButton/BranchCreateButton/BranchCreateButton';
+import { TablesResult } from '../../../components/Tables/TablesResult';
+import { TablesPagination } from '../../../components/Tables/TablesPagination';
+import { BranchCreateButton } from '../../../components/CreateButton/BranchCreateButton/BranchCreateButton';
 import { TablesProvider, useTables } from './tablesContext';
 import styles from './Tables.module.css';
 

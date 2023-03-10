@@ -1,23 +1,23 @@
 import React, { useCallback } from 'react';
 import { generatePath, useHistory } from 'react-router-dom';
 
-import { Project } from '#api_client/publicv2';
-import { DataTable } from '#shared/components/DataTable/DataTable';
-import { Text } from '#shared/components/Text/Text';
-import { DataTableHeader } from '#shared/components/DataTable/DataTableHeader/DataTableHeader';
-import { SettingsDesc, SettingsHeader } from '#shared/components/Settings/Settings';
-import { formatDate } from '#shared/utils/formatDate';
-import { AnalyticsAction, useAnalytics } from '#shared/utils/analytics';
-import { ConsoleRoutes, CONSOLE_BASE_ROUTE } from '#shared/routes';
-import { usePlatforms } from '#shared/hooks/platforms';
-import { humanReadableBytes } from '#shared/utils/units';
-import { ProjectCreateButton } from '../../components/CreateButton/ProjectCreateButton/ProjectCreateButton';
+import { Project } from '../../../api/publicv2';
+import { DataTable } from '../../../components/DataTable/DataTable';
+import { Text } from '../../../components/Text/Text';
+import { DataTableHeader } from '../../../components/DataTable/DataTableHeader/DataTableHeader';
+import { SettingsDesc, SettingsHeader } from '../../../components/Settings/Settings';
+import { formatDate } from '../../../utils/formatDate';
+import { AnalyticsAction, useAnalytics } from '../../../utils/analytics';
+import { ConsoleRoutes, CONSOLE_BASE_ROUTE } from '../../../routes/routes';
+import { usePlatforms } from '../../../hooks/platforms';
+import { humanReadableBytes } from '../../../utils/units';
+import { ProjectCreateButton } from '../../../components/CreateButton/ProjectCreateButton/ProjectCreateButton';
 import { useProjectsContext } from '../../hooks/projectsContext';
 import { useAppCache } from '../../hooks/cache';
 import { useAppContext } from '../../hooks/app';
-import { ProjectActions } from '../../components/ProjectActions/ProjectActions';
+import { ProjectActions } from '../../../components/ProjectActions/ProjectActions';
 
-import { NoProjectsPlaceholder } from '../../components/NoProjectsPlaceholder/NoProjectsPlaceholder';
+import { NoProjectsPlaceholder } from '../../../components/NoProjectsPlaceholder/NoProjectsPlaceholder';
 import './Projects.css';
 
 export const Projects = () => {

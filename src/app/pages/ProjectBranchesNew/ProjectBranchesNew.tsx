@@ -1,11 +1,11 @@
 import React, { useMemo } from 'react';
 
 import { generatePath } from 'react-router-dom';
-import { ConsoleRoutes } from '#shared/routes';
+import { ConsoleRoutes } from '../../../routes/routes';
 import { useHistory } from 'react-router';
-import { useGoBack } from '#shared/hooks/useGoBack';
+import { useGoBack } from '../../../hooks/useGoBack';
 import { useProjectsItemContext } from '../../hooks/projectsItem';
-import { BranchForm } from '../../components/BranchForm/BranchForm';
+import { BranchForm } from '../../../components/BranchForm/BranchForm';
 
 export const ProjectsBranchesNew = () => {
   const { projectId } = useProjectsItemContext();

@@ -1,7 +1,7 @@
 import React, { createContext, PropsWithChildren, useState } from 'react';
-import { Branch, Endpoint } from '#api_client/generated/api_public_v2';
-import { createUseContext } from '#shared/hooks/utils';
-import { useBranches } from '#shared/hooks/projectBranches';
+import { Branch, Endpoint } from '../../../api/generated/api_public_v2';
+import { createUseContext } from '../../../hooks/utils';
+import { useBranches } from '../../../hooks/projectBranches';
 import { useLocation } from 'react-router-dom';
 import { parse } from 'query-string';
 import { ProjectDatabasesProvider } from './projectDatabases';

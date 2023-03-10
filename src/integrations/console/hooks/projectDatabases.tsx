@@ -1,23 +1,23 @@
 import React, {
   createContext, PropsWithChildren, useCallback,
 } from 'react';
-import { createUseContext } from '#shared/hooks/utils';
+import { createUseContext } from '../../../hooks/utils';
 import {
   ConfirmationPreset,
   createConfirmation,
   useConfirmation,
-} from '#shared/components/Confirmation/ConfirmationProvider';
-import { debounceApiRequest, apiErrorToaster, createErrorText } from '#api_client/utils';
+} from '../../../components/Confirmation/ConfirmationProvider';
+import { debounceApiRequest, apiErrorToaster, createErrorText } from '../../../api/utils';
 import {
   DatabaseCreateRequest,
   DatabaseResponse,
   DatabaseUpdateRequest,
   apiService,
   Database,
-} from '#api_client/publicv2';
+} from '../../../api/publicv2';
 import { AxiosResponse } from 'axios';
-import { useResource } from '#shared/utils/useResource';
-import { BranchScopeProps } from '#shared/types/Props';
+import { useResource } from '../../../utils/useResource';
+import { BranchScopeProps } from '../../../types/Props';
 
 export interface DatabaseOption {
   database: Database;

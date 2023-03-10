@@ -1,17 +1,17 @@
 import React from 'react';
-import { DataTable } from '#shared/components/DataTable/DataTable';
-import { Role } from '#api_client/publicv2';
-import { IconButton } from '#shared/components/Button/IconButton/IconButton';
-import { Button } from '#shared/components/Button/Button';
-import { BranchSelectOption, useBranches } from '#shared/hooks/projectBranches';
+import { DataTable } from '../../../components/DataTable/DataTable';
+import { Role } from '../../../api/publicv2';
+import { IconButton } from '../../../components/Button/IconButton/IconButton';
+import { Button } from '../../../components/Button/Button';
+import { BranchSelectOption, useBranches } from '../../../hooks/projectBranches';
 import { useProjectsItemContext } from '../../hooks/projectsItem';
 import { useProjectRoles } from '../../hooks/projectRoles';
-import { withDisableOnTransition } from '../../components/withDisableOnTransition/withDisableOnTransition';
-import { RoleCreateButton } from '../../components/CreateButton/RoleCreateButton/RoleCreateButton';
-import { ResetRolePassword } from '../../components/ResetRolePassword/ResetRolePassword';
+import { withDisableOnTransition } from '../../../components/withDisableOnTransition/withDisableOnTransition';
+import { RoleCreateButton } from '../../../components/CreateButton/RoleCreateButton/RoleCreateButton';
+import { ResetRolePassword } from '../../../components/ResetRolePassword/ResetRolePassword';
 
 import { useSelectedBranch } from '../../hooks/selectedBranchProvider';
-import { BranchSelect } from '../../components/BranchSelect/BranchSelect';
+import { BranchSelect } from '../../../components/BranchSelect/BranchSelect';
 import styles from './ProjectRoles.module.css';
 
 const TransitionButton = withDisableOnTransition(Button);

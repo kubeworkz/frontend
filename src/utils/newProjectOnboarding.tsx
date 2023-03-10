@@ -1,5 +1,5 @@
 import store from 'store2';
-import { StoreKeys } from '#shared/config';
+import { StoreKeys } from '../config/config';
 
 export const forceShowOnboarding = () => store.remove(StoreKeys.NewProjectOnboardingDone);
 

@@ -1,22 +1,22 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 
-import { ToastContainer } from '#shared/components/Toast/ToastContainer';
-import { ConfirmationProvider } from '#shared/components/Confirmation/ConfirmationProvider';
-import { useBrowserDetect } from '#shared/hooks/browserDetect';
-import { ActionCableProvider } from '#shared/hooks/actionCable';
-import { Platform, PlatformsProvider } from '#shared/hooks/platforms';
-import { CurrentUserProvider } from '#shared/hooks/currentUser';
+import { ToastContainer } from '../../../components/Toast/ToastContainer';
+import { ConfirmationProvider } from '../../../components/Confirmation/ConfirmationProvider';
+import { useBrowserDetect } from '../../../hooks/browserDetect';
+import { ActionCableProvider } from '../../../hooks/actionCable';
+import { Platform, PlatformsProvider } from '../../../hooks/platforms';
+import { CurrentUserProvider } from '../../../hooks/currentUser';
 
-import { CONSOLE_BASE_ROUTE, ConsoleRoutes } from '#shared/routes';
-import { Settings } from '#shared/hooks/settings';
-import { PgSettingInternal } from '#shared/hooks/pgSettings';
-import { NewItemProvider } from '#shared/hooks/useNewItem';
-import { BreadcrumbsContext } from '#shared/components/Breadcrumbs/Breadcrumbs';
-import { createBreadcrumbs } from '#shared/components/Breadcrumbs/createBreadcrumbs';
-import { EnrollToProContainer } from '#shared/components/EnrollToPro/EnrollToProContainer';
-import { EnrollToProProvider } from '#shared/components/EnrollToPro/enrollToProContext';
-import { BillingSubscriptionType } from '#api_client/generated/api_public_v2';
+import { CONSOLE_BASE_ROUTE, ConsoleRoutes } from '../../../routes/routes';
+import { Settings } from '../../../hooks/settings';
+import { PgSettingInternal } from '../../../hooks/pgSettings';
+import { NewItemProvider } from '../../../hooks/useNewItem';
+import { BreadcrumbsContext } from '../../../components/Breadcrumbs/Breadcrumbs';
+import { createBreadcrumbs } from '../../../components/Breadcrumbs/createBreadcrumbs';
+import { EnrollToProContainer } from '../../../components/EnrollToPro/EnrollToProContainer';
+import { EnrollToProProvider } from '../../../components/EnrollToPro/enrollToProContext';
+import { BillingSubscriptionType } from '../../../api/generated/api_public_v2';
 import { AppProvider, ConsoleFeatures } from '../../hooks/app';
 import { ProjectsProvider } from '../../hooks/projectsContext';
 import { ROUTES_BREADCRUMBS_LABELS } from '../../config/routes_mapper';

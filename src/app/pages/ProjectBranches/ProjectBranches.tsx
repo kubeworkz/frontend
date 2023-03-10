@@ -1,20 +1,20 @@
 import React, { useState } from 'react';
-import { DataTable, DataTableProps } from '#shared/components/DataTable/DataTable';
-import { Branch } from '#api_client/generated/api_public_v2';
-import { formatDate } from '#shared/utils/formatDate';
+import { DataTable, DataTableProps } from '../../../components/DataTable/DataTable';
+import { Branch } from '../../../api/generated/api_public_v2';
+import { formatDate } from '../../../utils/formatDate';
 import { generatePath, useHistory } from 'react-router-dom';
-import { ConsoleRoutes, CONSOLE_BASE_ROUTE } from '#shared/routes';
+import { ConsoleRoutes, CONSOLE_BASE_ROUTE } from '../../../routes/routes';
 import Highlighter from 'react-highlight-words';
-import { SearchField } from '#shared/components/SearchField/SearchField';
-import { useBranches } from '#shared/hooks/projectBranches';
-import { DataTableFilters } from '#shared/components/DataTable/DataTableFilters/DataTableFilters';
-import { PageError } from '#shared/components/PageError/PageError';
-import { AnalyticsAction, useAnalytics } from '#shared/utils/analytics';
-import { BranchPrimaryBadgeConditional } from '#shared/components/BranchPrimaryBadgeConditional/BranchPrimaryBadgeConditional';
-import { BranchCreateButton } from '../../components/CreateButton/BranchCreateButton/BranchCreateButton';
+import { SearchField } from '../../../components/SearchField/SearchField';
+import { useBranches } from '../../../hooks/projectBranches';
+import { DataTableFilters } from '../../../components/DataTable/DataTableFilters/DataTableFilters';
+import { PageError } from '../../../components/PageError/PageError';
+import { AnalyticsAction, useAnalytics } from '../../../utils/analytics';
+import { BranchPrimaryBadgeConditional } from '../../../components/BranchPrimaryBadgeConditional/BranchPrimaryBadgeConditional';
+import { BranchCreateButton } from '../../../components/CreateButton/BranchCreateButton/BranchCreateButton';
 import { useProjectsItemContext } from '../../hooks/projectsItem';
-import { BranchEndpointStatus } from '../../components/BranchEndpointStatus/BranchEndpointStatus';
-import { BranchUsedSize } from '../../components/BranchSize/BranchSize';
+import { BranchEndpointStatus } from '../../../components/BranchEndpointStatus/BranchEndpointStatus';
+import { BranchUsedSize } from '../../../components/BranchSize/BranchSize';
 
 import styles from './ProjectBranches.module.css';
 

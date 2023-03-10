@@ -3,11 +3,11 @@
 import React, {
   createContext, useCallback, useEffect, useState,
 } from 'react';
-import { apiErrorToaster, debounceApiRequest } from '#api_client/utils';
-import { apiService, Project } from '#api_client/publicv2';
-import { getNewestData, useSubscription } from '#shared/hooks/actionCable';
-import { createUseContext } from '#shared/hooks/utils';
-import { useCurrentUser } from '#shared/hooks/currentUser';
+import { apiErrorToaster, debounceApiRequest } from '../../api/utils';
+import { apiService, Project } from '../../api/publicv2';
+import { getNewestData, useSubscription } from '../../hooks/actionCable';
+import { createUseContext } from '../../hooks/utils';
+import { useCurrentUser } from '../../hooks/currentUser';
 
 interface ProjectsContextInterface {
   list: Project[],

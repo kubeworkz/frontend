@@ -1,6 +1,6 @@
 import React, { createContext, PropsWithChildren, useState } from 'react';
-import { createUseContext } from '#shared/hooks/utils';
-import { Project, Endpoint, apiService } from '#api_client/publicv2';
+import { createUseContext } from '../../hooks/utils';
+import { Project, Endpoint, apiService } from '../../api/publicv2';
 import { useHistory } from 'react-router-dom';
 import { PsqlConnectRoutes } from '../config/routes';
 

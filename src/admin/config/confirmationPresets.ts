@@ -1,4 +1,4 @@
-import { ConfirmationOptions } from '#shared/components/Confirmation/ConfirmationProvider';
+import { ConfirmationOptions } from '../../components/Confirmation/ConfirmationProvider';
 
 export const ConfirmationPresets: Record<string, ConfirmationOptions> = {
   MakeUserAnAdmin: {

@@ -1,5 +1,5 @@
 import store from 'store2';
-import { Project } from '#api_client/publicv2';
+import { Project } from '../../api/publicv2';
 import { Keys } from '../services/store';
 
 interface QueryStorageData {

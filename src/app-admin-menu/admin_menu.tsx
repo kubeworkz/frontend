@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { AdminMenu } from './components/AdminMenu/AdminMenu';
+import { AdminMenu } from '../components/AdminMenu/AdminMenu';
 import styles from './components/AdminMenu/AdminMenu.module.css';
 
 const node = window.document.createElement('div');

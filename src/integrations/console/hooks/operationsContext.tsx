@@ -1,13 +1,13 @@
 import React, {
   createContext, PropsWithChildren, useState,
 } from 'react';
-import { createUseContext } from '#shared/hooks/utils';
+import { createUseContext } from '../../../hooks/utils';
 import {
   getNewestData,
   useSubscription, UseSubscriptionReturns,
-} from '#shared/hooks/actionCable';
-import { Operation, apiService } from '#api_client/publicv2';
-import { createErrorText, debounceApiRequest } from '#api_client/utils';
+} from '../../../hooks/actionCable';
+import { Operation, apiService } from '../../../api/publicv2';
+import { createErrorText, debounceApiRequest } from '../../../api/utils';
 
 interface OperationsContextInterface extends UseSubscriptionReturns{
   state: {

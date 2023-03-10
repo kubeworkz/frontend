@@ -1,4 +1,4 @@
-import { Operation } from '#api_client/generated/api';
+import { Operation } from '../api/generated/api';
 import dayjs from 'dayjs';
 
 const bytesUnits = ['B', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'];

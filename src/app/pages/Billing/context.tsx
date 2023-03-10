@@ -1,6 +1,6 @@
 import React, { createContext, useEffect, useState } from 'react';
 
-import { apiService, ConsumptionHistoryPeriod, Invoice } from '#api_client/publicv2';
+import { apiService, ConsumptionHistoryPeriod, Invoice } from '../../../api/publicv2';
 
 export type BillingContext = {
   invoices: Invoice[];

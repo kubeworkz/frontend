@@ -1,13 +1,13 @@
 import React, {
   createContext, PropsWithChildren, useCallback, useState,
 } from 'react';
-import { Project, apiService } from '#api_client/publicv2';
-import { debounceApiRequest } from '#api_client/utils';
-import { getNewestData, useSubscription, UseSubscriptionReturns } from '#shared/hooks/actionCable';
-import { createUseContext } from '#shared/hooks/utils';
+import { Project, apiService } from '../../../api/publicv2';
+import { debounceApiRequest } from '../../../api/utils';
+import { getNewestData, useSubscription, UseSubscriptionReturns } from '../../../hooks/actionCable';
+import { createUseContext } from '../../../hooks/utils';
 // import { Loader } from '#shared/components/Loader/Loader';
 // import { Text } from '#shared/components/Text/Text';
-import { BranchesProvider } from '#shared/hooks/projectBranches';
+import { BranchesProvider } from '../../../hooks/projectBranches';
 import { SelectedBranchProvider } from './selectedBranchProvider';
 import { ProjectEndpointsProvider } from './projectEndpoints';
 import { useProjectsContext } from './projectsContext';

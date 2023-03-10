@@ -1,6 +1,6 @@
 import { ReactNode, useMemo } from 'react';
-import { useCurrentUser } from '#shared/hooks/currentUser';
-import { useBranches } from '#shared/hooks/projectBranches';
+import { useCurrentUser } from '../../hooks/currentUser';
+import { useBranches } from '../../hooks/projectBranches';
 
 import { useProjectEndpoints } from './projectEndpoints';
 

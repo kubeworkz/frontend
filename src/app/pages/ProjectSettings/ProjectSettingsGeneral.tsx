@@ -1,13 +1,13 @@
 import React from 'react';
-import { SettingsDesc, SettingsDivider } from '#shared/components/Settings/Settings';
-import { CenteredLoader } from '#shared/components/Loader/Loader';
-import { useCurrentUser } from '#shared/hooks/currentUser';
-import { Alert } from '#shared/components/Alert/Alert';
-import { ProjectSettingsName } from '../../components/ProjectSettings/ProjectSettingsName/ProjectSettingsName';
-import { ProjectSettingsDelete } from '../../components/ProjectSettings/ProjectSettingsDelete/ProjectSettingsDelete';
-import { ProjectSettingsID } from '../../components/ProjectSettings/ProjectSettingsID/ProjectSettingsID';
+import { SettingsDesc, SettingsDivider } from '../../../components/Settings/Settings';
+import { CenteredLoader } from '../../../components/Loader/Loader';
+import { useCurrentUser } from '../../../hooks/currentUser';
+import { Alert } from '../../../components/Alert/Alert';
+import { ProjectSettingsName } from '../../../components/ProjectSettings/ProjectSettingsName/ProjectSettingsName';
+import { ProjectSettingsDelete } from '../../../components/ProjectSettings/ProjectSettingsDelete/ProjectSettingsDelete';
+import { ProjectSettingsID } from '../../../components/ProjectSettings/ProjectSettingsID/ProjectSettingsID';
 import { useProjectsItemContext } from '../../hooks/projectsItem';
-import { ProjectSettingsShare } from '../../components/ProjectSettings/ProjectSettingsShare/ProjectSettingsShare';
+import { ProjectSettingsShare } from '../../../components/ProjectSettings/ProjectSettingsShare/ProjectSettingsShare';
 import { useAppContext } from '../../hooks/app';
 
 export const ProjectSettingsGeneral = () => {

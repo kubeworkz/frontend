@@ -1,4 +1,4 @@
-import { AuthRoutes } from '#shared/routes';
+import { AuthRoutes } from '../routes/routes';
 
 export const ANALYTICS_PAGE_MAPPER: Record<AuthRoutes, string> = {
   [AuthRoutes.EnterInvite]: 'enter_invite',

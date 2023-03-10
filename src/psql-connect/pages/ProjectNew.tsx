@@ -1,3 +1,3 @@
-import { ProjectForm } from '../components/ProjectForm/ProjectForm';
+import { CreateProjectForm } from '../../components/ProjectForm/CreateProjectForm';
 
-export const ProjectNew = ProjectForm;
+export const ProjectNew = CreateProjectForm;

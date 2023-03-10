@@ -1,0 +1,75 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+.root {
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: 700;
+  padding: 4px 8px;
+}
+
+.root:not(.noMargins) {
+  margin: 0 10px;
+}
+
+.s {
+  font: var(--font-main-mini);
+  border-radius: 8px;
+}
+
+.m {
+  font: var(--font-main-tiny);
+  border-radius: 10px;
+}
+
+.l {
+  font: 600 12px/1 'Open Sans', sans-serif;
+  border-radius: 12px;
+}
+
+.success {
+  background-color: var(--bg-active-light);
+  color: var(--text-active);
+}
+
+.warning {
+  background-color: var(--bg-warning-light);
+  color: var(--text-primary);
+}
+
+.error {
+  background-color: var(--bg-error-light);
+  color: var(--text-error);
+}
+
+.primary {
+  background-color: var(--n-bg-highlight-light);
+  color: var(--n-text-quaternary);
+}
+
+.default {
+  background-color: var(--n-bg-quaternary);
+  color: var(--n-text-quaternary);
+}
+
+.neon {
+  color: var(--text-primary);
+  background: var(--n-bg-neon-gradient);
+}
+
+.beta {
+  margin: 0 0 0 8px;
+  text-transform: none;
+}

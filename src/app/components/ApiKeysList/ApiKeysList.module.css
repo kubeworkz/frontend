@@ -1,0 +1,81 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+.list {
+  padding: 0;
+  margin: 0;
+  border: var(--border-primary);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.item {
+  list-style-type: none;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+}
+
+.item + .item {
+  border-top: var(--border-primary);
+}
+
+.col {
+  flex-shrink: 0;
+}
+
+.col + .col {
+  padding-left: 20px;
+}
+
+.col_wide {
+  flex-grow: 1;
+}
+
+.item_new {
+  background-color: var(--bg-hover-secondary);
+}
+
+.item_name {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.new_token {
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.item_created {
+  font-size: 13px;
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+.copy_button {
+  margin-left: 8px;
+}
+
+.ok {
+  color: var(--text-active);
+  margin-right: 8px;
+}
+
+.item_last_used {
+  font-size: 12px;
+}

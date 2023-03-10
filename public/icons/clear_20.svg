@@ -1,0 +1,29 @@
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 21 20" xmlSpace="preserve" width="20" height="20">
+  <style>
+    .enableBackground {
+      enableBackground: new 0 0 21 20;
+    }
+  </style>  
+  <style>
+    .st0{clip-path:url(#SVGID_00000136410830707085941580000003559933904024738491_)}
+  </style>
+  <defs>
+    <path id="SVGID_1_" d="M0 0h20.3v19.9H0z" />
+    <clipPath id="SVGID_00000172431425808145766530000004733864825840866203_">
+      <use xlinkHref="#SVGID_1_" />
+    </clipPath>
+    <style>
+      {
+        overflow: visible;
+      }
+    </style>
+  </defs>
+  <g>
+    <style>
+      {
+        clipPath: url(#SVGID_00000172431425808145766530000004733864825840866203_);
+      }
+    </style>
+    <path fillRule="evenodd" clipRule="evenodd" d="M12.3 8.3 18.1 1l-1.2-1-5.8 7.4c-2.3-.7-6.8 1.2-8.5 3.4C.8 13 0 16 0 19.2v.8h13.5l-.7-1.1c-.7-1.2-1.1-2.5-1.2-3.9-.1-1.4.9-4.6 1-5 .2-.7 0-1.3-.3-1.7zm-1.4.7c.2.2 0 0 0 0 .2.2.4.5.3.8s-.4 1.4-.5 1.8c-2.2-.1-2.4-2.4-2.2-2.7.5-.1 1.4-.2 1.6-.2s.6.1.8.3zm-4 .3c-1.3.5-2.3 1.4-3.2 2.4-1.3 1.7-2.1 4.1-2.2 6.7h2.2c-.1-1 0-2.1.2-3.1l1.5.2c-.2 1-.2 1.9-.1 2.9h2.2c-.2-1-.3-2-.2-3l1.5.1c-.1 1 0 2 .2 3h2c-.5-1.1-.7-2.2-.8-3.4 0-.7 0-1.3.1-2-3.3-.6-3.4-3.6-3.4-3.8zm13.4 3.8h-6.5v-1.5h6.5v1.5zm-7.2 3.1h7.1v-1.5h-7.1v1.5zm1.3 1.6h5.9v1.5h-5.9v-1.5z" />
+  </g>
+</svg>

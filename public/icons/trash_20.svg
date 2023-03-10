@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" xmlSpace="preserve" width="20" height="20"> 
+  <style>
+    .enableBackground {
+      enableBackground=new 0 0 20 20;
+    }
+  </style>
+  <path fillRule="evenodd" clipRule="evenodd" d="M5.9 0h8.2v3.4H20v1.5H0V3.4h5.9V0zm6.7 1.5v1.9H7.4V1.5h5.2zM4.4 16.3 3.7 6l-1.5.1.7 10.4C3 18.4 4.7 20 6.7 20h6.7c2 0 3.6-1.6 3.8-3.6L17.9 6h-1.6l-.7 10.4c-.1 1.2-1.1 2.1-2.3 2.1H6.7c-1.2 0-2.2-1-2.3-2.2z" />
+</svg>

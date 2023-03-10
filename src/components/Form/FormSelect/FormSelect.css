@@ -1,0 +1,248 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+.FormSelect .FormSelect__control {
+  color: var(--text-primary);
+  line-height: var(--line-height);
+  font-size: var(--fz-text-m);
+  border-radius: var(--border-radius-s);
+  width: 100%;
+  border: var(--border-primary);
+  padding: 0;
+  box-shadow: var(--input-boxshadow);
+  font-weight: 600;
+}
+
+.FormSelect--is-disabled .FormSelect__control {
+  background-color: var(--bg-disabled);
+  color: var(--text-disabled);
+  border-color: var(--border-color-disabled);
+}
+
+.FormSelect .FormSelect__control--is-focused {
+  border-color: var(--border-color-focused);
+}
+
+.FormSelect .FormSelect__control:not(.FormSelect__control--is-focused):hover {
+  border-color: var(--border-color-hover);
+}
+
+.FormSelect .FormSelect__control.FormSelect__control--is-focused:hover {
+  border-color: var(--border-color-focused);
+}
+
+.FormSelect .FormSelect__value-container {
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+.FormSelect.FormSelect_size-m .FormSelect__value-container {
+  padding: 9px 14px;
+  font-size: var(--fz-text-m);
+  line-height: var(--line-height);
+}
+
+.FormSelect.FormSelect_size-s .FormSelect__value-container {
+  padding: 6px 14px;
+  font-size: var(--fz-text-m);
+  line-height: var(--line-height);
+}
+
+.FormSelect .FormSelect__placeholder {
+  margin: 0;
+  color: inherit;
+}
+
+.FormSelect .FormSelect__single-value {
+  color: var(--text-primary);
+}
+
+.FormSelect__indicators {
+  fill: currentColor;
+}
+
+.FormSelect.FormSelect_size-s .FormSelect__indicators {
+  padding: 6px;
+}
+
+.FormSelect.FormSelect_size-m .FormSelect__indicators {
+  padding: 9px 10px;
+}
+
+.FormSelect .FormSelect__indicator-separator {
+  margin: 0;
+  width: 8px;
+  background-color: transparent;
+}
+
+.FormSelect .FormSelect__indicator_dropdown {
+  transition:
+    transform var(--hover-transition),
+    color var(--hover-transition);
+  cursor: pointer;
+}
+
+.FormSelect .FormSelect__control--menu-is-open .FormSelect__indicator_dropdown {
+  transform: rotate(180deg);
+}
+
+.FormSelect .FormSelect__indicator_clear {
+  color: var(--text-secondary);
+}
+
+.FormSelect.FormSelect_empty .FormSelect__indicator_clear {
+  display: none;
+}
+
+.FormSelect .FormSelect__input {
+  color: var(--text-primary);
+}
+
+/* Multi value select */
+.FormSelect .FormSelect__value-container--is-multi {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.FormSelect .FormSelect__value-container--is-multi input {
+  position: absolute;
+  left: 0;
+}
+
+.FormSelect .FormSelect__multi-value {
+  margin: 0;
+  background: transparent;
+  min-width: initial;
+  display: inline-block;
+}
+
+.FormSelect .FormSelect__multi-value + .FormSelect__multi-value::before {
+  content: ', ';
+  display: inline;
+}
+
+.FormSelect__multi-value__label {
+  padding: 0;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.FormSelect__multi-value__remove {
+  cursor: pointer;
+  border-radius: 0;
+  color: var(--icon-secondary);
+  display: none;
+}
+
+.FormSelect__multi-value__remove:hover {
+  background-color: transparent;
+  color: var(--icon-secondary-hover);
+}
+
+.FormSelect__menu-list--is-multi .FormSelect__option--is-selected {
+  position: relative;
+}
+
+.FormSelect__menu-list--is-multi .FormSelect__option--is-selected::after {
+  display: block;
+  content: '✓';
+  color: var(--text-highlight);
+  font-weight: bold;
+  line-height: 16px;
+  top: 50%;
+  margin-top: -8px;
+  right: 12px;
+  position: absolute;
+}
+
+/* Select menu */
+.FormSelect__menu-portal {
+  z-index: 500 !important;
+}
+
+.FormSelect__menu-portal .FormSelect__menu,
+.FormSelect .FormSelect__menu {
+  margin: 4px 0;
+  border-radius: var(--border-radius-s);
+  overflow: hidden;
+  background-color: var(--bg-primary);
+  box-shadow: var(--dropdown-boxshadow);
+  border: var(--border-primary);
+  z-index: 300;
+  text-align: left;
+}
+
+.FormSelect__menu-portal .FormSelect__menu-list,
+.FormSelect .FormSelect__menu-list {
+  padding: 0;
+  font-size: var(--fz-text-m);
+  box-shadow: var(--popup-boxshadow-s);
+}
+
+.FormSelect__menu-portal .FormSelect__menu-notice,
+.FormSelect .FormSelect__menu-notice {
+  color: var(--text-secondary);
+}
+
+.FormSelect__menu-portal .FormSelect__option,
+.FormSelect .FormSelect__option {
+  color: var(--text-primary);
+  padding: 10px 14px;
+  transition:
+    color var(--hover-transition),
+    background-color var(--hover-transition);
+}
+
+.FormSelect__menu-portal .FormSelect__option.FormSelect__option--is-disabled,
+.FormSelect .FormSelect__option.FormSelect__option--is-disabled {
+  color: var(--text-secondary);
+}
+
+.FormSelect__menu-portal .FormSelect__option:not(.FormSelect__option--is-disabled):hover,
+.FormSelect .FormSelect__option:not(.FormSelect__option--is-disabled):hover {
+  background-color: var(--bg-hover-primary);
+}
+
+.FormSelect__menu-portal .FormSelect__option--is-focused:not(.FormSelect__option--is-selected),
+.FormSelect .FormSelect__option--is-focused:not(.FormSelect__option--is-selected) {
+  background-color: transparent;
+}
+
+.FormSelect__menu-portal .FormSelect__option--is-selected,
+.FormSelect .FormSelect__option--is-selected {
+  color: var(--text-highlight);
+  background-color: var(--bg-primary);
+}
+
+.FormSelect__menu-portal .FormSelect__input input:focus,
+.FormSelect .FormSelect__input input:focus {
+  box-shadow: none !important;
+}
+
+.FormSelectContainer {
+  position: relative;
+}
+
+.FormSelectAnchor {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+}

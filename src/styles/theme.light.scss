@@ -1,0 +1,141 @@
+$breakpoint-mobile: 320px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop-s: 1024px;
+$breakpoint-desktop-m: 1440px;
+$breakpoint-desktop-l: 1600px;
+$breakpoint-desktop-xl: 1920px;
+//@use "sass:color";
+@import 'theme.light-next';
+
+$black: #171a1c;
+$white: #fff;
+$blue: #0d80f2;
+$sea-blue: #46c1ea;
+$baby-blue: #d9eef2;
+$green: #00db92;
+$neon-green: #00e699;
+$red: #ff4c79;
+$yellow: #f0f075;
+$orange: #ffa64c;
+$pink: #fbd0d7;
+$purple: #a9f;
+$dark-purple: #6347eb;
+$grey-0: #fcfcfd;
+$grey-1: #f9fafa;
+$grey-2: #eef0f1;
+$grey-3: #e3e5e8;
+$grey-4: #c7ccd1;
+$grey-5: #abb2ba;
+$grey-6: #8f99a3;
+$grey-7: #73808c;
+$grey-8: #5c6670;
+$grey-9: #454d54;
+$grey-10: #2e3338;
+
+:root {
+  --black: #{$black};
+  --white: #{$white};
+  --blue: #{$blue};
+  --sea-blue: #{$sea-blue};
+  --baby-blue: #{$baby-blue};
+  --green: #{$green};
+  --neon-green: #{$neon-green};
+  --red: #{$red};
+  --yellow: #{$yellow};
+  --orange: #{$orange};
+  --pink: #{$pink};
+  --purple: #{$purple};
+  --dark-purple: #{$dark-purple};
+  --grey-0: #{$grey-0};
+  --grey-1: #{$grey-1};
+  --grey-2: #{$grey-2};
+  --grey-3: #{$grey-3};
+  --grey-4: #{$grey-4};
+  --grey-5: #{$grey-5};
+  --grey-6: #{$grey-6};
+  --grey-7: #{$grey-7};
+  --grey-8: #{$grey-8};
+  --grey-9: #{$grey-9};
+  --grey-10: #{$grey-10};
+}
+
+body {
+  --border-color-primary: #{$grey-3};
+  --border-color-secondary: #{$grey-2};
+  --border-color-focused: #{$grey-9};
+  --border-color-hover: #{$grey-6};
+  --border-color-tertiary: #{$grey-6};
+  --border-color-disabled: #{$grey-4};
+  --border-light: #{$grey-2};
+  --border-error-light: rgba(255, 76, 121, 0.1);
+  --border-active-light: rgba(0, 219, 146, 0.2);
+  --border-warning-light: rgba(255, 201, 51, 0.3);
+  --border-default-light: rgba(13, 128, 242, 0.2);
+
+  /* bg */
+  --bg-primary: #{$white};
+  --bg-primary-transparent: #{rgba($white, 0)};
+  --bg-secondary: #{$grey-2};
+  --bg-secondary-light: #f9fafb;
+  --bg-tertiary: #{$baby-blue};
+  --bg-overlay: #{rgba($black, 0.45)};
+  --bg-hover-primary: #{rgba($blue, 0.09)};
+  --bg-hover-secondary: #{rgba($green, 0.06)};
+  --bg-hover-tertiary: #f3f4f7;
+  --bg-highlight: #{$blue};
+  --bg-highlight_hover: #0b50db;
+  --bg-highlight-secondary: #{$sea-blue};
+  --bg-highlight-third: #{rgba($blue, 0.09)};
+  --bg-disabled: #{$grey-1};
+  --bg-disabled-secondary: #{$grey-5};
+  --bg-light: #{$grey-1};
+  --bg-extralight: #{$grey-0};
+  --bg-active: #{$green};
+  --bg-active_hover: #00f5a3;
+  --bg-active-light: #e3fdf4;
+  --bg-error: #{$red};
+  --bg-error_hover: #{$red};
+  --bg-error-light: #fef1f3;
+  --bg-warning-light: #fdfde3;
+  --bg-default-light: #ecf5fe;
+  --bg-inversed: #{$black};
+  --bg-inversed-hover: #{$grey-9};
+  --bg-warning: #{$orange};
+
+  /* text */
+  --text-primary: #{$black};
+  --text-primary-inversed: #{$white};
+  --text-secondary: #{$grey-8};
+  --text-highlight: #{$blue};
+  --text-tertiary: #{$grey-9};
+  --text-active: #{$green};
+  --text-active-dark: #064;
+  --text-error: #{$red};
+  --text-error-dark: #8a0f2e;
+  --text-warning: #{$yellow};
+  --text-warning-dark: #805e00;
+  --text-default: #{$black};
+  --text-default-dark: #0d4073;
+  --text-disabled: #{$grey-6};
+
+  /* icons */
+  --icon-primary: #{$grey-5};
+  --icon-default: #{$grey-5};
+  --icon-secondary: #{$grey-6};
+  --icon-secondary-hover: #{$grey-8};
+  --icon-error: #{$red};
+  --icon-empty: #c2c9d6;
+
+  /* misc */
+  --dropdown-boxshadow: 0 1px 4px rgba(26, 26, 26, 0.08);
+  --popup-boxshadow-s: 0 1px 6px rgba(26, 26, 26, 0.2);
+  --input-boxshadow: 0 1px 2px rgba(23, 26, 28, 0.06);
+  --border-primary: 1px solid var(--border-color-primary);
+
+  /* onboarding */
+  --bg-color-welcome: #d9eef2;
+  --bg-color-branching: #f0f075;
+  --bg-color-sql-editor:  #d4ccff;
+  --black-onboarding: #21242c;
+  --badge-inactive: #e0e4eb;
+}

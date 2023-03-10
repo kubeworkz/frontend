@@ -1,0 +1,96 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+.root {
+  position: relative;
+}
+
+.field {
+  color: var(--text-primary);
+  border-radius: var(--border-radius-s);
+  border: var(--border-primary);
+  width: 100%;
+  margin: 0;
+  box-shadow: var(--input-boxshadow);
+  text-align: inherit;
+}
+
+textarea.field {
+  resize: none;
+  font-family: var(--font-family-main);
+}
+
+input.field[type="checkbox"] {
+  width: initial;
+  vertical-align: middle;
+}
+
+/* stylelint-disable-next-line selector-pseudo-class-no-unknown */
+:global(.FormField_inline) .root {
+  display: inline-block;
+}
+
+.disabled .field {
+  background-color: var(--bg-disabled);
+  color: var(--text-disabled);
+}
+
+.root:not(.disabled) .field:focus,
+.root:not(.disabled) .field:focus-visible {
+  border-color: var(--text-highlight);
+  box-shadow: var(--input-boxshadow);
+}
+
+.field::placeholder {
+  color: var(--text-disabled);
+}
+
+.field.field_invalid {
+  border-color: var(--text-error);
+}
+
+.action {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: color var(--hover-transition);
+}
+
+.action:hover {
+  color: var(--text-primary);
+}
+
+/* sizes */
+
+.field_s {
+  font-size: 12px;
+  line-height: 12px;
+  padding: 4px 10px;
+}
+
+.field_m {
+  font-size: 15px;
+  line-height: 20px;
+  padding: 11px 14px;
+}
+
+textarea.field_m {
+  min-height: 82px;
+}

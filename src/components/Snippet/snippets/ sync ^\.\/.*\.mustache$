@@ -1,0 +1,34 @@
+var map = {
+	"./_connstring.mustache": 96380,
+	"./django.mustache": 62953,
+	"./go.mustache": 28443,
+	"./hasura.mustache": 22501,
+	"./java.mustache": 33082,
+	"./nextjs.mustache": 56120,
+	"./nodejs.mustache": 68641,
+	"./prismajs.mustache": 45829,
+	"./psql.mustache": 40065,
+	"./ruby.mustache": 38848,
+	"./sql_alchemy.mustache": 54808,
+	"./symfony.mustache": 65739
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 4577;

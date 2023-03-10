@@ -1,0 +1,45 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+.root {
+  display: inline-block;
+  border-radius: 40px;
+  box-sizing: content-box;
+  padding: 8px 14px;
+  min-height: 14px;
+  min-width: 14px;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.root:not(.active) {
+  background-color: var(--badge-inactive) !important;
+  padding: 0;
+}
+
+.content {
+  opacity: 0;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  vertical-align: middle;
+  transition: all 0.3s ease-in-out;
+  transform: translateX(-50%);
+}
+
+.root.active .content {
+  transform: translateX(0);
+  opacity: 1;
+}

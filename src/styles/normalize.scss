@@ -1,0 +1,108 @@
+/* breakpoint variables would be inserted during compilation */
+
+/* $breakpoint-mobile: *;
+   $breakpoint-tablet: *;
+   $breakpoint-desktop-s: *;
+   $breakpoint-desktop-m: *;
+   $breakpoint-desktop-l: *;
+   $breakpoint-desktop-xl: *; */
+
+:root {
+  --breakpoint-mobile-min-width: #{$breakpoint-mobile};
+  --breakpoint-tablet-min-width: #{$breakpoint-tablet};
+  --breakpoint-s-min-width: #{$breakpoint-desktop-s};
+  --breakpoint-m-min-width: #{$breakpoint-desktop-m};
+  --breakpoint-l-min-width: #{$breakpoint-desktop-l};
+  --breakpoint-xl-min-width: #{$breakpoint-desktop-xl};
+  --min-screen-width: #{$breakpoint-desktop-s};
+
+  /* border-radius */
+  --border-radius: 8px;
+  --border-radius-s: 4px;
+  --border-radius-xs: 2px;
+
+  /* typography */
+  --fz-header-l: 64px;
+  --fz-header-m: 32px;
+  --fz-header-s: 18px;
+  --fz-text-l: 16px;
+  --fz-text-m: 14px;
+  --fz-text-s: 12px;
+  --line-height: 24px;
+
+  /* misc */
+  --hover-opacity: 0.7;
+  --hover-scale: scale(0.96);
+  --hover-transition: 0.2s ease-in-out;
+  --disabled-opacity: 0.3;
+  --focus-border-width: 2px;
+  --font-family-main: 'Open Sans', sans-serif;
+
+  /* animations */
+  --animation-spin: spin 2s linear 0s infinite;
+
+  /* form sizes */
+  --input-fixed-size-width: 280px;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 500px;
+  height: 100%;
+  width: 100%;
+  font-family: var(--font-family-main);
+  background-color: var(--bg-primary) !important; /* XXX: temp, sorry for inconvenience */
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  color: inherit;
+  font-weight: inherit;
+  font-family: var(--font-family-main);
+}
+
+button:not([disabled]) {
+  cursor: pointer;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+pre {
+  margin: 0;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

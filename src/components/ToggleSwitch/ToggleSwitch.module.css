@@ -1,0 +1,95 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+.root {
+  display: flex;
+}
+
+.root:not(.disabled) {
+  cursor: pointer;
+}
+
+.s {
+  --slider-size: 14px;
+  --offset: 2px;
+}
+
+.m {
+  --slider-size: 20px;
+  --offset: 2px;
+}
+
+.l {
+  --slider-size: 24px;
+  --offset: 2px;
+}
+
+.label {
+  font-size: 14px;
+  color: var(--text-primary);
+  margin-right: 8px;
+  vertical-align: 7px;
+}
+
+.switchBox {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  width: calc(var(--slider-size) * 2 + var(--offset) * 2);
+  height: calc(var(--slider-size) + var(--offset) * 2);
+  border-radius: calc(var(--slider-size) / 2 + var(--offset) * 2);
+}
+
+.input {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.switchBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--icon-empty);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.slider {
+  background-color: var(--white);
+  border-radius: 50%;
+  position: absolute;
+  top: var(--offset);
+  left: var(--offset);
+  transition: transform 0.2s ease-in-out;
+  width: var(--slider-size);
+  height: var(--slider-size);
+}
+
+.input:checked ~ .slider {
+  transform: translateX(var(--slider-size));
+}
+
+.input:checked ~ .switchBackground {
+  background-color: var(--bg-active);
+}

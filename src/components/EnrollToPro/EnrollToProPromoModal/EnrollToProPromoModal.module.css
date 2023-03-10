@@ -1,0 +1,85 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.modal {
+  background-color: var(--n-bg-primary);
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  inset: 0;
+}
+
+.container {
+  width: 496px;
+  margin: 0 auto;
+  padding: 48px;
+}
+
+.title {
+  font: var(--font-main-h4);
+  margin-bottom: 22px;
+}
+
+.price {
+  font-size: 57px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.period {
+  font: var(--font-main-h5);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+  gap: 16px;
+}
+
+.perks {
+  margin: 35px 0 70px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.item {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font: var(--font-main-h5);
+  font-weight: 400;
+}
+
+.item + .item {
+  margin-top: 16px;
+}
+
+.itemIcon {
+  color: var(--text-active);
+}

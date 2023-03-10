@@ -1,0 +1,94 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+.root {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  max-height: 100%;
+}
+
+.scrollContainer {
+  max-height: 100%;
+  overflow: auto;
+  flex-grow: 1;
+}
+
+.table {
+  background-color: var(--bg-light);
+  min-width: 100%;
+  border-bottom: var(--border-primary);
+  position: relative;
+  border-spacing: 0;
+}
+
+.table .row_header {
+  position: sticky;
+  top: 0;
+  background: var(--bg-light);
+  border-bottom: var(--border-primary);
+  z-index: 1;
+}
+
+.cell {
+  line-height: 18px;
+  padding: 10px 56px 10px 16px;
+}
+
+.cell_header {
+  border-bottom: var(--border-primary);
+  font-weight: 600;
+  color: var(--text-secondary);
+  font-size: 14px;
+  text-align: left;
+}
+
+.cell_data {
+  border-bottom: 1px solid var(--border-color-secondary);
+  font-size: 15px;
+}
+
+.row_data:last-of-type .cell_data {
+  border-bottom: none;
+}
+
+.row_data {
+  position: relative;
+}
+
+.cell_row_number {
+  position: sticky;
+  left: 0;
+  background-color: var(--bg-light);
+  border-right: var(--border-primary);
+  font-weight: 600;
+  color: var(--text-secondary);
+  font-size: 14px;
+  text-align: right;
+  padding: 10px 16px;
+  width: 1px;
+}
+
+.row_header .cell_row_number {
+  left: 0;
+  top: 0;
+}
+
+.total {
+  color: var(--text-secondary);
+  line-height: 18px;
+  padding: 16px;
+  border-top: 1px solid var(--border-color-secondary);
+}

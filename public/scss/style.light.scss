@@ -1,0 +1,18 @@
+$breakpoint-mobile: 320px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop-s: 1024px;
+$breakpoint-desktop-m: 1440px;
+$breakpoint-desktop-l: 1600px;
+$breakpoint-desktop-xl: 1920px;
+/* stylelint-disable */
+.Pev2React {
+  display: flex;
+
+  @import "../../../../../node_modules/bootstrap/scss/bootstrap";
+}
+
+// pev2 styles
+@import "../../../../../node_modules/pev2/dist/scss/variables";
+
+//@import "~pev2/dist/pev2.css";
+@import "../../../../../node_modules/pev2/dist/scss/pev2";

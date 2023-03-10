@@ -1,0 +1,84 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-bottom: var(--border-primary);
+  height: 72px;
+  flex: 1 0 auto;
+}
+
+.title {
+  flex-grow: 1;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.dbSelect {
+  width: 160px;
+}
+
+.main {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1;
+  border-right: var(--border-primary);
+  padding: 0 26px;
+}
+
+.opts {
+  flex: 1;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  padding: 0 26px;
+}
+
+.controls {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.controls > :not(:first-child) {
+  margin-left: 20px;
+}
+
+.delete {
+  color: var(--red);
+}
+
+.notSaved::after {
+  content: ' *';
+  color: var(--text-error);
+}
+
+.optField {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+@media (--desktop-m-min-width) {
+  .dbSelect {
+    width: 200px;
+  }
+}

@@ -1,0 +1,52 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+.button {
+  padding: 8px 35px;
+  background-color: var(--bg-light);
+  color: var(--text-primary);
+  transition: color var(--hover-transition);
+  border-top: var(--border-primary);
+  border-bottom: var(--border-primary);
+  line-height: 18px;
+}
+
+.button:first-child {
+  border-radius: var(--border-radius-s) 0 0 var(--border-radius-s);
+  border-left: var(--border-primary);
+}
+
+.button:last-child {
+  border-radius: 0 var(--border-radius-s) var(--border-radius-s) 0;
+  border-right: var(--border-primary);
+}
+
+.button:not(.disabled) {
+  cursor: pointer;
+}
+
+.button:hover {
+  color: var(--text-primary);
+}
+
+.button.active {
+  color: var(--text-primary);
+  background-color: var(--bg-active);
+  border-color: var(--bg-active);
+}
+
+.button.disabled {
+  opacity: 0.4;
+}

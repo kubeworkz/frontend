@@ -1,0 +1,54 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+.root {
+  font: var(--font-main-h6);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-radius: var(--border-radius-s);
+  padding: 8px;
+  transition: var(--n-hover-trasition);
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  color: var(--n-icon-secondary);
+  flex-shrink: 0;
+  transition: var(--n-hover-trasition);
+}
+
+.label {
+  color: var(--n-text-secondary);
+  transition: var(--n-hover-trasition);
+}
+
+.active {
+  background-color: var(--n-bg-highlight);
+}
+
+.active .icon,
+.active .label {
+  color: var(--n-text-highlight);
+}
+
+.root:hover:not(.active) {
+  background-color: var(--n-bg-tertiary);
+}
+
+.root:hover:not(.active) .icon {
+  color: var(--n-text-secondary);
+}

@@ -1,0 +1,8 @@
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="1.5" y="1.5" width="17" height="17" rx="2.5" fill="currentColor" stroke="currentColor" />
+  <path fillRule="evenodd" clipRule="evenodd" d="M2 13h9a.5.5 0 0 1 0 1H2a.5.5 0 0 1 0-1Z" fill="#fff" />
+  <path d="M1 13.5h10.5" stroke="#fff" strokeWidth="1.2" />
+  <circle cx="13.5" cy="13.5" r="1.9" stroke="#fff" strokeWidth="1.2" />
+  <circle cx="13.5" cy="6.5" r="1.9" stroke="#fff" strokeWidth="1.2" />
+  <path d="M11.5 6.5c-3 0-6.5.5-6.5 7" stroke="#fff" strokeWidth="1.2" />
+</svg>

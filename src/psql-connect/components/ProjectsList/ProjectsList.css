@@ -1,0 +1,49 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+.ProjectsTopNav {
+  display: flex;
+  align-items: flex-end;
+}
+
+.ProjectsTopNavItem {
+  flex-shrink: 0;
+}
+
+.ProjectsTopNavItem_select {
+  min-width: 180px;
+}
+
+.ProjectsTopNavItem_main {
+  flex-grow: 1;
+}
+
+.ProjectsTopNavItem + .ProjectsTopNavItem {
+  margin-left: 16px;
+}
+
+.ProjectsTopNavDeleted {
+  display: flex;
+  align-items: center;
+  height: 48px;
+}
+
+.ProjectsTopNavDeleted__label {
+  margin-right: 8px;
+}
+
+.ProjectsTopNavDeleted__circle {
+  margin-right: 0;
+}

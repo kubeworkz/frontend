@@ -1,0 +1,56 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+.root {
+  padding: 14px 40px;
+  border-top: var(--border-primary);
+  background-color: var(--bg-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.icon {
+  color: var(--text-active);
+  margin-right: 6px;
+}
+
+.codeBlock {
+  margin-left: 16px;
+  background-color: var(--bg-primary);
+  border: var(--border-primary);
+  border-radius: var(--border-radius-s);
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  padding: 0 5px 0 12px;
+}
+
+.command {
+  padding: 10px 0 11px;
+  margin-right: 11px;
+}
+
+.codePrefix {
+  user-select: none;
+}
+
+.codePrefix::after {
+  content: " ";
+}

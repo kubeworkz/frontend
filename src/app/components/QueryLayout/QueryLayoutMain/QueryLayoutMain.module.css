@@ -1,0 +1,81 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+.root {
+  display: flex;
+  height: 100%;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.sidebar {
+  flex: 0 0 auto;
+  display: flex;
+  width: 270px;
+  flex-direction: column;
+  border-right: var(--border-primary);
+  overflow: auto;
+}
+
+.main {
+  display: flex;
+  flex: 1 0 auto;
+  height: 100%;
+  width: calc(100% - 270px);
+  flex-direction: column;
+}
+
+.handle {
+  flex-shrink: 0;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.handle_s {
+  cursor: ns-resize;
+  margin-top: -4px;
+}
+
+.handle_e {
+  cursor: ew-resize;
+  margin-left: -4px;
+}
+
+.rows {
+  flex-direction: column;
+}
+
+.part_editor {
+  display: flex;
+  flex-direction: column;
+}
+
+.rows .part_editor {
+  flex-direction: column;
+}
+
+.part_result {
+  overflow: auto;
+  margin-top: -4px;
+}
+
+.editor {
+  position: relative;
+  flex-grow: 1;
+}

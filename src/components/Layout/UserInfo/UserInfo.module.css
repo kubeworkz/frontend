@@ -1,0 +1,41 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+.root {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 8px 4px 4px;
+  border-radius: 50px var(--border-radius-s) var(--border-radius-s) 50px;
+  font: var(--font-main-h6);
+  transition: var(--n-hover-trasition);
+}
+
+.name {
+  max-width: 180px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--n-text-secondary);
+}
+
+.withHover:hover:not(.active) {
+  background: var(--n-bg-tertiary);
+}
+
+.root.active {
+  background: var(--n-bg-highlight);
+  color: var(--n-text-highlight);
+}

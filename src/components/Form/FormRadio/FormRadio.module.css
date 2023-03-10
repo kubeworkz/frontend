@@ -1,0 +1,83 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+.root {
+  margin-right: 16px;
+  margin-bottom: 16px;
+  display: inline-block;
+  vertical-align: top;
+  transition: transform var(--hover-transition);
+  position: relative;
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+}
+
+.circleContainer {
+  display: inline-block;
+}
+
+.root:not(.root_disabled) .circleContainer {
+  cursor: pointer;
+}
+
+.input {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.circle {
+  margin: 4px 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: var(--border-primary);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.circle_checked::after,
+.input:checked ~ .circleContainer > .circle::after {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--text-highlight);
+  content: '';
+}
+
+.label {
+  margin-left: 8px;
+  font-weight: 600;
+}
+
+.root_disabled .circle {
+  background-color: var(--bg-disabled);
+  color: var(--text-disabled);
+}
+
+.root_disabled .circle_checked::after,
+.root_disabled .input:checked ~ .circleContainer > .circle::after {
+  background-color: var(--bg-disabled-secondary);
+}
+
+.input:focus + .circleContainer .circle {
+  border-color: var(--text-highlight);
+}

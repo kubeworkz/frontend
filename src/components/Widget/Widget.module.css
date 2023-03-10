@@ -1,0 +1,106 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+.container {
+  border: var(--border-primary);
+  border-radius: var(--border-radius);
+}
+
+.container + .container {
+  margin-top: 20px;
+}
+
+.header {
+  padding: 10px 16px 12px;
+  font-weight: 700;
+  line-height: 20px;
+  background-color: var(--bg-light);
+  border-bottom: var(--border-primary);
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: var(--fz-text-l);
+  display: flex;
+  align-items: center;
+}
+
+.header:empty {
+  display: none;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+}
+
+.link {
+  margin-left: 16px;
+  font-size: 14px;
+}
+
+.link button {
+  font-size: inherit;
+}
+
+.link button[disabled] {
+  color: var(--text-disabled);
+}
+
+.body {
+  padding: 0 16px;
+}
+
+.header + .body {
+  padding-top: 16px;
+}
+
+.body:last-of-type {
+  padding-bottom: 16px;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table th,
+.table td {
+  padding: 10px 0;
+}
+
+.table td {
+  font-size: 15px;
+}
+
+.table th {
+  text-align: left;
+  font-size: 14px;
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.table td:last-of-type,
+.table th:last-of-type {
+  text-align: right;
+}
+
+.table tr:not(:last-child) td,
+.table tr:not(:last-child) th {
+  border-bottom: 1px solid var(--border-light);
+}

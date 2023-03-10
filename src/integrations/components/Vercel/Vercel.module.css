@@ -1,0 +1,82 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+/* stylelint-disable selector-pseudo-class-no-unknown */
+.root {
+  width: 460px;
+  align-self: center;
+}
+
+.vercelProjectPick {
+  margin-top: 30px;
+}
+
+.neonProjectSelect :global(.FormSelect__option):last-child {
+  border-top: var(--border-primary);
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.button {
+  width: 200px;
+}
+
+.zeroVercelProjects {
+  margin-bottom: 30px;
+}
+
+.projectConnectedAlert {
+  margin-bottom: 30px;
+}
+
+.helpBlock {
+  margin-top: 8px;
+}
+
+.helpBlockDivider {
+  margin-top: 32px;
+}
+
+.connectionInfo {
+  margin-bottom: 8px;
+}
+
+.connectionInfoRow {
+  line-height: 16px;
+}
+
+.connectionInfoRow + .buttons {
+  margin-top: 24px;
+}
+
+.connectionInfoEnvName {
+  width: 200px;
+  vertical-align: top;
+  font: var(--font-mono-body);
+  font-weight: normal;
+}
+
+.connectionInfoEnvValue {
+  font: var(--font-mono-small);
+}
+
+.connectionWarning {
+  margin: 20px 0;
+}

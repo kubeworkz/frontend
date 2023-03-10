@@ -1,0 +1,133 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+.root {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  color: var(--n-text-primary);
+  background-color: var(--n-bg-primary);
+  min-width: var(--min-screen-width);
+}
+
+.layout {
+  display: flex;
+  align-items: stretch;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.left {
+  width: 209px;
+  flex-shrink: 0;
+  height: 100%;
+  display: flex;
+  border-right: 1px solid var(--n-border-primary);
+  background-color: var(--n-bg-secondary);
+}
+
+.logo {
+  margin: 0 4px 7px;
+}
+
+.logo img {
+  display: block;
+}
+
+.menu {
+  padding: 32px;
+  overflow-y: auto;
+  align-items: stretch;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.menuRow_wide {
+  flex-grow: 1;
+}
+
+.user {
+  margin: 8px 8px 0 0;
+}
+
+.right {
+  flex-grow: 1;
+  min-width: 0;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+.header {
+  flex-shrink: 0;
+  padding: 20px 32px;
+  font: var(--font-main-h4);
+  height: 83px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--n-border-primary);
+}
+
+.title {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.scrollable {
+  overflow: auto;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.container {
+  padding: 24px 40px 40px;
+  margin: 0 auto;
+  flex-grow: 1;
+  position: relative;
+}
+
+.container_s {
+  width: 780px;
+}
+
+.container_m {
+  width: 100%;
+  max-width: 1280px;
+}
+
+.container_l {
+  width: 100%;
+  max-width: var(--breakpoint-l-min-width);
+}
+
+.container_app {
+  overflow: auto;
+  padding: 0;
+  flex-grow: 1;
+  display: flex;
+  width: 100%;
+}
+
+.footer {
+  flex-shrink: 0;
+}

@@ -1,0 +1,52 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+.code {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  border: var(--border-primary);
+  border-radius: var(--border-radius-s);
+  text-align: left;
+  word-break: break-word;
+  white-space: pre;
+  font-weight: 600;
+  font-size: 15px;
+
+  /* hide ace cursor */
+  /* stylelint-disable-next-line selector-pseudo-class-no-unknown */
+  :global(.ace_cursor-layer) {
+    display: none;
+  }
+}
+
+.scrollable {
+  overflow: auto;
+}
+
+.span {
+  align-items: center;
+  padding: 1px;
+  border-radius: var(--border-radius-xs);
+  margin: 1px;
+  line-height: 1;
+  background-color: var(--bg-tertiary);
+  border: none;
+}
+
+.block {
+  max-width: 100%;
+  overflow: auto;
+  width: 100%;
+}

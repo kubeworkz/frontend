@@ -1,0 +1,86 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+.root {
+  border: 1px solid;
+  padding: 13px 16px;
+  display: flex;
+  width: 100%;
+  border-radius: var(--border-radius-s);
+  align-items: center;
+}
+
+.root a {
+  color: inherit;
+  font-weight: bold;
+}
+
+.close {
+  width: 24px;
+  height: 24px;
+}
+
+.icon,
+.close {
+  flex-shrink: 0;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.error {
+  background-color: var(--bg-error-light);
+  border-color: var(--border-error-light);
+  color: var(--text-error-dark);
+}
+
+.error .icon {
+  color: var(--text-error);
+}
+
+.success {
+  background-color: var(--bg-active-light);
+  border-color: var(--border-active-light);
+  color: var(--text-active-dark);
+}
+
+.success .icon {
+  color: var(--text-active);
+}
+
+.warning {
+  background-color: var(--bg-warning-light);
+  border-color: var(--border-warning-light);
+  color: var(--text-warning-dark);
+}
+
+.warning .icon {
+  color: var(--text-warning);
+}
+
+.default {
+  background-color: var(--bg-default-light);
+  border-color: var(--border-default-light);
+  color: var(--text-default-dark);
+}
+
+.default .icon {
+  color: var(--text-default);
+}
+
+.body {
+  flex-grow: 1;
+}

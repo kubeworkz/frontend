@@ -1,0 +1,109 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+button.Text {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+}
+
+a.Text,
+.Text a {
+  color: var(--text-highlight);
+}
+
+a.Text:hover,
+.Text a:hover {
+  text-decoration: underline;
+}
+
+/* appearance */
+.Text_primary {
+  color: var(--text-primary);
+}
+
+.Text_secondary {
+  color: var(--text-secondary);
+}
+
+.Text_error {
+  color: var(--text-error);
+}
+
+.Text_warning {
+  color: var(--text-warning);
+}
+
+.Text_success {
+  color: var(--text-active);
+}
+
+/* size */
+.Text_header,
+.Text_bold {
+  font-weight: bold;
+}
+
+.Text_s {
+  font-size: var(--fz-text-s);
+}
+
+.Text_m {
+  font-size: var(--fz-text-m);
+}
+
+.Text_l {
+  font-size: var(--fz-text-l);
+  line-height: 1.8rem;
+}
+
+.Text_header.Text_s {
+  font-size: var(--fz-header-s);
+  line-height: 32px;
+}
+
+.Text_header.Text_m {
+  font-size: var(--fz-header-m);
+  line-height: 40px;
+}
+
+.Text_header.Text_l {
+  font-size: var(--fz-header-l);
+  line-height: 72px;
+}
+
+.Text_align-left {
+  text-align: left;
+}
+
+.Text_align-right {
+  text-align: right;
+}
+
+.Text_align-center {
+  text-align: center;
+}
+
+.Text_nowrap {
+  white-space: nowrap;
+}
+
+ul.Text,
+ol.Text {
+  padding-left: 24px;
+}

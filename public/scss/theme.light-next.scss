@@ -1,0 +1,129 @@
+/* Black */
+$BL0: #fff;
+$BL10: #fafafa;
+$BL20: #f5f5f5;
+$BL30: #ebebeb;
+$BL40: #dedede;
+$BL50: #bfbfbf;
+$BL60: #b0b0b0;
+$BL70: #a3a3a3;
+$BL80: #949494;
+$BL90: #858585;
+$BL100: #757575;
+$BL200: #666;
+$BL300: #575757;
+$BL400: #4a4a4a;
+$BL500: #3b3b3b;
+$BL600: #2e2e2e;
+$BL700: #1c1c1c;
+$BL800: #0d0d0d;
+$BL900: #000;
+
+/* Blue */
+$BN0: #fff;
+$BN10: #fbfcfc;
+$BN20: #f8f9fa;
+$BN30: #f1f2f5;
+$BN40: #e8eaee;
+$BN50: #d3d7df;
+$BN60: #c8cdd8;
+$BN70: #bfc5d1;
+$BN80: #b4bbca;
+$BN90: #aab2c2;
+$BN100: #9fa8ba;
+$BN200: #949eb3;
+$BN300: #8a95ab;
+$BN400: #818da5;
+$BN500: #76839d;
+$BN600: #6d7b97;
+$BN700: #61708e;
+$BN800: #566686;
+$BN900: #4d5e80;
+
+/* Blue */
+$B50: #e6f0ff;
+$B75: #96c0ff;
+$B100: #6ba6ff;
+$B200: #2b7fff;
+$B300: #0065ff;
+$B400: #0047b3;
+$B500: #003e9c;
+
+/* Red */
+$R50: #ffe6ed;
+$R75: #ff96b6;
+$R100: #ff6b97;
+$R200: #ff2b6a;
+$R300: #ff004c;
+$R400: #b30035;
+$R500: #9c002e;
+
+/* Green */
+$G50: #e6fcf0;
+$G75: #96f2c3;
+$G100: #6bedaa;
+$G200: #2be585;
+$G300: #00e06c;
+$G400: #009d4c;
+$G500: #008942;
+
+/* Orange */
+$O50: #fff5e7;
+$O75: #ffd69d;
+$O100: #ffc574;
+$O200: #ffac38;
+$O300: #ff9b0f;
+$O400: #b36d0b;
+$O500: #9c5f09;
+
+/*
+All colors in this theme must have -n- prefix to separate them from the old vars.
+Once the redesign is finished and all css files use new variables we will remove the prefix
+ */
+:root {
+  /* Monospace font styles */
+  --font-mono-body: 500 14px/1.4 'IBM Plex Mono', monospace;
+  --font-mono-small: 400 12px/1.4 'IBM Plex Mono', monospace;
+
+  /* Main font styles */
+  --font-main-h1: 600 36px/1.1 'Open Sans', sans-serif;
+  --font-main-h2: 600 28px/1.2 'Open Sans', sans-serif;
+  --font-main-h3: 600 24px/1.1 'Open Sans', sans-serif;
+  --font-main-h4: 600 20px/1.2 'Open Sans', sans-serif;
+  --font-main-h5: 600 16px/1.2 'Open Sans', sans-serif;
+  --font-main-h6: 600 14px/1.2 'Open Sans', sans-serif;
+  --font-main-body: 500 14px/1.2 'Open Sans', sans-serif;
+  --font-main-caption: 700 12px/1.2 'Open Sans', sans-serif;
+  --font-main-small: 600 12px/1.2 'Open Sans', sans-serif;
+  --font-main-tiny: 700 10px/1 'Open Sans', sans-serif;
+  --font-main-mini: 800 8px/1 'Open Sans', sans-serif;
+
+  /* background colors */
+  --n-bg-primary: #{$BL0};
+  --n-bg-secondary: #{$BN20};
+  --n-bg-tertiary: #{$BN30};
+  --n-bg-quaternary: #{$BN40};
+  --n-bg-highlight-light: #{$B50};
+  --n-bg-neon-gradient: linear-gradient(326.31deg, #63f655 15%, #07e1d5 91.82%);
+  --n-bg-highlight: #{$B50};
+
+  /* text colors */
+  --n-text-primary: #{$BL700};
+  --n-text-secondary: #{$BL400};
+  --n-text-tertiary: #{$BL300};
+  --n-text-quaternary: #{$BN700};
+  --n-text-highlight: #{$B300};
+  --n-text-avatar: #{$BL800};
+  --n-text-divider: #{$BN100};
+  --n-text-sub: #{$BN300};
+
+  /* border colors */
+  --n-border-primary: #{$BN40};
+
+  /* icon colors */
+  --n-icon-primary: #{$BL600};
+  --n-icon-secondary: #{$BN300};
+
+  /* transition */
+  --n-hover-trasition: background-color 0.5s, color 0.5s;
+}

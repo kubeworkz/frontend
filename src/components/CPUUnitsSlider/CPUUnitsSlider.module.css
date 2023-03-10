@@ -1,0 +1,108 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+.root {
+  border: var(--border-primary);
+  border-radius: var(--border-radius-s);
+}
+
+.row {
+  padding: 12px 10px;
+}
+
+.row + .row {
+  border-top: var(--border-primary);
+}
+
+.row_flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input_row {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.input_row + .input_row {
+  margin-top: 10px;
+}
+
+.input {
+  width: 40px;
+  text-align: center;
+}
+
+.inputDescription {
+  color: var(--text-secondary);
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.trackContainer {
+  padding: 5px 0 20px;
+  width: 100%;
+  display: flex;
+}
+
+.track {
+  height: 8px;
+  border-radius: var(--border-radius-s);
+  width: 100%;
+  align-self: center;
+}
+
+.thumb {
+  height: 18px;
+  width: 18px;
+  border-radius: 9px;
+  background-color: var(--bg-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 1px 4px rgba(26, 26, 26, 0.25);
+}
+
+.thumbDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: var(--bg-highlight);
+}
+
+.root_disabled .thumbDot {
+  background-color: var(--text-disabled);
+}
+
+.thumbDot_dragged {
+  background-color: var(--bg-highlight_hover);
+}
+
+.mark {
+  font-size: 10px;
+  line-height: 10px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  bottom: 0;
+}
+
+.mark_last {
+  transform: translateX(-50%);
+}
+
+.mark_first {
+  transform: translateX(50%);
+}

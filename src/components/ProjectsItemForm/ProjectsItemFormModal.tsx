@@ -1,9 +1,9 @@
 import React from 'react';
-import { ModalHeader } from '#shared/components/Modal/ModalHeader';
-import { ModalActions } from '#shared/components/Modal/ModalActions';
-import { Button } from '#shared/components/Button/Button';
-import { Modal } from '#shared/components/Modal/Modal';
-import { ModalBody } from '#shared/components/Modal/ModalBody';
+import { ModalHeader } from '../../components/Modal/ModalHeader';
+import { ModalActions } from '../../components/Modal/ModalActions';
+import { Button } from '../../components/Button/Button';
+import { Modal } from '../../components/Modal/Modal';
+import { ModalBody } from '../../components/Modal/ModalBody';
 import { ProjectsItemForm, ProjectsItemFormProps } from './ProjectsItemForm';
 
 export const ProjectsItemFormModal = (props: ProjectsItemFormProps) => (

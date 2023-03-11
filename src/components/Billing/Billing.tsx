@@ -1,18 +1,18 @@
 import { capitalize } from 'lodash';
 import React, { useCallback } from 'react';
 
-import { Invoice } from '#api_client/publicv2';
-import { useCurrentUser } from '#shared/hooks/currentUser';
+import { Invoice } from '../../api/publicv2';
+import { useCurrentUser } from '../../hooks/currentUser';
 import {
   DataTable,
   DataTableColumn,
-} from '#shared/components/DataTable/DataTable';
-import { CardNext } from '#shared/components/CardNext/CardNext';
-import { Button } from '#shared/components/Button/Button';
-import { Loader } from '#shared/components/Loader/Loader';
+} from '../../components/DataTable/DataTable';
+import { CardNext } from '../../components/CardNext/CardNext';
+import { Button } from '../../components/Button/Button';
+import { Loader } from '../../components/Loader/Loader';
 
-import { DateTimeFormat, formatDate } from '#shared/utils/formatDate';
-import { useBilling } from '../../pages/Billing/context';
+import { DateTimeFormat, formatDate } from '../../utils/formatDate';
+import { useBilling } from '../../app/pages/Billing/context';
 import styles from './Billing.module.css';
 
 const invoicesColumns: DataTableColumn<Invoice>[] = [

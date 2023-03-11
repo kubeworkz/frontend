@@ -1,8 +1,8 @@
 import React, { useCallback, useState } from 'react';
 
-import { Button } from '#shared/components/Button/Button';
-import { apiErrorToaster } from '#api_client/utils';
-import { useQueryContext } from '../../../pages/Query/queryContext';
+import { Button } from '../../../components/Button/Button';
+import { apiErrorToaster } from '../../../api/utils';
+import { useQueryContext } from '../../../app/pages/Query/queryContext';
 import { QuerySaveDialog } from './QuerySaveDialog';
 
 export const QuerySaveButton = () => {

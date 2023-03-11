@@ -2,8 +2,8 @@
 import React, {
   useState,
 } from 'react';
-import { Modal } from '#shared/components/Modal/Modal';
-import { ModalBody } from '#shared/components/Modal/ModalBody';
+import { Modal } from '../../components/Modal/Modal';
+import { ModalBody } from '../../components/Modal/ModalBody';
 import { QueryRoleForm } from './QueryRoleForm/QueryRoleForm';
 import { QueryLayoutMain } from './QueryLayoutMain/QueryLayoutMain';
 

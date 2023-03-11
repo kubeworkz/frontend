@@ -1,7 +1,7 @@
-import { Tippy } from '#shared/components/Tippy/Tippy';
+import { Tippy } from '../../components/Tippy/Tippy';
 import React from 'react';
-import { useProjectEndpoints } from '../../hooks/projectEndpoints';
-import { useSelectedBranch } from '../../hooks/selectedBranchProvider';
+import { useProjectEndpoints } from '../../app/hooks/projectEndpoints';
+import { useSelectedBranch } from '../../app/hooks/selectedBranchProvider';
 
 import style from './DisableOnTransition.module.css';
 

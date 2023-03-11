@@ -1,12 +1,12 @@
 import React, { ReactNode } from 'react';
 import { generatePath, Link } from 'react-router-dom';
 
-import { AdminEndpoint } from '#api_client/internal';
-import { PageHeader } from '#shared/components/PageHeader/PageHeader';
-import { Text } from '#shared/components/Text/Text';
+import { AdminEndpoint } from '../../api/internal';
+import { PageHeader } from '../../components/PageHeader/PageHeader';
+import { Text } from '../../components/Text/Text';
 
-import { humanReadableBytes, secondsToHours } from '#shared/utils/units';
-import { AdminRoutes } from '../../config/routes';
+import { humanReadableBytes, secondsToHours } from '../../utils/units';
+import { AdminRoutes } from '../../admin/config/routes';
 
 interface EndpointItemProps {
   endpoint: AdminEndpoint;

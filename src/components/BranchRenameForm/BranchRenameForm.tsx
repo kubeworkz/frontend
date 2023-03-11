@@ -1,8 +1,8 @@
 import React, { PropsWithChildren } from 'react';
 import { useForm, FormProvider } from 'react-hook-form';
-import { apiService, Branch } from '#api_client/publicv2';
-import { Form } from '#shared/components/Form/Form';
-import { FormCallbacks } from '#shared/components/Form/types';
+import { apiService, Branch } from '../../api/publicv2';
+import { Form } from '../../components/Form/Form';
+import { FormCallbacks } from '../../components/Form/types';
 
 interface BranchRenameFormValues {
   name: string;

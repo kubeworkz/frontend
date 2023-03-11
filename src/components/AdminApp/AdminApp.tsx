@@ -3,12 +3,12 @@ import {
   BrowserRouter, Redirect, Route, Switch,
 } from 'react-router-dom';
 
-import { Text } from '#shared/components/Text/Text';
+import { Text } from '../../components/Text/Text';
 
-import { ConfirmationProvider } from '#shared/components/Confirmation/ConfirmationProvider';
-import { ToastContainer } from '#shared/components/Toast/ToastContainer';
-import { CurrentUserProvider } from '#shared/hooks/currentUser';
-import { ADMIN_BASE_ROUTE } from '#shared/routes';
+import { ConfirmationProvider } from '../../components/Confirmation/ConfirmationProvider';
+import { ToastContainer } from '../../components/Toast/ToastContainer';
+import { CurrentUserProvider } from '../../hooks/currentUser';
+import { ADMIN_BASE_ROUTE } from '../../routes/routes';
 import { AdminLayout } from '../AdminLayout/AdminLayout';
 import { SafekeepersItem as SafekeepersItemComponent } from '../SafekeepersItem/SafekeepersItem';
 import { ProjectsList as ProjectsListComponent } from '../ProjectsList/ProjectsList';
@@ -22,9 +22,9 @@ import { PlatformsList } from '../PlatformsList/PlatformsList';
 import { OperationsList } from '../OperationsList/OperationsList';
 import { OperationsItem } from '../OperationsItem/OperationsItem';
 
-import { UserCacheProvider, SafekeeperCacheProvider, PageserverCacheProvider } from '../../utils/caches';
+import { UserCacheProvider, SafekeeperCacheProvider, PageserverCacheProvider } from '../../admin/utils/caches';
 
-import { AdminRoutes } from '../../config/routes';
+import { AdminRoutes } from '../../admin/config/routes';
 import { InvitesList } from '../InvitesList/InvitesList';
 import { ConsoleSettings } from '../ConsoleSettings/ConsoleSettings';
 import { BranchesList } from '../BranchesList/BranchesList';

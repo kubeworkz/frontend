@@ -1,9 +1,9 @@
 import React from 'react';
-import { Modal } from '#shared/components/Modal/Modal';
+import { Modal } from '../../components/Modal/Modal';
 import ReactModal from 'react-modal';
-import { ModalBody } from '#shared/components/Modal/ModalBody';
-import { ModalActions } from '#shared/components/Modal/ModalActions';
-import { Button } from '#shared/components/Button/Button';
+import { ModalBody } from '../../components/Modal/ModalBody';
+import { ModalActions } from '../../components/Modal/ModalActions';
+import { Button } from '../../components/Button/Button';
 import classNames from 'classnames';
 import { RoleForm } from './RoleForm';
 import { RoleFormProps, RoleFormProvider } from './RoleFormProvider';

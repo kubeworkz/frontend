@@ -2,21 +2,21 @@ import React from 'react';
 import { useHistory } from 'react-router-dom';
 import { toast } from 'react-toastify';
 
-import { SettingsHeader, SettingsDesc } from '#shared/components/Settings/Settings';
-import { apiErrorToaster } from '#api_client/utils';
+import { SettingsHeader, SettingsDesc } from '../../../components/Settings/Settings';
+import { apiErrorToaster } from '../../../api/utils';
 import {
   ConfirmationPreset,
   createConfirmation,
   useConfirmation,
-} from '#shared/components/Confirmation/ConfirmationProvider';
-import { Alert } from '#shared/components/Alert/Alert';
-import { Button } from '#shared/components/Button/Button';
-import { ConsoleRoutes } from '#shared/routes';
-import { AnalyticsAction, useAnalytics } from '#shared/utils/analytics';
-import { ToastSuccess } from '#shared/components/Toast/Toast';
-import { apiService } from '#api_client/publicv2';
-import { useProjectsItemContext } from '../../../hooks/projectsItem';
-import { useProjectsContext } from '../../../hooks/projectsContext';
+} from '../../../components/Confirmation/ConfirmationProvider';
+import { Alert } from '../../../components/Alert/Alert';
+import { Button } from '../../../components/Button/Button';
+import { ConsoleRoutes } from '../../../routes/routes';
+import { AnalyticsAction, useAnalytics } from '../../../utils/analytics';
+import { ToastSuccess } from '../../../components/Toast/Toast';
+import { apiService } from '../../../api/publicv2';
+import { useProjectsItemContext } from '../../../app/hooks/projectsItem';
+import { useProjectsContext } from '../../../app/hooks/projectsContext';
 import { ProjectSettingsSectionProps } from '../types';
 
 export const ProjectSettingsDelete = ({ disabled }: ProjectSettingsSectionProps) => {

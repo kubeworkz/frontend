@@ -1,12 +1,12 @@
 import React from 'react';
-import { AdminProject, internalApiService } from '#api_client/internal';
-import { Form } from '#shared/components/Form/Form';
+import { AdminProject, internalApiService } from '../../api/internal';
+import { Form } from '../../components/Form/Form';
 import { useForm } from 'react-hook-form';
-import { FormLabel } from '#shared/components/Form/FormLabel/FormLabel';
-import { FormInput } from '#shared/components/Form/FormInput/FormInput';
-import { FormField } from '#shared/components/Form/FormField/FormField';
-import { Text } from '#shared/components/Text/Text';
-import { mbAsGB } from '#shared/utils/sizeHelpers';
+import { FormLabel } from '../../components/Form/FormLabel/FormLabel';
+import { FormInput } from '../../components/Form/FormInput/FormInput';
+import { FormField } from '../../components/Form/FormField/FormField';
+import { Text } from '../../components/Text/Text';
+import { mbAsGB } from '../../utils/sizeHelpers';
 
 export interface ProjectsItemFormProps {
   project: AdminProject;

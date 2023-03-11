@@ -1,16 +1,16 @@
 import React from 'react';
 import { Controller, useFormContext } from 'react-hook-form';
-import { FormField } from '#shared/components/Form/FormField/FormField';
-import { BranchSelectOption, useBranches } from '#shared/hooks/projectBranches';
-import { useCurrentUser } from '#shared/hooks/currentUser';
-import { FormCheckbox } from '#shared/components/Form/FormCheckbox/FormCheckbox';
-import { CPUUnitsSlider } from '#shared/components/CPUUnitsSlider/CPUUnitsSlider';
-import { Button } from '#shared/components/Button/Button';
-import { Alert } from '#shared/components/Alert/Alert';
-import { FormRow } from '#shared/components/Form/FormRow/FormRow';
-import { Endpoint } from '#api_client/generated/api_public_v2';
+import { FormField } from '../../components/Form/FormField/FormField';
+import { BranchSelectOption, useBranches } from '../../hooks/projectBranches';
+import { useCurrentUser } from '../../hooks/currentUser';
+import { FormCheckbox } from '../../components/Form/FormCheckbox/FormCheckbox';
+import { CPUUnitsSlider } from '../../components/CPUUnitsSlider/CPUUnitsSlider';
+import { Button } from '../../components/Button/Button';
+import { Alert } from '../../components/Alert/Alert';
+import { FormRow } from '../../components/Form/FormRow/FormRow';
+import { Endpoint } from '../../api/generated/api_public_v2';
 import { BranchSelect } from '../BranchSelect/BranchSelect';
-import { useAppContext } from '../../hooks/app';
+import { useAppContext } from '../../app/hooks/app';
 
 const EndpointBranchIdField = () => {
   const { selectOptionsById } = useBranches();

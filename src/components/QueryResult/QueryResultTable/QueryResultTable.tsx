@@ -1,7 +1,7 @@
 /* eslint-disable react/no-array-index-key */
 import React from 'react';
 
-import { Text } from '#shared/components/Text/Text';
+import { Text } from '../../../components/Text/Text';
 
 import classNames from 'classnames';
 import styles from './QueryResultTable.module.css';

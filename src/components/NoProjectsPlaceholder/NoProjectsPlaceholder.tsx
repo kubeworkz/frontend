@@ -1,11 +1,11 @@
 import React, { useCallback, useEffect } from 'react';
 import classNames from 'classnames';
 
-import { BigCarousel } from '#shared/components/BigCarousel/BigCarousel';
-import { ProgressBadge } from '#shared/components/ProgressBadge/ProgressBadge';
+import { BigCarousel } from '../../components/BigCarousel/BigCarousel';
+import { ProgressBadge } from '../../components/ProgressBadge/ProgressBadge';
 
-import { AnyLink } from '#shared/components/AnyLink/AnyLink';
-import { AnalyticsAction, useAnalytics } from '#shared/utils/analytics';
+import { AnyLink } from '../../components/AnyLink/AnyLink';
+import { AnalyticsAction, useAnalytics } from '../../utils/analytics';
 import { ProjectFormModal } from '../ProjectFormModal/ProjectFormModal';
 
 import styles from './NoProjectsPlaceholder.module.css';

@@ -1,8 +1,8 @@
 import React, { HTMLAttributes, PropsWithChildren } from 'react';
 import classNames from 'classnames';
 
-import { AnyLinkConfig } from '#shared/components/AnyLink/AnyLink';
-import { WidgetLink } from '#shared/components/Widget/WidgetLink';
+import { AnyLinkConfig } from '../../components/AnyLink/AnyLink';
+import { WidgetLink } from '../../components/Widget/WidgetLink';
 import styles from './Widget.module.css';
 
 export interface WidgetProps {

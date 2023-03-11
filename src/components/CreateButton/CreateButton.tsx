@@ -1,6 +1,6 @@
 import React, { HTMLAttributes } from 'react';
-import { Button, ButtonProps } from '#shared/components/Button/Button';
-import { ComponentWithAsProp, ReplaceProps } from '#shared/types/Props';
+import { Button, ButtonProps } from '../../components/Button/Button';
+import { ComponentWithAsProp, ReplaceProps } from '../../types/Props';
 
 // eslint-disable-next-line func-names
 export const CreateButton: ComponentWithAsProp<'button', ButtonProps> = function<As extends React.ElementType>({

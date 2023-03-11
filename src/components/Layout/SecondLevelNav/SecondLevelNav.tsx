@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { AnyLink, AnyLinkConfig } from '#shared/components/AnyLink/AnyLink';
+import { AnyLink, AnyLinkConfig } from '../../../components/AnyLink/AnyLink';
 import styles from './SecondLevelNav.module.css';
 
 interface SecondLevelNavProps {

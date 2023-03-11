@@ -1,7 +1,7 @@
 import React from 'react';
-import { AceDiff } from '#shared/components/Ace/Ace';
+import { AceDiff } from '../../components/Ace/Ace';
 
-import { Button } from '#shared/components/Button/Button';
+import { Button } from '../../components/Button/Button';
 
 import styles from './SettingsEditor.module.css';
 

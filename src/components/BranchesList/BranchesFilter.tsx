@@ -1,11 +1,11 @@
 import React, { useCallback } from 'react';
 
-import { FormField } from '#shared/components/Form/FormField/FormField';
-import { FormLabel } from '#shared/components/Form/FormLabel/FormLabel';
-import { FormInput } from '#shared/components/Form/FormInput/FormInput';
-import { Toggle } from '#shared/components/Toggle/Toggle';
-import { ToggleButton } from '#shared/components/Toggle/ToggleButton/ToggleButton';
-import { FormCheckbox } from '#shared/components/Form/FormCheckbox/FormCheckbox';
+import { FormField } from '../../components/Form/FormField/FormField';
+import { FormLabel } from '../../components/Form/FormLabel/FormLabel';
+import { FormInput } from '../../components/Form/FormInput/FormInput';
+import { Toggle } from '../../components/Toggle/Toggle';
+import { ToggleButton } from '../../components/Toggle/ToggleButton/ToggleButton';
+import { FormCheckbox } from '../../components/Form/FormCheckbox/FormCheckbox';
 
 import { FilterComponentProps } from '../DataPage/DataPage';
 import styles from './BranchesFilter.module.css';

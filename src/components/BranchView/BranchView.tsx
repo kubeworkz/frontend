@@ -1,32 +1,32 @@
 import React, { useState } from 'react';
 import { generatePath } from 'react-router-dom';
 
-import { Button } from '#shared/components/Button/Button';
-import { useGoBack } from '#shared/hooks/useGoBack';
-import { ConsoleRoutes } from '#shared/routes';
-import { IconButton } from '#shared/components/Button/IconButton/IconButton';
-import { DateTimeFormat, formatDate } from '#shared/utils/formatDate';
-import { DataTableHeader } from '#shared/components/DataTable/DataTableHeader/DataTableHeader';
+import { Button } from '../../components/Button/Button';
+import { useGoBack } from '../../hooks/useGoBack';
+import { ConsoleRoutes } from '../../routes/routes';
+import { IconButton } from '../../components/Button/IconButton/IconButton';
+import { DateTimeFormat, formatDate } from '../../utils/formatDate';
+import { DataTableHeader } from '../../components/DataTable/DataTableHeader/DataTableHeader';
 import {
   ConfirmationPreset,
   createConfirmation,
   useConfirmation,
-} from '#shared/components/Confirmation/ConfirmationProvider';
-import { apiService } from '#api_client/publicv2';
-import { apiErrorToaster } from '#api_client/utils';
-import { Skeleton } from '#shared/components/Skeleton/Skeleton';
-import { renderDataSize } from '#shared/utils/branch';
-import { Text } from '#shared/components/Text/Text';
-import { CopyButton } from '#shared/components/CopyButton/CopyButton';
-import { useBranches } from '#shared/hooks/projectBranches';
+} from '../../components/Confirmation/ConfirmationProvider';
+import { apiService } from '../../api/publicv2';
+import { apiErrorToaster } from '../../api/utils';
+import { Skeleton } from '../../components/Skeleton/Skeleton';
+import { renderDataSize } from '../../utils/branch';
+import { Text } from '../../components/Text/Text';
+import { CopyButton } from '../../components/CopyButton/CopyButton';
+import { useBranches } from '../../hooks/projectBranches';
 
 import {
   ModalForm,
   ModalFormActions,
   ModalFormBody,
   ModalFormCancelButton, ModalFormSubmitButton,
-} from '#shared/components/Modal/ModalForm/ModalForm';
-import { useProjectsItemContext } from '../../hooks/projectsItem';
+} from '../../components/Modal/ModalForm/ModalForm';
+import { useProjectsItemContext } from '../../app/hooks/projectsItem';
 import { BranchCreateButton } from '../CreateButton/BranchCreateButton/BranchCreateButton';
 import { BranchRenameForm } from '../BranchRenameForm/BranchRenameForm';
 import { BranchRenameFormFields } from '../BranchRenameForm/BranchRenameFormFields';

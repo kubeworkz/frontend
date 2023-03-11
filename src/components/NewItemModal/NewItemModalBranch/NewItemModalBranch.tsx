@@ -1,19 +1,19 @@
 import React from 'react';
-import { Modal, ModalProps } from '#shared/components/Modal/Modal';
+import { Modal, ModalProps } from '../../../components/Modal/Modal';
 import {
   BranchResponse,
   EndpointsResponse,
   OperationsResponse,
-} from '#api_client/publicv2';
-import { ModalBody } from '#shared/components/Modal/ModalBody';
-import { CodeBlock } from '#shared/components/Code/Code';
-import { Button } from '#shared/components/Button/Button';
+} from '../../../api/publicv2';
+import { ModalBody } from '../../../components/Modal/ModalBody';
+import { CodeBlock } from '../../../components/Code/Code';
+import { Button } from '../../../components/Button/Button';
 import { generatePath, NavLink } from 'react-router-dom';
-import { ConsoleRoutes } from '#shared/routes';
-import { AnalyticsAction, useAnalytics } from '#shared/utils/analytics';
-import { Alert } from '#shared/components/Alert/Alert';
-import { HelpBlock } from '#shared/components/HelpBlock/HelpBlock';
-import { AnyLink } from '#shared/components/AnyLink/AnyLink';
+import { ConsoleRoutes } from '../../../routes/routes';
+import { AnalyticsAction, useAnalytics } from '../../../utils/analytics';
+import { Alert } from '../../../components/Alert/Alert';
+import { HelpBlock } from '../../../components/HelpBlock/HelpBlock';
+import { AnyLink } from '../../../components/AnyLink/AnyLink';
 
 import styles from './NewItemModalBranch.module.css';
 

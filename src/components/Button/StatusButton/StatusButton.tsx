@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Button, ButtonProps } from '#shared/components/Button/Button';
-import { IconName } from '#shared/components/SvgIcon/SvgIcon';
-import { Loader } from '#shared/components/Loader/Loader';
-import { ComponentWithAsProp } from '#shared/types/Props';
+import { Button, ButtonProps } from '../../../components/Button/Button';
+import { IconName } from '../../../components/SvgIcon/SvgIcon';
+import { Loader } from '../../../components/Loader/Loader';
+import { ComponentWithAsProp } from '../../../types/Props';
 
 type StatusButtonLabel = readonly [
   string, // default

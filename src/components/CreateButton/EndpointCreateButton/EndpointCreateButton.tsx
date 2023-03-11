@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
-import { Button, ButtonProps } from '#shared/components/Button/Button';
-import { Tippy } from '#shared/components/Tippy/Tippy';
+import { Button, ButtonProps } from '../../../components/Button/Button';
+import { Tippy } from '../../../components/Tippy/Tippy';
 import {
   Branch, Endpoint,
-} from '#api_client/publicv2';
-import { AnalyticsAction, useAnalytics } from '#shared/utils/analytics';
-import { getLimitsLabel, useUserEndpointsLimit } from '../../../hooks/userLimits';
-import { useProjectsItemContext } from '../../../hooks/projectsItem';
+} from '../../../api/publicv2';
+import { AnalyticsAction, useAnalytics } from '../../../utils/analytics';
+import { getLimitsLabel, useUserEndpointsLimit } from '../../../app/hooks/userLimits';
+import { useProjectsItemContext } from '../../../app/hooks/projectsItem';
 import { EndpointFormModal } from '../../EndpointForm/EndpointFormModal';
-import { useProjectEndpoints } from '../../../hooks/projectEndpoints';
+import { useProjectEndpoints } from '../../../app/hooks/projectEndpoints';
 
 interface EndpointCreateButtonProps {
   branchId?: Branch['id'],

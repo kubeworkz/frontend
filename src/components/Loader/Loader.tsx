@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { SvgIcon } from '#shared/components/SvgIcon/SvgIcon';
+import { SvgIcon } from '../../components/SvgIcon/SvgIcon';
 
 import styles from './Loader.module.css';
 

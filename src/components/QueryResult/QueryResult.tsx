@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 
-import { Result } from '../../pages/Query/queryContext';
+import { Result } from '../../app/pages/Query/queryContext';
 import styles from './QueryResult.module.css';
 import { QueryResultTabs } from './QueryResultTabs/QueryResultTabs';
 import { QueryResultTableSkeleton } from './QueryResultTable/QueryResultTableSkeleton';

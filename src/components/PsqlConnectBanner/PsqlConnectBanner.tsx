@@ -1,11 +1,11 @@
 import React from 'react';
 import * as Sentry from '@sentry/react';
 
-import { SvgIcon } from '#shared/components/SvgIcon/SvgIcon';
-import { CopyButton } from '#shared/components/CopyButton/CopyButton';
-import { AnalyticsAction, useAnalytics } from '#shared/utils/analytics';
+import { SvgIcon } from '../../components/SvgIcon/SvgIcon';
+import { CopyButton } from '../../components/CopyButton/CopyButton';
+import { AnalyticsAction, useAnalytics } from '../../utils/analytics';
 
-import { useAppContext } from '../../hooks/app';
+import { useAppContext } from '../../app/hooks/app';
 import styles from './PsqlConnectBanner.module.css';
 
 export const PsqlConnectBanner = () => {

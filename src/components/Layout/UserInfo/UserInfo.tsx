@@ -1,7 +1,7 @@
 import React, { HTMLAttributes } from 'react';
 import classNames from 'classnames';
 
-import { UserPic } from '#shared/components/UserPic/UserPic';
+import { UserPic } from '../../../components/UserPic/UserPic';
 
 import styles from './UserInfo.module.css';
 

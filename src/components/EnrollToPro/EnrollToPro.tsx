@@ -1,6 +1,6 @@
 import React, { MouseEventHandler, PropsWithChildren } from 'react';
-import { AsProps, ReplaceProps } from '#shared/types/Props';
-import { useEnrollToPro } from '#shared/components/EnrollToPro/enrollToProContext';
+import { AsProps, ReplaceProps } from '../../types/Props';
+import { useEnrollToPro } from '../../components/EnrollToPro/enrollToProContext';
 
 type ClickableElement = React.ElementType<{ onClick?: MouseEventHandler }> | 'button';
 

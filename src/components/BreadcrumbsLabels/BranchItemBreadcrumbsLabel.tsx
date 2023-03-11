@@ -1,8 +1,8 @@
 import React from 'react';
-import { Loader } from '#shared/components/Loader/Loader';
-import { useBranches } from '#shared/hooks/projectBranches';
+import { Loader } from '../../components/Loader/Loader';
+import { useBranches } from '../../hooks/projectBranches';
 import { useRouteMatch } from 'react-router-dom';
-import { ConsoleRoutes } from '#shared/routes';
+import { ConsoleRoutes } from '../../routes/routes';
 
 export const BranchItemBreadcrumbLabel = () => {
   const { isLoading, branchesById } = useBranches();

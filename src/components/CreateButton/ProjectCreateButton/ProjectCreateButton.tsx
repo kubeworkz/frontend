@@ -1,11 +1,11 @@
 import React, { useCallback } from 'react';
-import { Tippy } from '#shared/components/Tippy/Tippy';
-import { ButtonProps } from '#shared/components/Button/Button';
-import { Project } from '#api_client/publicv2';
-import { useCurrentUser } from '#shared/hooks/currentUser';
-import { useSettings } from '#shared/hooks/settings';
-import { AnalyticsAction, useAnalytics } from '#shared/utils/analytics';
-import { useProjectsContext } from '../../../hooks/projectsContext';
+import { Tippy } from '../../../components/Tippy/Tippy';
+import { ButtonProps } from '../../../components/Button/Button';
+import { Project } from '../../../api/publicv2';
+import { useCurrentUser } from '../../../hooks/currentUser';
+import { useSettings } from '../../../hooks/settings';
+import { AnalyticsAction, useAnalytics } from '../../../utils/analytics';
+import { useProjectsContext } from '../../../app/hooks/projectsContext';
 import { CreateButton } from '../CreateButton';
 
 import { ProjectFormModal } from '../../ProjectFormModal/ProjectFormModal';

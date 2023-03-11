@@ -1,6 +1,6 @@
 import React from 'react';
-import { Loader } from '#shared/components/Loader/Loader';
-import { useProjectsItemContext } from '../../hooks/projectsItem';
+import { Loader } from '../../components/Loader/Loader';
+import { useProjectsItemContext } from '../../app/hooks/projectsItem';
 
 export const ProjectItemBreadcrumbLabel = () => {
   const { isLoading, project } = useProjectsItemContext();

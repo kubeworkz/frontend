@@ -1,8 +1,8 @@
 /* eslint-disable react/no-array-index-key */
 
 import React, { useEffect } from 'react';
-import { QueryResponse as QueryResult } from '#api_client/publicv2';
-import { Tabs } from '#shared/components/Tabs/Tabs';
+import { QueryResponse as QueryResult } from '../../../api/publicv2';
+import { Tabs } from '../../../components/Tabs/Tabs';
 import { QueryResultExplain } from '../QueryResultExplain/QueryResultExplain';
 import { QueryResultTable } from '../QueryResultTable/QueryResultTable';
 

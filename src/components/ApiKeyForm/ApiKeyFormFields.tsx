@@ -1,7 +1,7 @@
 import React from 'react';
 import { useFormContext } from 'react-hook-form';
-import { FormInput } from '#shared/components/Form/FormInput/FormInput';
-import { FormField } from '#shared/components/Form/FormField/FormField';
+import { FormInput } from '../../components/Form/FormInput/FormInput';
+import { FormField } from '../../components/Form/FormField/FormField';
 
 export const ApiKeyFormFields = () => {
   const form = useFormContext();

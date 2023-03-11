@@ -1,16 +1,16 @@
 import React, { useCallback, useMemo, useState } from 'react';
 import { useLocation } from 'react-router';
 
-import { logoutViaCookie } from '#api_client/utils';
-import { Button } from '#shared/components/Button/Button';
-import { Form } from '#shared/components/Form/Form';
-import { FormFieldset } from '#shared/components/Form/FormFieldset/FormFieldset';
-import { FormInput } from '#shared/components/Form/FormInput/FormInput';
-import { FormField } from '#shared/components/Form/FormField/FormField';
-import { useCSRFContext } from '#shared/hooks/csrf';
-import { Text } from '#shared/components/Text/Text';
+import { logoutViaCookie } from '../../../api/utils';
+import { Button } from '../../../components/Button/Button';
+import { Form } from '../../../components/Form/Form';
+import { FormFieldset } from '../../../components/Form/FormFieldset/FormFieldset';
+import { FormInput } from '../../../components/Form/FormInput/FormInput';
+import { FormField } from '../../../components/Form/FormField/FormField';
+import { useCSRFContext } from '../../../hooks/csrf';
+import { Text } from '../../../components/Text/Text';
 
-import { AnalyticsAction, useAnalytics } from '#shared/utils/analytics';
+import { AnalyticsAction, useAnalytics } from '../../../utils/analytics';
 import styles from './SignInForm.module.css';
 
 export type EnterInviteProps = {

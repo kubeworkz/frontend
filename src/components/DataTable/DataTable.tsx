@@ -2,14 +2,14 @@ import React, {
   HTMLProps, TableHTMLAttributes, TdHTMLAttributes, ThHTMLAttributes,
 } from 'react';
 import classNames from 'classnames';
-import { Skeleton } from '#shared/components/Skeleton/Skeleton';
-import { SvgIcon } from '#shared/components/SvgIcon/SvgIcon';
+import { Skeleton } from '../../components/Skeleton/Skeleton';
+import { SvgIcon } from '../../components/SvgIcon/SvgIcon';
 
 import _ from 'lodash';
 import {
   DataPlaceholderBadge,
   DataPlaceholderProps,
-} from '#shared/components/DataPlaceholder/DataPlaceholder';
+} from '../../components/DataPlaceholder/DataPlaceholder';
 import styles from './DataTable.module.css';
 
 export type DataTableOrder = 'asc' | 'desc';

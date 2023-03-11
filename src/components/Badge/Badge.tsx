@@ -1,6 +1,6 @@
 import React, { HTMLAttributes, PropsWithChildren } from 'react';
 import classNames from 'classnames';
-import { AppearanceStatus, SizeProps } from '#shared/types/Props';
+import { AppearanceStatus, SizeProps } from '../../types/Props';
 
 import styles from './Badge.module.css';
 

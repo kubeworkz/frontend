@@ -1,6 +1,6 @@
 import React from 'react';
-import { AdminUser } from '#api_client/internal';
-import { Badge } from '#shared/components/Badge/Badge';
+import { AdminUser } from '../../api/internal';
+import { Badge } from '../../components/Badge/Badge';
 
 import './UserPreview.css';
 

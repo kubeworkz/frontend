@@ -1,18 +1,18 @@
 import React from 'react';
 import { generatePath, Link } from 'react-router-dom';
 
-import { Text } from '#shared/components/Text/Text';
+import { Text } from '../../components/Text/Text';
 import {
   internalApiService, AdminGetOperationsParams, AdminOperation, OperationAction,
-} from '#api_client/internal';
-import { CopyButton } from '#shared/components/CopyButton/CopyButton';
-import { DateTimeFormat, formatDate } from '#shared/utils/formatDate';
+} from '../../api/internal';
+import { CopyButton } from '../../components/CopyButton/CopyButton';
+import { DateTimeFormat, formatDate } from '../../utils/formatDate';
 import {
   OperationStatusBadge,
-} from '#shared/components/OperationStatusBadge/OperationStatusBadge';
+} from '../../components/OperationStatusBadge/OperationStatusBadge';
 import Highlighter from 'react-highlight-words';
-import { formatOpDuration } from '#shared/utils/units';
-import { AdminRoutes } from '../../config/routes';
+import { formatOpDuration } from '../../utils/units';
+import { AdminRoutes } from '../../admin/config/routes';
 import { AdminAppProps } from '../AdminApp/types';
 import { createOpsLogsUrl, GrafanaLink } from '../GrafanaLink/GrafanaLink';
 import { DataPage } from '../DataPage/DataPage';

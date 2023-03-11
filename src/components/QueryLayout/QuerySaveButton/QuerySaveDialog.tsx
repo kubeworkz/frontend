@@ -1,15 +1,15 @@
 import React from 'react';
 import { useForm, FormProvider } from 'react-hook-form';
 
-import { Form } from '#shared/components/Form/Form';
-import { FormField } from '#shared/components/Form/FormField/FormField';
-import { FormInput } from '#shared/components/Form/FormInput/FormInput';
-import { AnalyticsAction, useAnalytics } from '#shared/utils/analytics';
+import { Form } from '../../../components/Form/Form';
+import { FormField } from '../../../components/Form/FormField/FormField';
+import { FormInput } from '../../../components/Form/FormInput/FormInput';
+import { AnalyticsAction, useAnalytics } from '../../../utils/analytics';
 import {
   ModalForm,
   ModalFormActions,
   ModalFormBody, ModalFormCancelButton, ModalFormSubmitButton,
-} from '#shared/components/Modal/ModalForm/ModalForm';
+} from '../../../components/Modal/ModalForm/ModalForm';
 
 const MAX_LEN = 100;
 

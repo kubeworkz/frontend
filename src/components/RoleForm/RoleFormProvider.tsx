@@ -1,12 +1,12 @@
 import React, { PropsWithChildren } from 'react';
 import { useForm, FormProvider } from 'react-hook-form';
-import { Form } from '#shared/components/Form/Form';
-import { Role, apiService } from '#api_client/publicv2';
-import { apiErrorToaster } from '#api_client/utils';
-import { useNewItemsCallbacks } from '#shared/hooks/useNewItem';
-import { useProjectsItemContext } from '../../hooks/projectsItem';
-import { useProjectRoles } from '../../hooks/projectRoles';
-import { useSelectedBranch } from '../../hooks/selectedBranchProvider';
+import { Form } from '../../components/Form/Form';
+import { Role, apiService } from '../../api/publicv2';
+import { apiErrorToaster } from '../../api/utils';
+import { useNewItemsCallbacks } from '../../hooks/useNewItem';
+import { useProjectsItemContext } from '../../app/hooks/projectsItem';
+import { useProjectRoles } from '../../app/hooks/projectRoles';
+import { useSelectedBranch } from '../../app/hooks/selectedBranchProvider';
 import { RoleFormState } from './types';
 
 export interface RoleFormProps {

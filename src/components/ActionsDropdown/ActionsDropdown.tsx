@@ -3,10 +3,10 @@ import * as PopperJS from '@popperjs/core';
 import { usePopper } from 'react-popper';
 import classNames from 'classnames';
 
-import { SvgIcon } from '#shared/components/SvgIcon/SvgIcon';
-import { Popper } from '#shared/components/Popper/Popper';
+import { SvgIcon } from '../../components/SvgIcon/SvgIcon';
+import { Popper } from '../../components/Popper/Popper';
 
-import { AnalyticsAction, useAnalytics } from '#shared/utils/analytics';
+import { AnalyticsAction, useAnalytics } from '../../utils/analytics';
 import styles from './ActionsDropdown.module.css';
 
 interface ActionsDropdownProps extends AriaAttributes {

@@ -1,25 +1,25 @@
 import React, { HTMLAttributes, PropsWithChildren } from 'react';
 import { useLocation } from 'react-router-dom';
 
-import { BillingSubscriptionType, Project } from '#api_client/publicv2';
+import { BillingSubscriptionType, Project } from '../../api/publicv2';
 
-import { AnyLinkConfig } from '#shared/components/AnyLink/AnyLink';
-import { ConsoleRoutes } from '#shared/routes';
+import { AnyLinkConfig } from '../../components/AnyLink/AnyLink';
+import { ConsoleRoutes } from '../../routes/routes';
 // import { useUserContext } from '../../context/user';
-import { AnalyticsAction, useAnalytics } from '#shared/utils/analytics';
+import { AnalyticsAction, useAnalytics } from '../../utils/analytics';
 import { captureMessage } from '@sentry/react';
-import { WEBSITE_URL } from '#shared/config';
+import { WEBSITE_URL } from '../../config/config';
 import {
   LayoutWithSideNav,
   LayoutWithSideNavProps,
-} from '#shared/components/Layout/LayoutWithSideNav/LayoutWithSideNav';
-import { BreadcrumbsContainer } from '#shared/components/Breadcrumbs/Breadcrumbs';
-import { ActionsDropdownItem } from '#shared/components/ActionsDropdown/ActionDropdownItem/ActionsDropdownItem';
-import { EnrollToProConditional } from '#shared/components/EnrollToPro/EnrollToPro';
-import { useCurrentUser } from '#shared/hooks/currentUser';
-import { Badge } from '#shared/components/Badge/Badge';
-import { ROUTES_ICONS, ROUTES_NAMES } from '../../config/routes_mapper';
-import { useAppContext } from '../../hooks/app';
+} from '../../components/Layout/LayoutWithSideNav/LayoutWithSideNav';
+import { BreadcrumbsContainer } from '../../components/Breadcrumbs/Breadcrumbs';
+import { ActionsDropdownItem } from '../../components/ActionsDropdown/ActionDropdownItem/ActionsDropdownItem';
+import { EnrollToProConditional } from '../../components/EnrollToPro/EnrollToPro';
+import { useCurrentUser } from '../../hooks/currentUser';
+import { Badge } from '../../components/Badge/Badge';
+import { ROUTES_ICONS, ROUTES_NAMES } from '../../app/config/routes_mapper';
+import { useAppContext } from '../../app/hooks/app';
 
 import styles from './ConsoleLayout.module.css';
 

@@ -1,11 +1,11 @@
 import React from 'react';
-import { ApiKeysListResponseItem, ApiKeyCreateResponse } from '#api_client/publicv2';
+import { ApiKeysListResponseItem, ApiKeyCreateResponse } from '../../api/publicv2';
 
-import { Button } from '#shared/components/Button/Button';
+import { Button } from '../../components/Button/Button';
 import classNames from 'classnames';
-import { CopyButton } from '#shared/components/CopyButton/CopyButton';
-import { SvgIcon } from '#shared/components/SvgIcon/SvgIcon';
-import { formatDate } from '#shared/utils/formatDate';
+import { CopyButton } from '../../components/CopyButton/CopyButton';
+import { SvgIcon } from '../../components/SvgIcon/SvgIcon';
+import { formatDate } from '../../utils/formatDate';
 import styles from './ApiKeysList.module.css';
 
 interface ApiKeysListProps {

@@ -1,12 +1,12 @@
 import React, { createRef, useCallback } from 'react';
 import {
   internalApiService, AdminGetBranchesParams, AdminBranch,
-} from '#api_client/internal';
-import { Text } from '#shared/components/Text/Text';
+} from '../../api/internal';
+import { Text } from '../../components/Text/Text';
 import { generatePath, Link } from 'react-router-dom';
-import { DateTimeFormat, formatDate } from '#shared/utils/formatDate';
-import { humanReadableBytes } from '#shared/utils/units';
-import { AdminRoutes } from '../../config/routes';
+import { DateTimeFormat, formatDate } from '../../utils/formatDate';
+import { humanReadableBytes } from '../../utils/units';
+import { AdminRoutes } from '../../admin/config/routes';
 import { DataPage, DataPageRef } from '../DataPage/DataPage';
 import { BranchesFilter } from './BranchesFilter';
 

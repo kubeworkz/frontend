@@ -1,6 +1,6 @@
 import React from 'react';
-import { Branch } from '#api_client/generated/api_public_v2';
-import { Badge } from '#shared/components/Badge/Badge';
+import { Branch } from '../../api/generated/api_public_v2';
+import { Badge } from '../../components/Badge/Badge';
 
 interface BranchPrimaryBadgeProps {
   branch?: Branch

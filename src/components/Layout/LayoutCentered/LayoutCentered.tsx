@@ -2,18 +2,18 @@ import React, { PropsWithChildren } from 'react';
 import classNames from 'classnames';
 import { ErrorBoundary } from '@sentry/react';
 
-import { PageError } from '#shared/components/PageError/PageError';
-import { AnyLink } from '#shared/components/AnyLink/AnyLink';
-import { LimitedPreviewBanner } from '#shared/components/Layout/LimitedPreviewBanner/LimitedPreviewBanner';
-import logo from '#shared/assets/images/logo_sidemenu.svg';
+import { PageError } from '../../../components/PageError/PageError';
+import { AnyLink } from '../../../components/AnyLink/AnyLink';
+import { LimitedPreviewBanner } from '../../../components/Layout/LimitedPreviewBanner/LimitedPreviewBanner';
+import logo from '/images/logo_sidemenu.svg';
 
-import { User } from '#shared/components/Layout/User/User';
+import { User } from '../../../components/Layout/User/User';
 import {
   MenuItemDocumentation,
   MenuItemFeedback,
   MenuItemSupport,
-} from '#shared/components/Layout/MenuItem/MenuItemPresets';
-import { LayoutBasicProps } from '#shared/components/Layout/types';
+} from '../../../components/Layout/MenuItem/MenuItemPresets';
+import { LayoutBasicProps } from '../../../components/Layout/types';
 import styles from './LayoutCentered.module.css';
 
 export interface LayoutCenteredProps extends LayoutBasicProps {

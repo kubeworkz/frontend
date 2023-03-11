@@ -1,8 +1,8 @@
 import React from 'react';
 import classNames from 'classnames';
-import { Button, ButtonProps } from '#shared/components/Button/Button';
+import { Button, ButtonProps } from '../../components/Button/Button';
 
-import { AnyLink } from '#shared/components/AnyLink/AnyLink';
+import { AnyLink } from '../../components/AnyLink/AnyLink';
 import styles from './Widget.module.css';
 
 interface WidgetLinkProps extends ButtonProps {}

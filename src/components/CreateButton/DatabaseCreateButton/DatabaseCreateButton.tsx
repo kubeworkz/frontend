@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { ButtonProps } from '#shared/components/Button/Button';
-import { AnalyticsAction, useAnalytics } from '#shared/utils/analytics';
+import { ButtonProps } from '../../../components/Button/Button';
+import { AnalyticsAction, useAnalytics } from '../../../utils/analytics';
 import { CreateButton } from '../CreateButton';
 
 import { DatabaseFormModal } from '../../DatabaseForm/DatabaseFormModal';

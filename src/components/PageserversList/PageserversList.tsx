@@ -1,12 +1,12 @@
 import React from 'react';
 import { generatePath, Link } from 'react-router-dom';
 
-import { DataTableProps } from '#shared/components/DataTable/DataTable';
-import { PageHeader } from '#shared/components/PageHeader/PageHeader';
-import { Text } from '#shared/components/Text/Text';
-import { DateTimeFormat, formatDate } from '#shared/utils/formatDate';
+import { DataTableProps } from '../../components/DataTable/DataTable';
+import { PageHeader } from '../../components/PageHeader/PageHeader';
+import { Text } from '../../components/Text/Text';
+import { DateTimeFormat, formatDate } from '../../utils/formatDate';
 import { Pageserver } from '../types';
-import { AdminRoutes } from '../../config/routes';
+import { AdminRoutes } from '../../admin/config/routes';
 import { AdminDataTable } from '../AdminDataTable/AdminDataTable';
 
 interface PageserversListProps

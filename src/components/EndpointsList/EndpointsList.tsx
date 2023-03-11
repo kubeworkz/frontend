@@ -3,11 +3,11 @@ import { generatePath, Link } from 'react-router-dom';
 
 import {
   internalApiService, AdminGetEndpointsParams, AdminEndpoint,
-} from '#api_client/internal';
-import { Text } from '#shared/components/Text/Text';
-import { AdminEndpointStatusBadge } from '#shared/components/AdminProjectStatusBadge/AdminProjectStatusBadge';
-import { DateTimeFormat, formatDate } from '#shared/utils/formatDate';
-import { AdminRoutes } from '../../config/routes';
+} from '../../api/internal';
+import { Text } from '../../components/Text/Text';
+import { AdminEndpointStatusBadge } from '../../components/AdminProjectStatusBadge/AdminProjectStatusBadge';
+import { DateTimeFormat, formatDate } from '../../utils/formatDate';
+import { AdminRoutes } from '../../admin/config/routes';
 import { DataPage, DataPageRef } from '../DataPage/DataPage';
 import { EndpointsFilter } from './EndpointsFilter';
 

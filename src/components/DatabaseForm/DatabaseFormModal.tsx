@@ -1,13 +1,13 @@
 import React from 'react';
-import { Button } from '#shared/components/Button/Button';
+import { Button } from '../../components/Button/Button';
 import classNames from 'classnames';
 import {
   ModalForm,
   ModalFormActions,
   ModalFormBody, ModalFormCancelButton, ModalFormSubmitButton,
-} from '#shared/components/Modal/ModalForm/ModalForm';
-import { apiErrorToaster } from '#api_client/utils';
-import { ModalProps } from '#shared/components/Modal/Modal';
+} from '../../components/Modal/ModalForm/ModalForm';
+import { apiErrorToaster } from '../../api/utils';
+import { ModalProps } from '../../components/Modal/Modal';
 import { withDisableOnTransition } from '../withDisableOnTransition/withDisableOnTransition';
 import { DatabaseFormFields } from './DatabaseFormFields';
 import { DatabaseFormProps, DatabaseFormProvider } from './DatabaseFormProvider';

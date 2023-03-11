@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { useTables } from '../../pages/Tables/tablesContext';
+import { useTables } from '../../app/pages/Tables/tablesContext';
 import { QueryResult } from '../QueryResult/QueryResult';
 import { QueryResultProvider } from '../QueryResult/queryResultContext';
 

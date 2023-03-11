@@ -2,10 +2,10 @@ import React, { PropsWithChildren } from 'react';
 import ReactModal from 'react-modal';
 import classNames from 'classnames';
 
-// import { SvgIcon } from '#shared/components/SvgIcon/SvgIcon';
+// import { SvgIcon } from '../../components/SvgIcon/SvgIcon';
 
-import { ModalHeader } from '#shared/components/Modal/ModalHeader';
-import { SvgIcon } from '#shared/components/SvgIcon/SvgIcon';
+import { ModalHeader } from '../../components/Modal/ModalHeader';
+import { SvgIcon } from '../../components/SvgIcon/SvgIcon';
 import styles from './Modal.module.css';
 
 export interface ModalProps extends ReactModal.Props {

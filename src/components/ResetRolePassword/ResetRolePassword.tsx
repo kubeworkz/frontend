@@ -1,18 +1,18 @@
 import React, { MouseEventHandler } from 'react';
 import {
   apiService, Branch, Role, RoleResponse,
-} from '#api_client/publicv2';
-import { Modal } from '#shared/components/Modal/Modal';
-import { Text } from '#shared/components/Text/Text';
-import { StatusButton } from '#shared/components/Button/StatusButton/StatusButton';
-import { Button } from '#shared/components/Button/Button';
-import { CodeBlock, CodeSpan } from '#shared/components/Code/Code';
-import { ModalActions } from '#shared/components/Modal/ModalActions';
-import { ModalBody } from '#shared/components/Modal/ModalBody';
-import { apiErrorToaster } from '#api_client/utils';
-import { AnalyticsAction, useAnalytics } from '#shared/utils/analytics';
-import { HiddenPassword } from '#shared/components/HiddenPassword/HiddenPassword';
-import { useProjectsItemContext } from '../../hooks/projectsItem';
+} from '../../api/publicv2';
+import { Modal } from '../../components/Modal/Modal';
+import { Text } from '../../components/Text/Text';
+import { StatusButton } from '../../components/Button/StatusButton/StatusButton';
+import { Button } from '../../components/Button/Button';
+import { CodeBlock, CodeSpan } from '../../components/Code/Code';
+import { ModalActions } from '../../components/Modal/ModalActions';
+import { ModalBody } from '../../components/Modal/ModalBody';
+import { apiErrorToaster } from '../../api/utils';
+import { AnalyticsAction, useAnalytics } from '../../utils/analytics';
+import { HiddenPassword } from '../../components/HiddenPassword/HiddenPassword';
+import { useProjectsItemContext } from '../../app/hooks/projectsItem';
 import { useAppCache } from '../../hooks/cache';
 
 import styles from './ResetRolePassword.module.css';

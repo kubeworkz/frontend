@@ -3,10 +3,10 @@ import React, {
 } from 'react';
 import classNames from 'classnames';
 
-import { SvgIcon } from '#shared/components/SvgIcon/SvgIcon';
+import { SvgIcon } from '../../../components/SvgIcon/SvgIcon';
 
-import { useFormFieldContext } from '#shared/components/Form/FormField/formFieldContext';
-import { SizeProps } from '#shared/types/Props';
+import { useFormFieldContext } from '../../../components/Form/FormField/formFieldContext';
+import { SizeProps } from '../../../types/Props';
 import styles from './FormInput.module.css';
 
 interface FormTextareaProps extends SizeProps {

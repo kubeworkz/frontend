@@ -1,8 +1,8 @@
 import React, { useMemo } from 'react';
 
 import classNames from 'classnames';
-// import { ToggleSwitch } from '#shared/components/ToggleSwitch/ToggleSwitch';
-import { FormLabel } from '#shared/components/Form/FormLabel/FormLabel';
+// import { ToggleSwitch } from '../../components/ToggleSwitch/ToggleSwitch';
+import { FormLabel } from '../../components/Form/FormLabel/FormLabel';
 import { Range, getTrackBackground } from 'react-range';
 import styles from './CPUUnitsSlider.module.css';
 

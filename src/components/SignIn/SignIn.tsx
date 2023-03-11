@@ -4,13 +4,13 @@ import { capitalize } from 'lodash';
 import React from 'react';
 import { StaticRouter, Switch } from 'react-router-dom';
 
-import { CSRFProvider } from '#shared/hooks/csrf';
+import { CSRFProvider } from '../../hooks/csrf';
 
-import { useBrowserDetect } from '#shared/hooks/browserDetect';
-import { getCSRFToken } from '#shared/utils/getCSRFToken';
-import { Text } from '#shared/components/Text/Text';
-import { TrackingRoute } from '#shared/utils/analytics';
-import { AuthRoutes } from '#shared/routes';
+import { useBrowserDetect } from '../../hooks/browserDetect';
+import { getCSRFToken } from '../../utils/getCSRFToken';
+import { Text } from '../../components/Text/Text';
+import { TrackingRoute } from '../../utils/analytics';
+import { AuthRoutes } from '../../routes/routes';
 import { AuthLayout } from '../AuthLayout/AuthLayout';
 import { EnterInvite } from './SignInForm/EnterInvite';
 import { SignInForm } from './SignInForm/SignInForm';

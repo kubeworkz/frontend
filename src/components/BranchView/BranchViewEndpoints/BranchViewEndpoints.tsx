@@ -2,18 +2,18 @@ import React from 'react';
 import {
   Branch,
   Endpoint,
-} from '#api_client/publicv2';
+} from '../../../api/publicv2';
 
-// import { Button } from '#shared/components/Button/Button';
-import { DataTable } from '#shared/components/DataTable/DataTable';
+// import { Button } from '../../../components/Button/Button';
+import { DataTable } from '../../../components/DataTable/DataTable';
 // import { generatePath } from 'react-router-dom';
-// import { ConsoleRoutes } from '#shared/routes';
-// import { AnyLink } from '#shared/components/AnyLink/AnyLink';
-// import { usePlatforms } from '#shared/hooks/platforms';
-import { EndpointStatusBadge } from '#shared/components/EndpointStatusBadge/EndpointStatusBadge';
-import { createActionsCol } from '#shared/components/DataTable/utils';
-import { CopyButton } from '#shared/components/CopyButton/CopyButton';
-// import { Skeleton } from '#shared/components/Skeleton/Skeleton';
+// import { ConsoleRoutes } from '../../../routes/routes';
+// import { AnyLink } from '../../../components/AnyLink/AnyLink';
+// import { usePlatforms } from '../../../hooks/platforms';
+import { EndpointStatusBadge } from '../../../components/EndpointStatusBadge/EndpointStatusBadge';
+import { createActionsCol } from '../../../components/DataTable/utils';
+import { CopyButton } from '../../../components/CopyButton/CopyButton';
+// import { Skeleton } from '../../../components/Skeleton/Skeleton';
 // import { useProjectsItemContext } from '../../../hooks/projectsItem';
 import { EndpointActionsDropdown } from '../../EndpointActionsDropdown/EndpointActionsDropdown';
 

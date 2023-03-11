@@ -1,8 +1,8 @@
 import React, { PropsWithChildren } from 'react';
-import { Form } from '#shared/components/Form/Form';
+import { Form } from '../../components/Form/Form';
 import { FormProvider, useForm } from 'react-hook-form';
-import { ApiKeyCreateRequest, ApiKeyCreateResponse, apiService } from '#api_client/publicv2';
-import { FormCallbacks } from '#shared/components/Form/types';
+import { ApiKeyCreateRequest, ApiKeyCreateResponse, apiService } from '../../api/publicv2';
+import { FormCallbacks } from '../../components/Form/types';
 
 interface ApiKeyFormProps extends FormCallbacks<ApiKeyCreateResponse> {}
 

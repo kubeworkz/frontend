@@ -3,10 +3,10 @@ import AceEditorI from 'react-ace';
 import { AceEditorProps } from 'react-ace/types';
 import { debounce } from 'throttle-debounce';
 
-import { AceEditor } from '#shared/components/Ace/Ace';
+import { AceEditor } from '../../../components/Ace/Ace';
 
-import { useProjectsItemContext } from '../../../hooks/projectsItem';
-import { useQueryContext } from '../../../pages/Query/queryContext';
+import { useProjectsItemContext } from '../../../app/hooks/projectsItem';
+import { useQueryContext } from '../../../app/pages/Query/queryContext';
 import { saveQueryToStore } from '../../../utils/queryStorage';
 
 interface QueryEditorProps {

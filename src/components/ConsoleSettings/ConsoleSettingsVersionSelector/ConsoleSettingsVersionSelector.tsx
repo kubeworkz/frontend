@@ -1,6 +1,6 @@
 import React from 'react';
-import { FormSelect } from '#shared/components/Form/FormSelect/FormSelect';
-import { FormLabel } from '#shared/components/Form/FormLabel/FormLabel';
+import { FormSelect } from '../../../components/Form/FormSelect/FormSelect';
+import { FormLabel } from '../../../components/Form/FormLabel/FormLabel';
 
 interface ConsoleSettingsVersionSelectorProps {
   currentVersion: any;

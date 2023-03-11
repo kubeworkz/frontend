@@ -1,13 +1,13 @@
 import React, { PropsWithChildren } from 'react';
-import { Form } from '#shared/components/Form/Form';
+import { Form } from '../../components/Form/Form';
 import { FormProvider, useForm } from 'react-hook-form';
 import {
   FeedbackFormData,
   useHubspot,
-} from '#shared/utils/hubspot';
-import { AnalyticsAction, useAnalytics } from '#shared/utils/analytics';
-import { FormCallbacks } from '#shared/components/Form/types';
-import { useCurrentUserInfoSafe } from '#shared/hooks/currentUser';
+} from '../../utils/hubspot';
+import { AnalyticsAction, useAnalytics } from '../../utils/analytics';
+import { FormCallbacks } from '../../components/Form/types';
+import { useCurrentUserInfoSafe } from '../../hooks/currentUser';
 
 export interface FeedbackFormProps extends FormCallbacks<void> {
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { BreadcrumbsConfig } from '#shared/components/Breadcrumbs/Breadcrumbs';
+import { BreadcrumbsConfig } from '../../components/Breadcrumbs/Breadcrumbs';
 
 const SEPARATOR = '/';
 

@@ -1,12 +1,12 @@
 import React from 'react';
 import { generatePath, Link } from 'react-router-dom';
-import { PageHeader } from '#shared/components/PageHeader/PageHeader';
-import { DataTableProps } from '#shared/components/DataTable/DataTable';
-import { Text } from '#shared/components/Text/Text';
-import { DateTimeFormat, formatDate } from '#shared/utils/formatDate';
+import { PageHeader } from '../../components/PageHeader/PageHeader';
+import { DataTableProps } from '../../components/DataTable/DataTable';
+import { Text } from '../../components/Text/Text';
+import { DateTimeFormat, formatDate } from '../../utils/formatDate';
 import { Safekeeper } from '../types';
 import { AdminDataTable } from '../AdminDataTable/AdminDataTable';
-import { AdminRoutes } from '../../config/routes';
+import { AdminRoutes } from '../../admin/config/routes';
 
 interface SafekeepersListProps
   extends DataTableProps<Safekeeper> {}

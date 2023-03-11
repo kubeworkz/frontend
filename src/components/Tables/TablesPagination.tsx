@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { Pagination } from '#shared/components/Pagination/Pagination';
-import { useTables } from '../../pages/Tables/tablesContext';
+import { Pagination } from '../../components/Pagination/Pagination';
+import { useTables } from '../../app/pages/Tables/tablesContext';
 
 export const TablesPagination = () => {
   const {

@@ -1,11 +1,11 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import React from 'react';
 
-import { FormLabel } from '#shared/components/Form/FormLabel/FormLabel';
-import { BranchSelectOption, useBranches } from '#shared/hooks/projectBranches';
+import { FormLabel } from '../../../components/Form/FormLabel/FormLabel';
+import { BranchSelectOption, useBranches } from '../../../hooks/projectBranches';
 import classnames from 'classnames';
-import { SvgIcon } from '#shared/components/SvgIcon/SvgIcon';
-import { useQueryContext } from '../../../pages/Query/queryContext';
+import { SvgIcon } from '../../../components/SvgIcon/SvgIcon';
+import { useQueryContext } from '../../../app/pages/Query/queryContext';
 import { DatabaseSelect } from '../../DatabaseSelect/DatabaseSelect';
 import { QuerySaveButton } from '../QuerySaveButton/QuerySaveButton';
 import { BranchSelect } from '../../BranchSelect/BranchSelect';

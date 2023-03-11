@@ -1,7 +1,7 @@
 import React, { PropsWithChildren } from 'react';
-import { Tippy } from '#shared/components/Tippy/Tippy';
-import { Loader } from '#shared/components/Loader/Loader';
-import { CacheDataId, CreateCacheReturn } from '../../utils/caches';
+import { Tippy } from '../../components/Tippy/Tippy';
+import { Loader } from '../../components/Loader/Loader';
+import { CacheDataId, CreateCacheReturn } from '../../admin/utils/caches';
 import { ObjectPreview } from '../ObjectPreview/ObjectPreview';
 import styles from './InstanceLink.module.css';
 

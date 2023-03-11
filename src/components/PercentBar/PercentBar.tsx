@@ -1,8 +1,8 @@
 import React, { ForwardedRef, HTMLAttributes } from 'react';
-import { AppearanceProps } from '#shared/types/Props';
+import { AppearanceProps } from '../../types/Props';
 
 import classNames from 'classnames';
-import { WithTooltip } from '#shared/components/WithTooltip/WithTooltip';
+import { WithTooltip } from '../../components/WithTooltip/WithTooltip';
 import styles from './PercentBar.module.css';
 
 interface PercentBarProps extends AppearanceProps<'primary'> {

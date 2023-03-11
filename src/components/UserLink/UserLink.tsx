@@ -1,4 +1,4 @@
-import { useUserCache } from '../../utils/caches';
+import { useUserCache } from '../../admin/utils/caches';
 import { UserPreview } from '../UserPreview/UserPreview';
 import { createInstanceLink } from '../InstanceLink/InstanceLink';
 

@@ -3,7 +3,7 @@ import React, {
 } from 'react';
 import classNames from 'classnames';
 
-import { SvgIcon } from '#shared/components/SvgIcon/SvgIcon';
+import { SvgIcon } from '../../../components/SvgIcon/SvgIcon';
 
 import styles from './FormCheckbox.module.css';
 

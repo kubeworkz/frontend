@@ -1,10 +1,10 @@
 import React from 'react';
-import { EndpointState } from '#api_client/generated/api';
-import { conformEndpointState } from '#api_client/utils';
+import { EndpointState } from '../../api/generated/api';
+import { conformEndpointState } from '../../api/utils';
 import classNames from 'classnames';
-import { Badge } from '#shared/components/Badge/Badge';
-import { AppearanceStatus } from '#shared/types/Props';
-import { Loader } from '#shared/components/Loader/Loader';
+import { Badge } from '../../components/Badge/Badge';
+import { AppearanceStatus } from '../../types/Props';
+import { Loader } from '../../components/Loader/Loader';
 import {
   EndpointStatusBadgeProps,
 } from './utils';

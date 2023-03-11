@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 
 import Draggable from 'react-draggable';
 
-import { FormSelect } from '#shared/components/Form/FormSelect/FormSelect';
-import { AnyLink } from '#shared/components/AnyLink/AnyLink';
-import { ADMIN_BASE_ROUTE } from '#shared/routes';
+import { FormSelect } from '../../components/Form/FormSelect/FormSelect';
+import { AnyLink } from '../../components/AnyLink/AnyLink';
+import { ADMIN_BASE_ROUTE } from '../../routes/routes';
 import styles from './AdminMenu.module.css';
 
 type EnvOption = {

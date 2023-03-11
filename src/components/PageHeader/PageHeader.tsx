@@ -1,8 +1,8 @@
 import React, { HTMLAttributes } from 'react';
 import classNames from 'classnames';
 
-import { Text } from '#shared/components/Text/Text';
-import { IconName, SvgIcon } from '#shared/components/SvgIcon/SvgIcon';
+import { Text } from '../../components/Text/Text';
+import { IconName, SvgIcon } from '../../components/SvgIcon/SvgIcon';
 
 import './PageHeader.css';
 

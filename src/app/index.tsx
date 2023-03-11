@@ -1,5 +1,5 @@
-import '#shared/styles/basic.css';
-import '#shared/styles/theme.light.scss';
+import '../styles/basic.css';
+import '../styles/theme.light.scss';
 import { AnalyticsAppNames } from '../utils/analytics';
 import { renderComponent } from '../index';
 

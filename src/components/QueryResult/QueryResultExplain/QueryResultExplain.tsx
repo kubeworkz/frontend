@@ -7,7 +7,7 @@ interface QueryResultExplainProps {
   plan: string;
 }
 
-const Pev2React = React.lazy(() => import('#shared/components/Pev2react/index.light'));
+const Pev2React = React.lazy(() => import('../../../components/Pev2react/index.light'));
 
 export const QueryResultExplain = ({ query, plan }: QueryResultExplainProps) => (
   <Suspense fallback={<div className="QueryResultExplain">Loading...</div>}>

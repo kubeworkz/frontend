@@ -2,17 +2,17 @@ import classNames from 'classnames';
 import React from 'react';
 import { generatePath, Link } from 'react-router-dom';
 
-import { StatusButton } from '#shared/components/Button/StatusButton/StatusButton';
-import { Button } from '#shared/components/Button/Button';
-import { Loader } from '#shared/components/Loader/Loader';
-import { AnalyticsAction, useAnalytics } from '#shared/utils/analytics';
-import { StatementResult } from '#api_client/publicv2';
+import { StatusButton } from '../../../components/Button/StatusButton/StatusButton';
+import { Button } from '../../../components/Button/Button';
+import { Loader } from '../../../components/Loader/Loader';
+import { AnalyticsAction, useAnalytics } from '../../../utils/analytics';
+import { StatementResult } from '../../../api/publicv2';
 
-import { ConsoleRoutes } from '#shared/routes';
-import { humanizeNanoseconds } from '#shared/utils/units';
+import { ConsoleRoutes } from '../../../routes/routes';
+import { humanizeNanoseconds } from '../../../utils/units';
 import { useQueryResultContext } from '../../QueryResult/queryResultContext';
-import { useQueryContext } from '../../../pages/Query/queryContext';
-import { useProjectsItemContext } from '../../../hooks/projectsItem';
+import { useQueryContext } from '../../../app/pages/Query/queryContext';
+import { useProjectsItemContext } from '../../../app/hooks/projectsItem';
 import styles from './QueryLayoutActions.module.css';
 
 export const QueryLayoutActions = () => {

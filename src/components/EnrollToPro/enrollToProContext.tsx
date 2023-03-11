@@ -1,10 +1,10 @@
 import React, {
   createContext, useContext, useEffect, useState,
 } from 'react';
-import { useCurrentUser } from '#shared/hooks/currentUser';
-import { BillingSubscriptionType } from '#api_client/generated/api_public_v2';
+import { useCurrentUser } from '../../hooks/currentUser';
+import { BillingSubscriptionType } from '../../api/generated/api_public_v2';
 import { useHistory, useLocation } from 'react-router';
-import { useAppContext } from '../../../console/hooks/app';
+import { useAppContext } from '../../app/hooks/app';
 
 export type EnrollToProContextI = {
   enrollToProAvailable: boolean;

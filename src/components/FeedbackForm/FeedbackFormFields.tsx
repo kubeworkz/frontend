@@ -1,12 +1,12 @@
 import React from 'react';
-import { FormField } from '#shared/components/Form/FormField/FormField';
-import { FormTextarea } from '#shared/components/Form/FormInput/FormTextarea';
+import { FormField } from '../../components/Form/FormField/FormField';
+import { FormTextarea } from '../../components/Form/FormInput/FormTextarea';
 import { useFormContext } from 'react-hook-form';
 import {
   FeedbackFormData,
-} from '#shared/utils/hubspot';
-import { FormInput } from '#shared/components/Form/FormInput/FormInput';
-import { EMAIL_VALIDATION_REGEX } from '#shared/utils/validation';
+} from '../../utils/hubspot';
+import { FormInput } from '../../components/Form/FormInput/FormInput';
+import { EMAIL_VALIDATION_REGEX } from '../../utils/validation';
 
 export const FeedbackFormFields = () => {
   const {

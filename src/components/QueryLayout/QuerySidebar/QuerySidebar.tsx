@@ -1,12 +1,12 @@
 import React, { useCallback, useState } from 'react';
 
-import { Toggle } from '#shared/components/Toggle/Toggle';
-import { ToggleButton } from '#shared/components/Toggle/ToggleButton/ToggleButton';
-import { AnalyticsAction, useAnalytics } from '#shared/utils/analytics';
-import { Button } from '#shared/components/Button/Button';
+import { Toggle } from '../../../components/Toggle/Toggle';
+import { ToggleButton } from '../../../components/Toggle/ToggleButton/ToggleButton';
+import { AnalyticsAction, useAnalytics } from '../../../utils/analytics';
+import { Button } from '../../../components/Button/Button';
 import { QueryHistory } from '../QueryHistory/QueryHistory';
 import { QueriesSaved } from '../QuerySaved/QuerySaved';
-import { useQueryContext } from '../../../pages/Query/queryContext';
+import { useQueryContext } from '../../../app/pages/Query/queryContext';
 import styles from './QuerySidebar.module.css';
 
 type Tab = 'saved' | 'history';

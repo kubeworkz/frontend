@@ -1,9 +1,9 @@
 import React from 'react';
 import { useFormContext } from 'react-hook-form';
 
-import { FormField } from '#shared/components/Form/FormField/FormField';
-import { FormInput } from '#shared/components/Form/FormInput/FormInput';
-import { FormLabel } from '#shared/components/Form/FormLabel/FormLabel';
+import { FormField } from '../../components/Form/FormField/FormField';
+import { FormInput } from '../../components/Form/FormInput/FormInput';
+import { FormLabel } from '../../components/Form/FormLabel/FormLabel';
 
 export const NewInvite = React.memo(() => {
   const { register } = useFormContext();

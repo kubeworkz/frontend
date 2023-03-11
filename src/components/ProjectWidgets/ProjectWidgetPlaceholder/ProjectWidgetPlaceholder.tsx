@@ -1,7 +1,7 @@
 import React, { HTMLAttributes } from 'react';
-import { Skeleton } from '#shared/components/Skeleton/Skeleton';
-import { WidgetBody } from '#shared/components/Widget/WidgetBody';
-import { Widget } from '#shared/components/Widget/Widget';
+import { Skeleton } from '../../../components/Skeleton/Skeleton';
+import { WidgetBody } from '../../../components/Widget/WidgetBody';
+import { Widget } from '../../../components/Widget/Widget';
 
 export const ProjectWidgetPlaceholder = (props: HTMLAttributes<HTMLDivElement>) => (
   <Widget

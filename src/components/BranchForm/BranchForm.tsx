@@ -2,30 +2,30 @@ import React, { useCallback, useEffect, useState } from 'react';
 import { Controller, FormProvider, useForm } from 'react-hook-form';
 import moment from 'moment';
 
-import { apiErrorToaster } from '#api_client/utils';
-import { Form } from '#shared/components/Form/Form';
-import { FormField } from '#shared/components/Form/FormField/FormField';
-import { FormInput } from '#shared/components/Form/FormInput/FormInput';
-import { Button } from '#shared/components/Button/Button';
+import { apiErrorToaster } from '../../api/utils';
+import { Form } from '../../components/Form/Form';
+import { FormField } from '../../components/Form/FormField/FormField';
+import { FormInput } from '../../components/Form/FormInput/FormInput';
+import { Button } from '../../components/Button/Button';
 
 import {
   SettingsActions,
   SettingsDesc,
   SettingsHeader,
   SettingsPageHeader,
-} from '#shared/components/Settings/Settings';
-import { FormCallbacks } from '#shared/components/Form/types';
-import { Branch, EndpointType } from '#api_client/generated/api_public_v2';
-import { apiService } from '#api_client/publicv2';
-import { AnalyticsAction, useAnalytics } from '#shared/utils/analytics';
-import { BranchSelectOption, useBranches } from '#shared/hooks/projectBranches';
-import { FormRadio } from '#shared/components/Form/FormRadio/FormRadio';
-import { Tippy } from '#shared/components/Tippy/Tippy';
-import { useNewItemsCallbacks } from '#shared/hooks/useNewItem';
-import { useProjectsItemContext } from '../../hooks/projectsItem';
+} from '../../components/Settings/Settings';
+import { FormCallbacks } from '../../components/Form/types';
+import { Branch, EndpointType } from '../../api/generated/api_public_v2';
+import { apiService } from '../../api/publicv2';
+import { AnalyticsAction, useAnalytics } from '../../utils/analytics';
+import { BranchSelectOption, useBranches } from '../../hooks/projectBranches';
+import { FormRadio } from '../../components/Form/FormRadio/FormRadio';
+import { Tippy } from '../../components/Tippy/Tippy';
+import { useNewItemsCallbacks } from '../../hooks/useNewItem';
+import { useProjectsItemContext } from '../../app/hooks/projectsItem';
 import { BranchSelect } from '../BranchSelect/BranchSelect';
-import { useProjectEndpoints } from '../../hooks/projectEndpoints';
-import { useUserEndpointsLimit } from '../../hooks/userLimits';
+import { useProjectEndpoints } from '../../app/hooks/projectEndpoints';
+import { useUserEndpointsLimit } from '../../app/hooks/userLimits';
 import { BranchFormStartPoint, DATE_TIME_FORMAT } from './BranchFormStartPoint/BranchFormStartPoint';
 import styles from './BranchForm.module.css';
 

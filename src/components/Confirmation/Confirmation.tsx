@@ -1,9 +1,9 @@
 import React from 'react';
-import { Modal } from '#shared/components/Modal/Modal';
-import { Button } from '#shared/components/Button/Button';
-import { Appearance, AppearanceProps } from '#shared/types/Props';
-import { ModalBody } from '#shared/components/Modal/ModalBody';
-import { ModalActions } from '#shared/components/Modal/ModalActions';
+import { Modal } from '../../components/Modal/Modal';
+import { Button } from '../../components/Button/Button';
+import { Appearance, AppearanceProps } from '../../types/Props';
+import { ModalBody } from '../../components/Modal/ModalBody';
+import { ModalActions } from '../../components/Modal/ModalActions';
 
 import styles from './Confirmation.module.css';
 

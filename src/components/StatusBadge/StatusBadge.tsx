@@ -1,9 +1,9 @@
 import React, { HTMLAttributes } from 'react';
 
-import { Appearance, AppearanceStatus } from '#shared/types/Props';
-import { WithTooltip } from '#shared/components/WithTooltip/WithTooltip';
+import { Appearance, AppearanceStatus } from '../../types/Props';
+import { WithTooltip } from '../../components/WithTooltip/WithTooltip';
 import classNames from 'classnames';
-import { SvgIcon } from '#shared/components/SvgIcon/SvgIcon';
+import { SvgIcon } from '../../components/SvgIcon/SvgIcon';
 import styles from './StatusBadge.module.css';
 
 export type StatusBadgeAppearance = AppearanceStatus | Appearance | 'highlight-secondary' | 'tertiary';

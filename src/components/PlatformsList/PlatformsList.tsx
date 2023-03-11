@@ -1,6 +1,6 @@
 import React from 'react';
-import { PageHeader } from '#shared/components/PageHeader/PageHeader';
-import { DataTable } from '#shared/components/DataTable/DataTable';
+import { PageHeader } from '../../components/PageHeader/PageHeader';
+import { DataTable } from '../../components/DataTable/DataTable';
 import { Platform } from '../types';
 
 import './PlatformsList.css';

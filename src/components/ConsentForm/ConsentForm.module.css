@@ -1,0 +1,104 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+/* stylelint-disable */
+:global {
+  body {
+    min-width: initial;
+  }
+}
+/* stylelint-enable */
+
+.root {
+  --container-width: 460px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+
+.title {
+  font-size: 28px;
+  line-height: 42px;
+  font-weight: 700;
+}
+
+.subtitle {
+  margin-top: 8px;
+}
+
+.accessInfo {
+  width: var(--container-width);
+  margin-top: 28px;
+  padding: 20px;
+  border: var(--border-primary);
+  border-radius: 4px;
+}
+
+.clientBlock {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.clientAccessHeader {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.clientAccessHeader a {
+  color: var(--text-highlight);
+}
+
+.header {
+  margin-top: 20px;
+}
+
+.clientAccess {
+  margin-left: 16px;
+  flex: 1;
+  text-align: left;
+}
+
+.clientAccessSubtitle {
+  font-size: 14px;
+}
+
+.scopes {
+  margin-top: 20px;
+  background: #f3f9fe;
+  border: 1px solid #d1e7fc;
+  box-shadow: 0 1px 2px rgba(23, 26, 28, 0.06);
+  border-radius: 4px;
+  padding: 10px 24px;
+  text-align: left;
+}
+
+.scopes > li::first-letter {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.controls {
+  width: var(--container-width);
+  margin-top: 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}

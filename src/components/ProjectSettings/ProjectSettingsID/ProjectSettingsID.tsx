@@ -1,9 +1,9 @@
 import React, { useCallback } from 'react';
-import { AnalyticsAction, useAnalytics } from '#shared/utils/analytics';
-import { FormLabel } from '#shared/components/Form/FormLabel/FormLabel';
-import { SettingsDesc } from '#shared/components/Settings/Settings';
-import { CodeBlock } from '#shared/components/Code/Code';
-import { useProjectsItemContext } from '../../../hooks/projectsItem';
+import { AnalyticsAction, useAnalytics } from '../../../utils/analytics';
+import { FormLabel } from '../../../components/Form/FormLabel/FormLabel';
+import { SettingsDesc } from '../../../components/Settings/Settings';
+import { CodeBlock } from '../../../components/Code/Code';
+import { useProjectsItemContext } from '../../../app/hooks/projectsItem';
 
 export const ProjectSettingsID = () => {
   const { projectId } = useProjectsItemContext();

@@ -1,14 +1,14 @@
 /* eslint-disable react/no-array-index-key */
 import React, { HTMLAttributes } from 'react';
 import classNames from 'classnames';
-import { ActionsDropdown } from '#shared/components/ActionsDropdown/ActionsDropdown';
-import { ActionsDropdownItem } from '#shared/components/ActionsDropdown/ActionDropdownItem/ActionsDropdownItem';
-import { Divider } from '#shared/components/Divider/Divider';
-import { useCurrentUser } from '#shared/hooks/currentUser';
-import { AnyLinkConfig } from '#shared/components/AnyLink/AnyLink';
-import { AnalyticsAction, useAnalytics } from '#shared/utils/analytics';
+import { ActionsDropdown } from '../../../components/ActionsDropdown/ActionsDropdown';
+import { ActionsDropdownItem } from '../../../components/ActionsDropdown/ActionDropdownItem/ActionsDropdownItem';
+import { Divider } from '../../../components/Divider/Divider';
+import { useCurrentUser } from '../../../hooks/currentUser';
+import { AnyLinkConfig } from '../../../components/AnyLink/AnyLink';
+import { AnalyticsAction, useAnalytics } from '../../../utils/analytics';
 
-import { UserInfo } from '#shared/components/Layout/UserInfo/UserInfo';
+import { UserInfo } from '../../../components/Layout/UserInfo/UserInfo';
 import styles from './User.module.css';
 
 export interface ConsoleLayoutUserProps extends HTMLAttributes<HTMLDivElement> {

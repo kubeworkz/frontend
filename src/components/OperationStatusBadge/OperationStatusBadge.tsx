@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { OperationStatus } from '#api_client/generated/api';
+import { OperationStatus } from '../../api/generated/api';
 
-import { StatusBadge, StatusBadgeAppearance } from '#shared/components/StatusBadge/StatusBadge';
+import { StatusBadge, StatusBadgeAppearance } from '../../components/StatusBadge/StatusBadge';
 import styles from './OperationStatusBadge.module.css';
 
 interface OperationStatusBadgeProps {

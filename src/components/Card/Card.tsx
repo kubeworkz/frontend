@@ -1,6 +1,6 @@
 import React, { HTMLAttributes, PropsWithChildren } from 'react';
 import classNames from 'classnames';
-import { Appearance, AsProps, ReplaceProps } from '#shared/types/Props';
+import { Appearance, AsProps, ReplaceProps } from '../../types/Props';
 
 import styles from './Card.module.css';
 

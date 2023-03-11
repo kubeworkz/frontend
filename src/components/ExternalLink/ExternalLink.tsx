@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { AnyLink, AnyLinkConfig } from '#shared/components/AnyLink/AnyLink';
-import { IconName, SvgIcon } from '#shared/components/SvgIcon/SvgIcon';
+import { AnyLink, AnyLinkConfig } from '../../components/AnyLink/AnyLink';
+import { IconName, SvgIcon } from '../../components/SvgIcon/SvgIcon';
 
-import { DOCUMENTATION_URL, WEBSITE_URL } from '#shared/config';
-import { AnalyticsAction, useAnalytics } from '#shared/utils/analytics';
+import { DOCUMENTATION_URL, WEBSITE_URL } from '../../config/config';
+import { AnalyticsAction, useAnalytics } from '../../utils/analytics';
 
-import { SupportFormModal } from '#shared/components/SupportForm/SupportFormModal';
+import { SupportFormModal } from '../../components/SupportForm/SupportFormModal';
 import styles from './ExternalLink.module.css';
 
 type ExternalLinkProp = {

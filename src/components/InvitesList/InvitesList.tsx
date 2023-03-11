@@ -1,21 +1,21 @@
 import React, { useCallback, useState } from 'react';
 import { FormProvider, useForm } from 'react-hook-form';
 
-import { InviteCreateRequest, internalApiService } from '#api_client/internal';
-import { apiErrorToaster } from '#api_client/utils';
-import { DataTableProps } from '#shared/components/DataTable/DataTable';
-import { PageHeader } from '#shared/components/PageHeader/PageHeader';
-import { Text } from '#shared/components/Text/Text';
-import { CopyButton } from '#shared/components/CopyButton/CopyButton';
-import { DateTimeFormat, formatDate } from '#shared/utils/formatDate';
-import { Button } from '#shared/components/Button/Button';
-import { Modal } from '#shared/components/Modal/Modal';
-import { ModalHeader } from '#shared/components/Modal/ModalHeader';
-import { ModalBody } from '#shared/components/Modal/ModalBody';
-import { ModalActions } from '#shared/components/Modal/ModalActions';
-import { Form } from '#shared/components/Form/Form';
-import { useDataFilters } from '#shared/components/DataFilters/hooks';
-import { DataFilters } from '#shared/components/DataFilters/DataFilters';
+import { InviteCreateRequest, internalApiService } from '../../api/internal';
+import { apiErrorToaster } from '../../api/utils';
+import { DataTableProps } from '../../components/DataTable/DataTable';
+import { PageHeader } from '../../components/PageHeader/PageHeader';
+import { Text } from '../../components/Text/Text';
+import { CopyButton } from '../../components/CopyButton/CopyButton';
+import { DateTimeFormat, formatDate } from '../../utils/formatDate';
+import { Button } from '../../components/Button/Button';
+import { Modal } from '../../components/Modal/Modal';
+import { ModalHeader } from '../../components/Modal/ModalHeader';
+import { ModalBody } from '../../components/Modal/ModalBody';
+import { ModalActions } from '../../components/Modal/ModalActions';
+import { Form } from '../../components/Form/Form';
+import { useDataFilters } from '../../components/DataFilters/hooks';
+import { DataFilters } from '../../components/DataFilters/DataFilters';
 
 import { AdminDataTable } from '../AdminDataTable/AdminDataTable';
 import { NewInvite } from './NewInvite';

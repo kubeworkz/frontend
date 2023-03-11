@@ -1,10 +1,10 @@
 /* eslint-disable react/no-array-index-key */
 
 import React, { PropsWithChildren } from 'react';
-import errDefault from '#shared/assets/images/error_hdd.webp';
-import { Button } from '#shared/components/Button/Button';
+import errDefault from '/images/error_hdd.webp';
+import { Button } from '../../components/Button/Button';
 
-import { CONSOLE_BASE_ROUTE } from '#shared/routes';
+import { CONSOLE_BASE_ROUTE } from '../../routes/routes';
 import styles from './Error.module.css';
 
 export interface ErrorData {

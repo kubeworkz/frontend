@@ -4,14 +4,14 @@ import React, {
   useState,
 } from 'react';
 
-import { DataTable, DataTableProps } from '#shared/components/DataTable/DataTable';
+import { DataTable, DataTableProps } from '../../components/DataTable/DataTable';
 import { parse } from 'query-string';
 import { useLocation } from 'react-router-dom';
-import { Loader } from '#shared/components/Loader/Loader';
-import { Pagination } from '#shared/components/Pagination/Pagination';
+import { Loader } from '../../components/Loader/Loader';
+import { Pagination } from '../../components/Pagination/Pagination';
 
 import { debounce } from 'throttle-debounce';
-import { SvgIcon } from '#shared/components/SvgIcon/SvgIcon';
+import { SvgIcon } from '../../components/SvgIcon/SvgIcon';
 import { isString } from 'lodash';
 import styles from './DataPage.module.css';
 

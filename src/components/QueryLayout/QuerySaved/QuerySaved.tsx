@@ -1,15 +1,15 @@
 import classNames from 'classnames';
 import React, { Ref, useCallback, useState } from 'react';
 
-import { AnalyticsAction, useAnalytics } from '#shared/utils/analytics';
-import { SvgIcon } from '#shared/components/SvgIcon/SvgIcon';
+import { AnalyticsAction, useAnalytics } from '../../../utils/analytics';
+import { SvgIcon } from '../../../components/SvgIcon/SvgIcon';
 
-import { SavedQuery } from '#api_client/publicv2';
-import { ActionsDropdown } from '#shared/components/ActionsDropdown/ActionsDropdown';
-import { ActionsDropdownItem } from '#shared/components/ActionsDropdown/ActionDropdownItem/ActionsDropdownItem';
-import { apiErrorToaster } from '#api_client/utils';
+import { SavedQuery } from '../../../api/publicv2';
+import { ActionsDropdown } from '../../../components/ActionsDropdown/ActionsDropdown';
+import { ActionsDropdownItem } from '../../../components/ActionsDropdown/ActionDropdownItem/ActionsDropdownItem';
+import { apiErrorToaster } from '../../../api/utils';
 import { EmptySidebarLayout } from '../EmptySidebarLayout/EmptySidebarLayout';
-import { useQueryContext } from '../../../pages/Query/queryContext';
+import { useQueryContext } from '../../../app/pages/Query/queryContext';
 import { QuerySaveDialog } from '../QuerySaveButton/QuerySaveDialog';
 import styles from './QuerySaved.module.css';
 

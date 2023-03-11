@@ -1,5 +1,5 @@
 import React from 'react';
-import { CacheDataId } from '../../utils/caches';
+import { CacheDataId } from '../../admin/utils/caches';
 
 function ObjectPreview<D extends { id: CacheDataId }>({ data }: { data: D }) {
   return (

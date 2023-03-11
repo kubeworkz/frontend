@@ -1,10 +1,10 @@
 import React, { PropsWithChildren } from 'react';
 import classNames from 'classnames';
 
-import { Text } from '#shared/components/Text/Text';
+import { Text } from '../../../components/Text/Text';
 
-import { useFormFieldContext } from '#shared/components/Form/FormField/formFieldContext';
-import { AsProps, ReplaceProps } from '#shared/types/Props';
+import { useFormFieldContext } from '../../../components/Form/FormField/formFieldContext';
+import { AsProps, ReplaceProps } from '../../../types/Props';
 import styles from './FormLabel.module.css';
 
 interface FormLabelProps<As extends React.ElementType = React.ElementType> extends

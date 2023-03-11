@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { Role } from '#api_client/publicv2';
-import { Text } from '#shared/components/Text/Text';
-import { CopyButton } from '#shared/components/CopyButton/CopyButton';
+import { Role } from '../../api/publicv2';
+import { Text } from '../../components/Text/Text';
+import { CopyButton } from '../../components/CopyButton/CopyButton';
 
 import styles from './RolePassword.module.css';
 

@@ -2,7 +2,7 @@
 
 import { AceEditorProps } from 'react-ace/types';
 import Mustache from 'mustache';
-import { CONN_DATA_PLACEHOLDER } from '#shared/utils/connectionString';
+import { CONN_DATA_PLACEHOLDER } from '../../utils/connectionString';
 import React, { useMemo } from 'react';
 import { HighlightedCodeBlock } from '../Code/Code';
 

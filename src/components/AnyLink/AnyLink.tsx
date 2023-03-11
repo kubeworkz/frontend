@@ -3,7 +3,7 @@ import React, {
 } from 'react';
 import { NavLink, NavLinkProps } from 'react-router-dom';
 import cx from 'classnames';
-import { AnalyticsAction, useAnalyticsSafe } from '#shared/utils/analytics';
+import { AnalyticsAction, useAnalyticsSafe } from '../../utils/analytics';
 
 export interface AnyLinkBasicConfig {
   id?: string;

@@ -1,15 +1,15 @@
 import React from 'react';
-import { PageHeader } from '#shared/components/PageHeader/PageHeader';
-import { Text } from '#shared/components/Text/Text';
+import { PageHeader } from '../../components/PageHeader/PageHeader';
+import { Text } from '../../components/Text/Text';
 import { Link } from 'react-router-dom';
-import { useConfirmation } from '#shared/components/Confirmation/ConfirmationProvider';
-import { Button } from '#shared/components/Button/Button';
-import { DataTable, DataTableColumn } from '#shared/components/DataTable/DataTable';
-import { AdminUser, ConsumptionHistoryPeriod } from '#api_client/generated/api';
-import { centsToDollars, humanReadableBytes, secondsToHours } from '#shared/utils/units';
-import { AdminRoutes } from '../../config/routes';
-import { toggleAdmin } from '../../utils/toggleAdmin';
-import { ConfirmationPresets } from '../../config/confirmationPresets';
+import { useConfirmation } from '../../components/Confirmation/ConfirmationProvider';
+import { Button } from '../../components/Button/Button';
+import { DataTable, DataTableColumn } from '../../components/DataTable/DataTable';
+import { AdminUser, ConsumptionHistoryPeriod } from '../../api/generated/api';
+import { centsToDollars, humanReadableBytes, secondsToHours } from '../../utils/units';
+import { AdminRoutes } from '../../admin/config/routes';
+import { toggleAdmin } from '../../admin/utils/toggleAdmin';
+import { ConfirmationPresets } from '../../admin/config/confirmationPresets';
 import { UsersItemFormModal } from '../UsersItemForm/UsersItemFormModal';
 
 interface UsersItemProps {

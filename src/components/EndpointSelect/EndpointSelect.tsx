@@ -3,13 +3,13 @@ import {
   FormSelect,
   FormSelectProps,
   useUpdateValueOnOptionsChangeEffect,
-} from '#shared/components/Form/FormSelect/FormSelect';
-import { ProjectScopeProps } from '#shared/types/Props';
-import { BranchPrimaryBadgeConditional } from '#shared/components/BranchPrimaryBadgeConditional/BranchPrimaryBadgeConditional';
+} from '../../components/Form/FormSelect/FormSelect';
+import { ProjectScopeProps } from '../../types/Props';
+import { BranchPrimaryBadgeConditional } from '../../components/BranchPrimaryBadgeConditional/BranchPrimaryBadgeConditional';
 import { OptionProps } from 'react-select';
-import { BranchSelectOption } from '#shared/hooks/projectBranches';
-import { EndpointOption, useProjectEndpoints } from '../../hooks/projectEndpoints';
-import { useProjectsItemContext } from '../../hooks/projectsItem';
+import { BranchSelectOption } from '../../hooks/projectBranches';
+import { EndpointOption, useProjectEndpoints } from '../../app/hooks/projectEndpoints';
+import { useProjectsItemContext } from '../../app/hooks/projectsItem';
 
 interface EndpointSelectProps
   extends FormSelectProps<EndpointOption> {

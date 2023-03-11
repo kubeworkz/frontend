@@ -1,6 +1,6 @@
 import React from 'react';
-import { StatusBadge, StatusBadgeAppearance } from '#shared/components/StatusBadge/StatusBadge';
-import { Endpoint, EndpointState } from '#api_client/publicv2';
+import { StatusBadge, StatusBadgeAppearance } from '../../components/StatusBadge/StatusBadge';
+import { Endpoint, EndpointState } from '../../api/publicv2';
 
 interface EndpointStatusBadgeProps {
   endpoint: Pick<Endpoint, 'current_state' | 'pending_state'>;

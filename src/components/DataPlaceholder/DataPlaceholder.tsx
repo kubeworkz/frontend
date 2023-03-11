@@ -1,6 +1,6 @@
 import React from 'react';
-import { ErrorData } from '#shared/components/Error/Error';
-import { SvgIcon, IconName } from '#shared/components/SvgIcon/SvgIcon';
+import { ErrorData } from '../../components/Error/Error';
+import { SvgIcon, IconName } from '../../components/SvgIcon/SvgIcon';
 
 import styles from './DataPlaceholder.module.css';
 

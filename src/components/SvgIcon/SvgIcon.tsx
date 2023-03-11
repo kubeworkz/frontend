@@ -2,7 +2,7 @@ import React, {
   ForwardedRef, forwardRef, HTMLAttributes, Suspense,
 } from 'react';
 import classNames from 'classnames';
-import { ErrorBoundary } from '#shared/components/ErrorBoundary/ErrorBoundary';
+import { ErrorBoundary } from '../../components/ErrorBoundary/ErrorBoundary';
 
 import styles from './SvgIcon.module.css';
 
@@ -110,7 +110,7 @@ const SvgIconC = forwardRef((
     name, size, ...props
   }: SvgIconProps, ref: ForwardedRef<HTMLDivElement>,
 ) => {
-  const Icon = React.lazy(() => import(`#shared/assets/icons/${name}.svg`));
+  const Icon = React.lazy(() => import(`/icons/${name}.svg`));
 
   const fallback = React.useMemo(() => {
     const chunks = name.split('_');

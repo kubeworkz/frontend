@@ -1,5 +1,5 @@
 import React from 'react';
-import { Skeleton } from '#shared/components/Skeleton/Skeleton';
+import { Skeleton } from '../../../components/Skeleton/Skeleton';
 import { QueryResultTable } from './QueryResultTable';
 
 const COLS_COUNT = 5;

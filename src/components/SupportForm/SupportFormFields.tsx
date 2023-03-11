@@ -1,9 +1,9 @@
 import React from 'react';
 import { useFormContext } from 'react-hook-form';
-import { FormField } from '#shared/components/Form/FormField/FormField';
-import { FormInput } from '#shared/components/Form/FormInput/FormInput';
-import { FormTextarea } from '#shared/components/Form/FormInput/FormTextarea';
-import { EMAIL_VALIDATION_REGEX } from '#shared/utils/validation';
+import { FormField } from '../../components/Form/FormField/FormField';
+import { FormInput } from '../../components/Form/FormInput/FormInput';
+import { FormTextarea } from '../../components/Form/FormInput/FormTextarea';
+import { EMAIL_VALIDATION_REGEX } from '../../utils/validation';
 
 export const SupportFormFields = () => {
   const { formState, register } = useFormContext();

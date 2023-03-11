@@ -1,15 +1,15 @@
 import React from 'react';
 import { Controller, useForm } from 'react-hook-form';
 
-import { Button } from '#shared/components/Button/Button';
-import { Form } from '#shared/components/Form/Form';
-import { FormField } from '#shared/components/Form/FormField/FormField';
-import { FormInput } from '#shared/components/Form/FormInput/FormInput';
+import { Button } from '../../../components/Button/Button';
+import { Form } from '../../../components/Form/Form';
+import { FormField } from '../../../components/Form/FormField/FormField';
+import { FormInput } from '../../../components/Form/FormInput/FormInput';
 
-import { FormSelect } from '#shared/components/Form/FormSelect/FormSelect';
-import { Role } from '#api_client/publicv2';
-import { Credentials, useQueryContext } from '../../../pages/Query/queryContext';
-import { useProjectRoles } from '../../../hooks/projectRoles';
+import { FormSelect } from '../../../components/Form/FormSelect/FormSelect';
+import { Role } from '../../../api/publicv2';
+import { Credentials, useQueryContext } from '../../../app/pages/Query/queryContext';
+import { useProjectRoles } from '../../../app/hooks/projectRoles';
 
 interface QueryRoleFormProps {
   onSubmit(): void;

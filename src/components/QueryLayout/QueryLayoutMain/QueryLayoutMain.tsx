@@ -6,7 +6,7 @@ import 'react-resizable/css/styles.css';
 
 import { QueryLayoutEditor } from '../QueryLayoutEditor/QueryLayoutEditor';
 import { QueryResult } from '../../QueryResult/QueryResult';
-import { QueryLayout, useQueryContext } from '../../../pages/Query/queryContext';
+import { QueryLayout, useQueryContext } from '../../../app/pages/Query/queryContext';
 import { QueryLayoutHeader } from '../QueryLayoutHeader/QueryLayoutHeader';
 import { QueryLayoutActions } from '../QueryLayoutActions/QueryLayoutActions';
 import { QuerySidebar } from '../QuerySidebar/QuerySidebar';

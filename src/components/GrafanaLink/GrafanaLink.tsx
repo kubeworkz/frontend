@@ -1,7 +1,7 @@
 import React, { AnchorHTMLAttributes, PropsWithChildren } from 'react';
 import dayjs from 'dayjs';
-import { Text } from '#shared/components/Text/Text';
-import { AdminOperation } from '#api_client/generated/api';
+import { Text } from '../../components/Text/Text';
+import { AdminOperation } from '../../api/generated/api';
 import { GrafanaConfig } from '../AdminApp/types';
 
 interface GrafanaLinkProps

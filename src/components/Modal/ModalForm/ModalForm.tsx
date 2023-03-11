@@ -1,10 +1,10 @@
 import React, { createContext, PropsWithChildren, useContext } from 'react';
 import classNames from 'classnames';
-import { Modal, ModalProps } from '#shared/components/Modal/Modal';
-import { ModalBody, ModalBodyProps } from '#shared/components/Modal/ModalBody';
-import { ModalActions } from '#shared/components/Modal/ModalActions';
-import { Button, ButtonProps } from '#shared/components/Button/Button';
-import { AsProps } from '#shared/types/Props';
+import { Modal, ModalProps } from '../../../components/Modal/Modal';
+import { ModalBody, ModalBodyProps } from '../../../components/Modal/ModalBody';
+import { ModalActions } from '../../../components/Modal/ModalActions';
+import { Button, ButtonProps } from '../../../components/Button/Button';
+import { AsProps } from '../../../types/Props';
 
 import { useFormContext } from 'react-hook-form';
 import styles from './ModalForm.module.css';

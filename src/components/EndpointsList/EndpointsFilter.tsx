@@ -1,16 +1,16 @@
 import React, { useCallback } from 'react';
 
-import { endpointStates } from '#api_client/utils';
-import { EndpointState } from '#api_client/publicv2';
-import { FormField } from '#shared/components/Form/FormField/FormField';
-import { FormLabel } from '#shared/components/Form/FormLabel/FormLabel';
-import { FormInput } from '#shared/components/Form/FormInput/FormInput';
-import { findOption } from '#shared/components/Form/FormSelect/utils';
+import { endpointStates } from '../../api/utils';
+import { EndpointState } from '../../api/publicv2';
+import { FormField } from '../../components/Form/FormField/FormField';
+import { FormLabel } from '../../components/Form/FormLabel/FormLabel';
+import { FormInput } from '../../components/Form/FormInput/FormInput';
+import { findOption } from '../../components/Form/FormSelect/utils';
 
-import { Toggle } from '#shared/components/Toggle/Toggle';
-import { ToggleButton } from '#shared/components/Toggle/ToggleButton/ToggleButton';
-import { FormCheckbox } from '#shared/components/Form/FormCheckbox/FormCheckbox';
-import { FormSelect } from '#shared/components/Form/FormSelect/FormSelect';
+import { Toggle } from '../../components/Toggle/Toggle';
+import { ToggleButton } from '../../components/Toggle/ToggleButton/ToggleButton';
+import { FormCheckbox } from '../../components/Form/FormCheckbox/FormCheckbox';
+import { FormSelect } from '../../components/Form/FormSelect/FormSelect';
 import { FilterComponentProps } from '../DataPage/DataPage';
 
 import styles from './EndpointsFilter.module.css';

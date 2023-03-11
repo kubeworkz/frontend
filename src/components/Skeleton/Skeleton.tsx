@@ -1,7 +1,7 @@
 import React, { HTMLAttributes, PropsWithChildren } from 'react';
 import classNames from 'classnames';
 
-import { AsProps, ReplaceProps } from '#shared/types/Props';
+import { AsProps, ReplaceProps } from '../../types/Props';
 
 import './Skeleton.css';
 

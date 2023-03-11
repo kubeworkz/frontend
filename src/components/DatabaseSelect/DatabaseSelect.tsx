@@ -3,19 +3,19 @@ import {
   FormSelect,
   FormSelectProps,
   useUpdateValueOnOptionsChangeEffect,
-} from '#shared/components/Form/FormSelect/FormSelect';
-import { Database } from '#api_client/publicv2';
+} from '../../components/Form/FormSelect/FormSelect';
+import { Database } from '../../api/publicv2';
 import { Option } from 'react-select/src/filters';
-import { AnalyticsAction, useAnalytics } from '#shared/utils/analytics';
-import { BranchScopeProps } from '#shared/types/Props';
-import { useProjectsItemContext } from '../../hooks/projectsItem';
+import { AnalyticsAction, useAnalytics } from '../../utils/analytics';
+import { BranchScopeProps } from '../../types/Props';
+import { useProjectsItemContext } from '../../app/hooks/projectsItem';
 import {
   DatabaseOption,
   useProjectDatabases,
   useProjectDatabasesState,
-} from '../../hooks/projectDatabases';
+} from '../../app/hooks/projectDatabases';
 import { DatabaseFormModal } from '../DatabaseForm/DatabaseFormModal';
-import { useSelectedBranch } from '../../hooks/selectedBranchProvider';
+import { useSelectedBranch } from '../../app/hooks/selectedBranchProvider';
 
 interface CreateOption extends Option {
   label: string;

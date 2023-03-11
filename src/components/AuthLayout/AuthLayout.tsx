@@ -1,12 +1,12 @@
 import React, { PropsWithChildren } from 'react';
 import { toast } from 'react-toastify';
 
-import { ToastContainer } from '#shared/components/Toast/ToastContainer';
-import { ToastError } from '#shared/components/Toast/Toast';
+import { ToastContainer } from '../../components/Toast/ToastContainer';
+import { ToastError } from '../../components/Toast/Toast';
 
-import { FREE_TIER_LIMITS } from '#shared/config';
-import logoDesktop from '#shared/assets/images/logo.svg';
-import logoMobile from '#shared/assets/images/logo_mobile.svg';
+import { FREE_TIER_LIMITS } from '../../config/config';
+import logoDesktop from '/images/logo.svg';
+import logoMobile from '/images/logo_mobile.svg';
 import styles from './AuthLayout.module.css';
 
 interface AuthProps {

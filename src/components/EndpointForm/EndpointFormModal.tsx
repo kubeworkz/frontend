@@ -3,9 +3,9 @@ import {
   ModalForm,
   ModalFormActions,
   ModalFormBody, ModalFormCancelButton, ModalFormSubmitButton,
-} from '#shared/components/Modal/ModalForm/ModalForm';
-import { ModalProps } from '#shared/components/Modal/Modal';
-import { apiErrorToaster } from '#api_client/utils';
+} from '../../components/Modal/ModalForm/ModalForm';
+import { ModalProps } from '../../components/Modal/Modal';
+import { apiErrorToaster } from '../../api/utils';
 import { EndpointEditFormProps, EndpointShortForm } from './EndpointShortForm';
 import {
   EndpointCreateShortFormFields,

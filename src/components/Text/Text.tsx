@@ -2,7 +2,7 @@ import React, { AllHTMLAttributes, PropsWithChildren } from 'react';
 import {
   Appearance,
   AppearanceProps, AppearanceStatus, AsProps, ReplaceProps, SizeProps,
-} from '#shared/types/Props';
+} from '../../types/Props';
 import classNames from 'classnames';
 
 import './Text.css';

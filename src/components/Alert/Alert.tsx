@@ -1,8 +1,8 @@
 import React, { HTMLAttributes } from 'react';
-import { AppearanceProps, AppearanceStatus } from '#shared/types/Props';
+import { AppearanceProps, AppearanceStatus } from '../../types/Props';
 
 import classNames from 'classnames';
-import { SvgIcon, IconName } from '#shared/components/SvgIcon/SvgIcon';
+import { SvgIcon, IconName } from '../../components/SvgIcon/SvgIcon';
 import styles from './Alert.module.css';
 
 export interface AlertProps extends

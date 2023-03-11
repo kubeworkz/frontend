@@ -1,7 +1,7 @@
 import React from 'react';
-import { EndpointStatusBadge } from '#shared/components/EndpointStatusBadge/EndpointStatusBadge';
-import { Loader } from '#shared/components/Loader/Loader';
-import { useProjectEndpoints } from '../../hooks/projectEndpoints';
+import { EndpointStatusBadge } from '../../components/EndpointStatusBadge/EndpointStatusBadge';
+import { Loader } from '../../components/Loader/Loader';
+import { useProjectEndpoints } from '../../app/hooks/projectEndpoints';
 
 interface BranchEndpointStatusProps {
   branchId: string;

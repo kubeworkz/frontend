@@ -1,9 +1,9 @@
 import React from 'react';
 import { generatePath, Link } from 'react-router-dom';
-import { PageHeader } from '#shared/components/PageHeader/PageHeader';
-import { Text } from '#shared/components/Text/Text';
+import { PageHeader } from '../../components/PageHeader/PageHeader';
+import { Text } from '../../components/Text/Text';
 import { Operation } from '../types';
-import { AdminRoutes } from '../../config/routes';
+import { AdminRoutes } from '../../admin/config/routes';
 import { createOpsLogsUrl, GrafanaLink } from '../GrafanaLink/GrafanaLink';
 import { AdminAppProps } from '../AdminApp/types';
 

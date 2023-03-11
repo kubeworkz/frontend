@@ -1,7 +1,7 @@
 import React from 'react';
-import { FormLabel } from '#shared/components/Form/FormLabel/FormLabel';
-import { FormInput } from '#shared/components/Form/FormInput/FormInput';
-import { FormField } from '#shared/components/Form/FormField/FormField';
+import { FormLabel } from '../../components/Form/FormLabel/FormLabel';
+import { FormInput } from '../../components/Form/FormInput/FormInput';
+import { FormField } from '../../components/Form/FormField/FormField';
 import { FilterComponentProps } from '../DataPage/DataPage';
 
 import styles from './UsersList.module.css';

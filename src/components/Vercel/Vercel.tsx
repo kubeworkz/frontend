@@ -3,23 +3,23 @@ import React, {
 } from 'react';
 import { useForm, FormProvider } from 'react-hook-form';
 
-import { apiService, Project, Role } from '#api_client/publicv2';
-import { apiErrorToaster, createErrorText } from '#api_client/utils';
-import { Form } from '#shared/components/Form/Form';
-import { FormField } from '#shared/components/Form/FormField/FormField';
+import { apiService, Project, Role } from '../../api/publicv2';
+import { apiErrorToaster, createErrorText } from '../../api/utils';
+import { Form } from '../../components/Form/Form';
+import { FormField } from '../../components/Form/FormField/FormField';
 import {
   FormSelect,
   SelectOption,
-} from '#shared/components/Form/FormSelect/FormSelect';
-import { Info } from '#shared/components/Info/Info';
-import { Button } from '#shared/components/Button/Button';
-import { StatusButton } from '#shared/components/Button/StatusButton/StatusButton';
-import { getCSRFToken } from '#shared/utils/getCSRFToken';
+} from '../../components/Form/FormSelect/FormSelect';
+import { Info } from '../../components/Info/Info';
+import { Button } from '../../components/Button/Button';
+import { StatusButton } from '../../components/Button/StatusButton/StatusButton';
+import { getCSRFToken } from '../../utils/getCSRFToken';
 import {
   SettingsDesc,
   SettingsPageHeader,
-} from '#shared/components/Settings/Settings';
-import { CreateProjectForm } from '#shared/components/ProjectForm/CreateProjectForm';
+} from '../../components/Settings/Settings';
+import { CreateProjectForm } from '../../components/ProjectForm/CreateProjectForm';
 
 import {
   ModalForm,
@@ -27,24 +27,24 @@ import {
   ModalFormBody,
   ModalFormCancelButton,
   ModalFormSubmitButton,
-} from '#shared/components/Modal/ModalForm/ModalForm';
-import { pgConnectionString } from '#shared/utils/connectionString';
-import { ProjectFormFields } from '#shared/components/ProjectForm/ProjectFormFields/ProjectFormFields';
-import { Alert } from '#shared/components/Alert/Alert';
-import { Badge } from '#shared/components/Badge/Badge';
-import { HelpBlock } from '#shared/components/HelpBlock/HelpBlock';
-import { AnyLink } from '#shared/components/AnyLink/AnyLink';
-import { FormCheckbox } from '#shared/components/Form/FormCheckbox/FormCheckbox';
+} from '../../components/Modal/ModalForm/ModalForm';
+import { pgConnectionString } from '../../utils/connectionString';
+import { ProjectFormFields } from '../../components/ProjectForm/ProjectFormFields/ProjectFormFields';
+import { Alert } from '../../components/Alert/Alert';
+import { Badge } from '../../components/Badge/Badge';
+import { HelpBlock } from '../../components/HelpBlock/HelpBlock';
+import { AnyLink } from '../../components/AnyLink/AnyLink';
+import { FormCheckbox } from '../../components/Form/FormCheckbox/FormCheckbox';
 import { generatePath } from 'react-router';
-import { ConsoleRoutes, CONSOLE_BASE_ROUTE } from '#shared/routes';
-import { Divider } from '#shared/components/Divider/Divider';
-import { AnalyticsAction, useAnalytics } from '#shared/utils/analytics';
+import { ConsoleRoutes, CONSOLE_BASE_ROUTE } from '../../routes/routes';
+import { Divider } from '../../components/Divider/Divider';
+import { AnalyticsAction, useAnalytics } from '../../utils/analytics';
 import { ExternalProject } from '../../types';
-import { useProjectsContext } from '../../../console/hooks/projectsContext';
-import { ProjectsItemProvider } from '../../../console/hooks/projectsItem';
-import { DatabaseOption } from '../../../console/hooks/projectDatabases';
-import { RoleOption } from '../../../console/hooks/projectRoles';
-import { withDisableOnTransition } from '../../../console/components/withDisableOnTransition/withDisableOnTransition';
+import { useProjectsContext } from '../../app/hooks/projectsContext';
+import { ProjectsItemProvider } from '../../app/hooks/projectsItem';
+import { DatabaseOption } from '../../app/hooks/projectDatabases';
+import { RoleOption } from '../../app/hooks/projectRoles';
+import { withDisableOnTransition } from '../../components/withDisableOnTransition/withDisableOnTransition';
 import { Success } from '../Success/Success';
 import { Failure } from '../Failure/Failure';
 import { ProjectInternalsSelect } from './ProjectInternalsSelect';

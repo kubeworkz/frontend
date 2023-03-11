@@ -1,17 +1,17 @@
 import React from 'react';
 
-import { Alert } from '#shared/components/Alert/Alert';
+import { Alert } from '../../components/Alert/Alert';
 import {
   SettingsDesc,
   SettingsHeader,
-} from '#shared/components/Settings/Settings';
+} from '../../components/Settings/Settings';
 
-import { Role } from '#api_client/publicv2';
-import { SvgIcon } from '#shared/components/SvgIcon/SvgIcon';
-import { Button } from '#shared/components/Button/Button';
-import { HelpBlock } from '#shared/components/HelpBlock/HelpBlock';
+import { Role } from '../../api/publicv2';
+import { SvgIcon } from '../../components/SvgIcon/SvgIcon';
+import { Button } from '../../components/Button/Button';
+import { HelpBlock } from '../../components/HelpBlock/HelpBlock';
 
-import { Divider } from '#shared/components/Divider/Divider';
+import { Divider } from '../../components/Divider/Divider';
 import { RolePassword } from '../RolePassword/RolePassword';
 import { ExternalProject } from '../../types';
 import styles from './Failure.module.css';

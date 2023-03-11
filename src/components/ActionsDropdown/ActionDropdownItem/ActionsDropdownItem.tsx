@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { AnyLink, AnyLinkConfig } from '../../AnyLink/AnyLink';
-import { AppearanceProps, AppearanceStatus } from '#shared/types/Props';
+import { AppearanceProps, AppearanceStatus } from '../../types/Props';
 import classNames from 'classnames';
 import { IconName, SvgIcon } from '../..//SvgIcon/SvgIcon';
 import styles from './ActionsDropdownItem.module.css';

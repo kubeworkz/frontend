@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 import classNames from 'classnames';
-import { Modal, ModalProps } from '#shared/components/Modal/Modal';
+import { Modal, ModalProps } from '../../../components/Modal/Modal';
 import {
   BranchResponse,
   ConnectionURIsResponse,
@@ -9,22 +9,22 @@ import {
   OperationsResponse,
   ProjectResponse,
   RolesResponse,
-} from '#api_client/generated/api_public_v2';
-import { ModalBody } from '#shared/components/Modal/ModalBody';
-import { Button } from '#shared/components/Button/Button';
+} from '../../../api/generated/api_public_v2';
+import { ModalBody } from '../../../components/Modal/ModalBody';
+import { Button } from '../../../components/Button/Button';
 
-import { AnalyticsAction, useAnalytics } from '#shared/utils/analytics';
-import { Alert } from '#shared/components/Alert/Alert';
-import { FormField } from '#shared/components/Form/FormField/FormField';
-import { FormSelect } from '#shared/components/Form/FormSelect/FormSelect';
+import { AnalyticsAction, useAnalytics } from '../../../utils/analytics';
+import { Alert } from '../../../components/Alert/Alert';
+import { FormField } from '../../../components/Form/FormField/FormField';
+import { FormSelect } from '../../../components/Form/FormSelect/FormSelect';
 import {
   Snippet,
   SnippetConnectionData,
   SnippetsOrder,
   SnippetTypeLabels,
-} from '#shared/components/Snippet/Snippet';
-import { HelpBlock } from '#shared/components/HelpBlock/HelpBlock';
-import { ConsoleRoutes } from '#shared/routes';
+} from '../../../components/Snippet/Snippet';
+import { HelpBlock } from '../../../components/HelpBlock/HelpBlock';
+import { ConsoleRoutes } from '../../../routes/routes';
 import { generatePath, NavLink } from 'react-router-dom';
 import styles from './NewItemModalProject.module.css';
 

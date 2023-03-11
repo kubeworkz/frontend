@@ -1,13 +1,13 @@
 import React from 'react';
 import axios from 'axios';
 import * as Sentry from '@sentry/react';
-import { Modal } from '#shared/components/Modal/Modal';
-import { ModalHeader } from '#shared/components/Modal/ModalHeader';
-import { ModalActions } from '#shared/components/Modal/ModalActions';
-import { Button } from '#shared/components/Button/Button';
-import { ModalBody } from '#shared/components/Modal/ModalBody';
-import { useRequest } from '#shared/hooks/request';
-import { Loader } from '#shared/components/Loader/Loader';
+import { Modal } from '../../components/Modal/Modal';
+import { ModalHeader } from '../../components/Modal/ModalHeader';
+import { ModalActions } from '../../components/Modal/ModalActions';
+import { Button } from '../../components/Button/Button';
+import { ModalBody } from '../../components/Modal/ModalBody';
+import { useRequest } from '../../hooks/request';
+import { Loader } from '../../components/Loader/Loader';
 import {
   UsersItemFormSettings,
   UsersItemFormProps,

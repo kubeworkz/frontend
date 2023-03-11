@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { AnalyticsAction, useAnalytics } from '#shared/utils/analytics';
-import { SupportFormModal } from '#shared/components/SupportForm/SupportFormModal';
-import { FeedbackFormModal } from '#shared/components/FeedbackForm/FeedbackFormModal';
-import { COMMUNITY_URL, DOCUMENTATION_URL, RELEASE_NOTES_URL } from '#shared/config';
+import { AnalyticsAction, useAnalytics } from '../../../utils/analytics';
+import { SupportFormModal } from '../../../components/SupportForm/SupportFormModal';
+import { FeedbackFormModal } from '../../../components/FeedbackForm/FeedbackFormModal';
+import { COMMUNITY_URL, DOCUMENTATION_URL, RELEASE_NOTES_URL } from '../../../config/config';
 import { MenuItem } from './MenuItem';
 
 export const MenuItemSupport = () => {

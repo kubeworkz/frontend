@@ -1,14 +1,14 @@
 import React from 'react';
 import classNames from 'classnames';
-import { Modal, ModalProps } from '#shared/components/Modal/Modal';
-import { OperationsResponse, RoleResponse } from '#api_client/generated/api_public_v2';
-import { ModalBody } from '#shared/components/Modal/ModalBody';
-import { Button } from '#shared/components/Button/Button';
-import { Text } from '#shared/components/Text/Text';
-import { CodeBlock, CodeSpan } from '#shared/components/Code/Code';
-import { HiddenPassword } from '#shared/components/HiddenPassword/HiddenPassword';
+import { Modal, ModalProps } from '../../../components/Modal/Modal';
+import { OperationsResponse, RoleResponse } from '../../../api/generated/api_public_v2';
+import { ModalBody } from '../../../components/Modal/ModalBody';
+import { Button } from '../../../components/Button/Button';
+import { Text } from '../../../components/Text/Text';
+import { CodeBlock, CodeSpan } from '../../../components/Code/Code';
+import { HiddenPassword } from '../../../components/HiddenPassword/HiddenPassword';
 
-import { AnalyticsAction, useAnalytics } from '#shared/utils/analytics';
+import { AnalyticsAction, useAnalytics } from '../../../utils/analytics';
 import styles from '../NewItemModal.module.css';
 
 interface NewItemModalRoleProps extends ModalProps {

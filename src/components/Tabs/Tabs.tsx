@@ -1,5 +1,5 @@
 import React from 'react';
-import { FormSelectProps } from '#shared/components/Form/FormSelect/FormSelect';
+import { FormSelectProps } from '../../components/Form/FormSelect/FormSelect';
 
 import classNames from 'classnames';
 import styles from './Tabs.module.css';

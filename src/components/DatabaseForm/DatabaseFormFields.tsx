@@ -1,13 +1,13 @@
 import React from 'react';
 import { Controller, useFormContext } from 'react-hook-form';
-import { FormField } from '#shared/components/Form/FormField/FormField';
-import { FormInput } from '#shared/components/Form/FormInput/FormInput';
-import { useBranches } from '#shared/hooks/projectBranches';
-import { RoleOption, useProjectRoles } from '../../hooks/projectRoles';
+import { FormField } from '../../components/Form/FormField/FormField';
+import { FormInput } from '../../components/Form/FormInput/FormInput';
+import { useBranches } from '../../hooks/projectBranches';
+import { RoleOption, useProjectRoles } from '../../app/hooks/projectRoles';
 import { RoleSelect } from '../RoleSelect/RoleSelect';
 
 import { BranchSelect } from '../BranchSelect/BranchSelect';
-import { useSelectedBranch } from '../../hooks/selectedBranchProvider';
+import { useSelectedBranch } from '../../app/hooks/selectedBranchProvider';
 import { DatabaseFormState } from './types';
 import styles from './DatabaseForm.module.css';
 

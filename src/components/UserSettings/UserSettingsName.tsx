@@ -1,8 +1,8 @@
 import React from 'react';
-import { useCurrentUser } from '#shared/hooks/currentUser';
-import { SettingsDesc, SettingsHeader } from '#shared/components/Settings/Settings';
-import { FormLabel } from '#shared/components/Form/FormLabel/FormLabel';
-import { FormInput } from '#shared/components/Form/FormInput/FormInput';
+import { useCurrentUser } from '../../hooks/currentUser';
+import { SettingsDesc, SettingsHeader } from '../../components/Settings/Settings';
+import { FormLabel } from '../../components/Form/FormLabel/FormLabel';
+import { FormInput } from '../../components/Form/FormInput/FormInput';
 
 export const UserSettingsName = () => {
   const { user } = useCurrentUser();

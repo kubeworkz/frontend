@@ -1,18 +1,18 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 
-import { CurrentUserProvider } from '#shared/hooks/currentUser';
-import { ActionCableProvider } from '#shared/hooks/actionCable';
-import { PlatformsProvider } from '#shared/hooks/platforms';
-import { ToastContainer } from '#shared/components/Toast/ToastContainer';
-import { CONSOLE_BASE_ROUTE } from '#shared/routes';
-import { ConfirmationProvider } from '#shared/components/Confirmation/ConfirmationProvider';
+import { CurrentUserProvider } from '../../hooks/currentUser';
+import { ActionCableProvider } from '../../hooks/actionCable';
+import { PlatformsProvider } from '../../hooks/platforms';
+import { ToastContainer } from '../../components/Toast/ToastContainer';
+import { CONSOLE_BASE_ROUTE } from '../../routes/routes';
+import { ConfirmationProvider } from '../../components/Confirmation/ConfirmationProvider';
 
-import { LayoutCentered } from '#shared/components/Layout/LayoutCentered/LayoutCentered';
+import { LayoutCentered } from '../../components/Layout/LayoutCentered/LayoutCentered';
 import { ConsentForm } from '../ConsentForm/ConsentForm';
 import { ConsentProps } from '../../types';
-import { ProjectsProvider } from '../../../console/hooks/projectsContext';
-import { AppProvider } from '../../../console/hooks/app';
+import { ProjectsProvider } from '../../app/hooks/projectsContext';
+import { AppProvider } from '../../app/hooks/app';
 
 export const ConsentApp = (props: ConsentProps) => (
   <BrowserRouter basename={CONSOLE_BASE_ROUTE} forceRefresh>

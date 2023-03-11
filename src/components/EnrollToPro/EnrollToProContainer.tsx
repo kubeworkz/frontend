@@ -1,6 +1,6 @@
 import React from 'react';
-import { EnrollToProPromoModal } from '#shared/components/EnrollToPro/EnrollToProPromoModal/EnrollToProPromoModal';
-import { useEnrollToPro } from '#shared/components/EnrollToPro/enrollToProContext';
+import { EnrollToProPromoModal } from '../../components/EnrollToPro/EnrollToProPromoModal/EnrollToProPromoModal';
+import { useEnrollToPro } from '../../components/EnrollToPro/enrollToProContext';
 
 export const EnrollToProContainer = () => {
   const { isPromoVisible, setIsPromoVisible } = useEnrollToPro();

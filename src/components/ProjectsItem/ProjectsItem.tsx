@@ -1,12 +1,12 @@
 import React from 'react';
-import { PageHeader } from '#shared/components/PageHeader/PageHeader';
-import { Text } from '#shared/components/Text/Text';
-import { Button } from '#shared/components/Button/Button';
+import { PageHeader } from '../../components/PageHeader/PageHeader';
+import { Text } from '../../components/Text/Text';
+import { Button } from '../../components/Button/Button';
 import { generatePath, Link } from 'react-router-dom';
-import { AdminProject } from '#api_client/internal';
-import { humanReadableBytes, secondsToHours } from '#shared/utils/units';
+import { AdminProject } from '../../api/internal';
+import { humanReadableBytes, secondsToHours } from '../../utils/units';
 import { Safekeeper } from '../types';
-import { AdminRoutes } from '../../config/routes';
+import { AdminRoutes } from '../../admin/config/routes';
 import {
   createTimelineLogsUrl,
   GrafanaLink,

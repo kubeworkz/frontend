@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { ButtonProps } from '#shared/components/Button/Button';
-import { ComponentWithAsProp } from '#shared/types/Props';
-import { AnalyticsAction, useAnalytics } from '#shared/utils/analytics';
+import { ButtonProps } from '../../../components/Button/Button';
+import { ComponentWithAsProp } from '../../../types/Props';
+import { AnalyticsAction, useAnalytics } from '../../../utils/analytics';
 import { CreateButton } from '../CreateButton';
 import { RoleFormModal } from '../../RoleForm/RoleFormModal';
 import { withDisableOnTransition } from '../../withDisableOnTransition/withDisableOnTransition';

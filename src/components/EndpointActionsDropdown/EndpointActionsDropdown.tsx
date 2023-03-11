@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
-import { apiService, Endpoint } from '#api_client/publicv2';
-import { ActionsDropdownItem } from '#shared/components/ActionsDropdown/ActionDropdownItem/ActionsDropdownItem';
+import { apiService, Endpoint } from '../../api/publicv2';
+import { ActionsDropdownItem } from '../../components/ActionsDropdown/ActionDropdownItem/ActionsDropdownItem';
 import {
   ConfirmationPreset,
   createConfirmation, useConfirmation,
-} from '#shared/components/Confirmation/ConfirmationProvider';
-import { ActionsDropdown } from '#shared/components/ActionsDropdown/ActionsDropdown';
-import { apiErrorToaster } from '#api_client/utils';
+} from '../../components/Confirmation/ConfirmationProvider';
+import { ActionsDropdown } from '../../components/ActionsDropdown/ActionsDropdown';
+import { apiErrorToaster } from '../../api/utils';
 import { EndpointFormModal } from '../EndpointForm/EndpointFormModal';
-import { useProjectEndpoints } from '../../hooks/projectEndpoints';
+import { useProjectEndpoints } from '../../app/hooks/projectEndpoints';
 
 interface EndpointActionsDropdownProps {
   endpoint: Endpoint;

@@ -1,20 +1,20 @@
 import React from 'react';
-import { useResource } from '#shared/utils/useResource';
-import { apiService, ProjectPermission } from '#api_client/publicv2';
-import { apiErrorToaster, createErrorText } from '#api_client/utils';
+import { useResource } from '../../utils/useResource';
+import { apiService, ProjectPermission } from '../../api/publicv2';
+import { apiErrorToaster, createErrorText } from '../../api/utils';
 import { useForm } from 'react-hook-form';
-import { SettingsDesc, SettingsHeader } from '#shared/components/Settings/Settings';
-import { Form } from '#shared/components/Form/Form';
+import { SettingsDesc, SettingsHeader } from '../../components/Settings/Settings';
+import { Form } from '../../components/Form/Form';
 
-import { FormInput } from '#shared/components/Form/FormInput/FormInput';
-import { FormField } from '#shared/components/Form/FormField/FormField';
-import { EMAIL_VALIDATION_REGEX } from '#shared/utils/validation';
-import { Button } from '#shared/components/Button/Button';
-import { DataTable, DataTableColumn } from '#shared/components/DataTable/DataTable';
+import { FormInput } from '../../components/Form/FormInput/FormInput';
+import { FormField } from '../../components/Form/FormField/FormField';
+import { EMAIL_VALIDATION_REGEX } from '../../utils/validation';
+import { Button } from '../../components/Button/Button';
+import { DataTable, DataTableColumn } from '../../components/DataTable/DataTable';
 import {
   ConfirmationPreset,
   useConfirmation,
-} from '#shared/components/Confirmation/ConfirmationProvider';
+} from '../../components/Confirmation/ConfirmationProvider';
 
 import styles from './ShareProjectForm.module.css';
 

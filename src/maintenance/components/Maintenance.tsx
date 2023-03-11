@@ -1,7 +1,7 @@
 import React from 'react';
 
-import '#shared/styles/basic.css';
-import '#shared/styles/theme.light.scss';
+import '../../styles/basic.css';
+import '../../styles/theme.light.scss';
 
 import { PageError } from '../../components/PageError/PageError';
 import { AnyLink } from '../../components/AnyLink/AnyLink';

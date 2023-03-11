@@ -1,8 +1,8 @@
 import React, { HTMLAttributes, PropsWithChildren } from 'react';
 import classNames from 'classnames';
 
-import { FormFieldContext } from '#shared/components/Form/FormField/formFieldContext';
-import { FormLabel } from '#shared/components/Form/FormLabel/FormLabel';
+import { FormFieldContext } from '../../../components/Form/FormField/formFieldContext';
+import { FormLabel } from '../../../components/Form/FormLabel/FormLabel';
 
 import styles from './FormField.module.css';
 

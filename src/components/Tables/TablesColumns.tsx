@@ -1,11 +1,11 @@
 import classNames from 'classnames';
 import React, { useCallback, useState } from 'react';
 
-import { Section } from '#shared/components/Section/Section';
-import { SvgIcon } from '#shared/components/SvgIcon/SvgIcon';
-import { Collapsible } from '#shared/components/Collapsible/Collapsible';
+import { Section } from '../../components/Section/Section';
+import { SvgIcon } from '../../components/SvgIcon/SvgIcon';
+import { Collapsible } from '../../components/Collapsible/Collapsible';
 
-import { ColumnDescription, useTables } from '../../pages/Tables/tablesContext';
+import { ColumnDescription, useTables } from '../../app/pages/Tables/tablesContext';
 import styles from './Tables.module.css';
 
 type TableSectionProps = {

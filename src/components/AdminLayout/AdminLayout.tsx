@@ -2,9 +2,9 @@ import React, { PropsWithChildren } from 'react';
 import {
   LayoutWithSideNav,
   LayoutWithSideNavProps,
-} from '#shared/components/Layout/LayoutWithSideNav/LayoutWithSideNav';
-import { LayoutNavProps } from '#shared/components/Layout/types';
-import { AdminRoutes } from '../../config/routes';
+} from '../../components/Layout/LayoutWithSideNav/LayoutWithSideNav';
+import { LayoutNavProps } from '../../components/Layout/types';
+import { AdminRoutes } from '../../admin/config/routes';
 
 const TOP_NAV_CONFIG: LayoutNavProps['firstLevelNavConfig'] = [
   {

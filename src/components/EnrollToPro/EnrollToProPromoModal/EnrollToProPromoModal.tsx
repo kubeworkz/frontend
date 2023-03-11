@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactModal from 'react-modal';
 
-import { Button } from '#shared/components/Button/Button';
-import { SvgIcon } from '#shared/components/SvgIcon/SvgIcon';
-import { BillingRoutes } from '#shared/routes';
-import { AnalyticsAction, useAnalytics } from '#shared/utils/analytics';
+import { Button } from '../../../components/Button/Button';
+import { SvgIcon } from '../../../components/SvgIcon/SvgIcon';
+import { BillingRoutes } from '../../../routes/routes';
+import { AnalyticsAction, useAnalytics } from '../../../utils/analytics';
 import styles from './EnrollToProPromoModal.module.css';
 
 interface EnrollToProPromoModalProps extends Pick<ReactModal.Props, 'isOpen' | 'onRequestClose'> {}

@@ -3,16 +3,16 @@ import {
   ModalForm,
   ModalFormActions,
   ModalFormBody, ModalFormCancelButton, ModalFormSubmitButton,
-} from '#shared/components/Modal/ModalForm/ModalForm';
-import { ModalProps } from '#shared/components/Modal/Modal';
-import { FormCallbacks } from '#shared/components/Form/types';
-import { SupportForm, SupportFormProps } from '#shared/components/SupportForm/SupportForm';
-import { SupportFormFields } from '#shared/components/SupportForm/SupportFormFields';
+} from '../../components/Modal/ModalForm/ModalForm';
+import { ModalProps } from '../../components/Modal/Modal';
+import { FormCallbacks } from '../../components/Form/types';
+import { SupportForm, SupportFormProps } from '../../components/SupportForm/SupportForm';
+import { SupportFormFields } from '../../components/SupportForm/SupportFormFields';
 import { toast } from 'react-toastify';
-import { ToastError, ToastSuccess } from '#shared/components/Toast/Toast';
-import { AnyLink } from '#shared/components/AnyLink/AnyLink';
-import { EMAIL_SUPPORT } from '#shared/config';
-import { HUBSPOT_ERROR_TOAST_OPTIONS } from '#shared/utils/hubspot';
+import { ToastError, ToastSuccess } from '../../components/Toast/Toast';
+import { AnyLink } from '../../components/AnyLink/AnyLink';
+import { EMAIL_SUPPORT } from '../../config/config';
+import { HUBSPOT_ERROR_TOAST_OPTIONS } from '../../utils/hubspot';
 
 interface SupportFormModalProps extends ModalProps {
   formProps?: Omit<SupportFormProps, keyof FormCallbacks<any>>;

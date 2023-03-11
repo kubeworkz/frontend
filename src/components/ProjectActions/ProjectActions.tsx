@@ -1,12 +1,12 @@
 import React from 'react';
 import { generatePath } from 'react-router-dom';
 
-import { Project } from '#api_client/publicv2';
-import { ActionsDropdown } from '#shared/components/ActionsDropdown/ActionsDropdown';
-import { ActionsDropdownItem } from '#shared/components/ActionsDropdown/ActionDropdownItem/ActionsDropdownItem';
-import { ConsoleRoutes } from '#shared/routes';
+import { Project } from '../../api/publicv2';
+import { ActionsDropdown } from '../../components/ActionsDropdown/ActionsDropdown';
+import { ActionsDropdownItem } from '../../components/ActionsDropdown/ActionDropdownItem/ActionsDropdownItem';
+import { ConsoleRoutes } from '../../routes/routes';
 
-import { AnalyticsAction, useAnalytics } from '#shared/utils/analytics';
+import { AnalyticsAction, useAnalytics } from '../../utils/analytics';
 
 export type ProjectActionsProps = {
   project: Project;

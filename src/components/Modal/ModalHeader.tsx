@@ -1,6 +1,6 @@
 import React, { PropsWithChildren } from 'react';
 
-import { Text } from '#shared/components/Text/Text';
+import { Text } from '../../components/Text/Text';
 
 import styles from './Modal.module.css';
 

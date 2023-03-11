@@ -1,14 +1,14 @@
 import React, { HTMLAttributes } from 'react';
-import { Widget } from '#shared/components/Widget/Widget';
-import { WidgetBody } from '#shared/components/Widget/WidgetBody';
-import { Button } from '#shared/components/Button/Button';
-import { ConsoleRoutes } from '#shared/routes';
+import { Widget } from '../../../components/Widget/Widget';
+import { WidgetBody } from '../../../components/Widget/WidgetBody';
+import { Button } from '../../../components/Button/Button';
+import { ConsoleRoutes } from '../../../routes/routes';
 import { generatePath, Link } from 'react-router-dom';
 import classNames from 'classnames';
-import { CodeBlock } from '#shared/components/Code/Code';
-import { AnalyticsAction, useAnalytics } from '#shared/utils/analytics';
-import { Loader } from '#shared/components/Loader/Loader';
-import { useProjectsItemContext } from '../../../hooks/projectsItem';
+import { CodeBlock } from '../../../components/Code/Code';
+import { AnalyticsAction, useAnalytics } from '../../../utils/analytics';
+import { Loader } from '../../../components/Loader/Loader';
+import { useProjectsItemContext } from '../../../app/hooks/projectsItem';
 import { ProjectWidgetPlaceholder } from '../ProjectWidgetPlaceholder/ProjectWidgetPlaceholder';
 
 import styles from './ProjectPostgresWidget.module.css';

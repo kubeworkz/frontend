@@ -1,8 +1,8 @@
 import React from 'react';
-import { Branch, Project } from '#api_client/publicv2';
-import { PercentBar } from '#shared/components/PercentBar/PercentBar';
-import { humanReadableBytes } from '#shared/utils/units';
-import { mbAsGB } from '#shared/utils/sizeHelpers';
+import { Branch, Project } from '../../api/publicv2';
+import { PercentBar } from '../../components/PercentBar/PercentBar';
+import { humanReadableBytes } from '../../utils/units';
+import { mbAsGB } from '../../utils/sizeHelpers';
 
 interface BranchUsedSizeProps {
   branch: Branch;

@@ -3,16 +3,16 @@ import {
   FormSelect,
   FormSelectProps,
   useUpdateValueOnOptionsChangeEffect,
-} from '#shared/components/Form/FormSelect/FormSelect';
-import { apiService, Role } from '#api_client/publicv2';
+} from '../../components/Form/FormSelect/FormSelect';
+import { apiService, Role } from '../../api/publicv2';
 import { Option } from 'react-select/src/filters';
-import { AnalyticsAction, useAnalytics } from '#shared/utils/analytics';
-import { BranchScopeProps } from '#shared/types/Props';
-import { apiErrorToaster } from '#api_client/utils';
-import { useNewItemsCallbacks } from '#shared/hooks/useNewItem';
-import { useProjectsItemContext } from '../../hooks/projectsItem';
-import { RoleOption, useProjectRoles, useProjectRolesState } from '../../hooks/projectRoles';
-import { useSelectedBranch } from '../../hooks/selectedBranchProvider';
+import { AnalyticsAction, useAnalytics } from '../../utils/analytics';
+import { BranchScopeProps } from '../../types/Props';
+import { apiErrorToaster } from '../../api/utils';
+import { useNewItemsCallbacks } from '../../hooks/useNewItem';
+import { useProjectsItemContext } from '../../app/hooks/projectsItem';
+import { RoleOption, useProjectRoles, useProjectRolesState } from '../../app/hooks/projectRoles';
+import { useSelectedBranch } from '../../app/hooks/selectedBranchProvider';
 
 interface CreateOption extends Option {
   label: string;

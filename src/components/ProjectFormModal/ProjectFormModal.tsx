@@ -1,19 +1,19 @@
 import React from 'react';
-import { ModalProps } from '#shared/components/Modal/Modal';
+import { ModalProps } from '../../components/Modal/Modal';
 import {
   ModalForm,
   ModalFormActions,
   ModalFormBody, ModalFormCancelButton, ModalFormSubmitButton,
-} from '#shared/components/Modal/ModalForm/ModalForm';
-import { CreateProjectForm } from '#shared/components/ProjectForm/CreateProjectForm';
-import { forceShowOnboarding } from '#shared/utils/newProjectOnboarding';
-import { useNewItemsCallbacks } from '#shared/hooks/useNewItem';
-import { usePasswordStorage } from '#shared/hooks/passwordStorage';
-import { apiErrorToaster } from '#api_client/utils';
-import { ProjectFormFields } from '#shared/components/ProjectForm/ProjectFormFields/ProjectFormFields';
-import { ConsoleRoutes } from '#shared/routes';
+} from '../../components/Modal/ModalForm/ModalForm';
+import { CreateProjectForm } from '../../components/ProjectForm/CreateProjectForm';
+import { forceShowOnboarding } from '../../utils/newProjectOnboarding';
+import { useNewItemsCallbacks } from '../../hooks/useNewItem';
+import { usePasswordStorage } from '../../hooks/passwordStorage';
+import { apiErrorToaster } from '../../api/utils';
+import { ProjectFormFields } from '../../components/ProjectForm/ProjectFormFields/ProjectFormFields';
+import { ConsoleRoutes } from '../../routes/routes';
 import { useHistory } from 'react-router-dom';
-import { useProjectsContext } from '../../hooks/projectsContext';
+import { useProjectsContext } from '../../app/hooks/projectsContext';
 
 interface ProjectFormModalProps extends ModalProps {}
 

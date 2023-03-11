@@ -2,9 +2,9 @@ import React, { HTMLAttributes } from 'react';
 import classNames from 'classnames';
 import { IAceEditorProps } from 'react-ace/lib/ace';
 
-import { CopyButton } from '#shared/components/CopyButton/CopyButton';
-import { Card } from '#shared/components/Card/Card';
-import { AceEditor } from '#shared/components/Ace/Ace';
+import { CopyButton } from '../../components/CopyButton/CopyButton';
+import { Card } from '../../components/Card/Card';
+import { AceEditor } from '../../components/Ace/Ace';
 
 import styles from './Code.module.css';
 

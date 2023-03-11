@@ -1,5 +1,5 @@
 import React, { HTMLAttributes, PropsWithChildren } from 'react';
-import { IconName, SvgIcon } from '#shared/components/SvgIcon/SvgIcon';
+import { IconName, SvgIcon } from '../../../components/SvgIcon/SvgIcon';
 
 import classNames from 'classnames';
 import styles from './BranchViewBadge.module.css';

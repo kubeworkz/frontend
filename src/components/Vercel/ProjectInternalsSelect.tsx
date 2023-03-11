@@ -1,14 +1,14 @@
 import React, { useEffect } from 'react';
 import { Controller, useFormContext } from 'react-hook-form';
 
-import { FormField } from '#shared/components/Form/FormField/FormField';
-import { FormSelect } from '#shared/components/Form/FormSelect/FormSelect';
-import { Hint } from '#shared/components/Hint/Hint';
-import { RoleSelect } from '../../../console/components/RoleSelect/RoleSelect';
-import { DatabaseSelect } from '../../../console/components/DatabaseSelect/DatabaseSelect';
-import { DatabaseOption } from '../../../console/hooks/projectDatabases';
-import { RoleOption } from '../../../console/hooks/projectRoles';
-import { useSelectedBranch } from '../../../console/hooks/selectedBranchProvider';
+import { FormField } from '../../components/Form/FormField/FormField';
+import { FormSelect } from '../../components/Form/FormSelect/FormSelect';
+import { Hint } from '../../components/Hint/Hint';
+import { RoleSelect } from '../../components/RoleSelect/RoleSelect';
+import { DatabaseSelect } from '../../components/DatabaseSelect/DatabaseSelect';
+import { DatabaseOption } from '../../app/hooks/projectDatabases';
+import { RoleOption } from '../../app/hooks/projectRoles';
+import { useSelectedBranch } from '../../app/hooks/selectedBranchProvider';
 
 const branchSelectOptions = [
   { label: 'main', value: 'main' },

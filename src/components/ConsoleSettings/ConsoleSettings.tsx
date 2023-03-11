@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import { SettingsDesc, SettingsPageHeader } from '#shared/components/Settings/Settings';
-import { Alert } from '#shared/components/Alert/Alert';
-import { GlobalSettingsTableRaw, internalApiService } from '#api_client/internal';
+import { SettingsDesc, SettingsPageHeader } from '../../components/Settings/Settings';
+import { Alert } from '../../components/Alert/Alert';
+import { GlobalSettingsTableRaw, internalApiService } from '../../api/internal';
 
-import { apiErrorToaster } from '#api_client/utils';
-import { Button } from '#shared/components/Button/Button';
-import { useConfirmation } from '#shared/components/Confirmation/ConfirmationProvider';
+import { apiErrorToaster } from '../../api/utils';
+import { Button } from '../../components/Button/Button';
+import { useConfirmation } from '../../components/Confirmation/ConfirmationProvider';
 import { toast } from 'react-toastify';
-import { ToastError } from '#shared/components/Toast/Toast';
+import { ToastError } from '../../components/Toast/Toast';
 import { SettingsEditor } from '../SettingsEditor/SettingsEditor';
 import { settingsToJSON } from '../SettingsEditor/utils';
 import { ConsoleSettingsVersionSelector } from './ConsoleSettingsVersionSelector/ConsoleSettingsVersionSelector';

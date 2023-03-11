@@ -1,11 +1,11 @@
 import React from 'react';
-import { FormField } from '#shared/components/Form/FormField/FormField';
-import { FormLabel } from '#shared/components/Form/FormLabel/FormLabel';
-import { Toggle } from '#shared/components/Toggle/Toggle';
-import { ToggleButton } from '#shared/components/Toggle/ToggleButton/ToggleButton';
-import { Text } from '#shared/components/Text/Text';
-import { FormCheckbox } from '#shared/components/Form/FormCheckbox/FormCheckbox';
-import { FormInput } from '#shared/components/Form/FormInput/FormInput';
+import { FormField } from '../../components/Form/FormField/FormField';
+import { FormLabel } from '../../components/Form/FormLabel/FormLabel';
+import { Toggle } from '../../components/Toggle/Toggle';
+import { ToggleButton } from '../../components/Toggle/ToggleButton/ToggleButton';
+import { Text } from '../../components/Text/Text';
+import { FormCheckbox } from '../../components/Form/FormCheckbox/FormCheckbox';
+import { FormInput } from '../../components/Form/FormInput/FormInput';
 import { FilterComponentProps } from '../DataPage/DataPage';
 
 import './ProjectsList.css';

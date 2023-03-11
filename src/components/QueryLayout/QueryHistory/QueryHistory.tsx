@@ -3,12 +3,12 @@ import moment from 'moment';
 import React, { useCallback, useState } from 'react';
 import classNames from 'classnames';
 
-import { QueryHistoryItem } from '#api_client/publicv2';
-import { Skeleton } from '#shared/components/Skeleton/Skeleton';
-import { AnalyticsAction, useAnalytics } from '#shared/utils/analytics';
+import { QueryHistoryItem } from '../../../api/publicv2';
+import { Skeleton } from '../../../components/Skeleton/Skeleton';
+import { AnalyticsAction, useAnalytics } from '../../../utils/analytics';
 
-import { SvgIcon } from '#shared/components/SvgIcon/SvgIcon';
-import { useQueryContext } from '../../../pages/Query/queryContext';
+import { SvgIcon } from '../../../components/SvgIcon/SvgIcon';
+import { useQueryContext } from '../../../app/pages/Query/queryContext';
 import { EmptySidebarLayout } from '../EmptySidebarLayout/EmptySidebarLayout';
 import styles from './QueryHistory.module.css';
 

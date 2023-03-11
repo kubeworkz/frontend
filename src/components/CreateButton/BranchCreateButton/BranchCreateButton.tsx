@@ -1,13 +1,13 @@
 import React from 'react';
-import { Button, ButtonProps } from '#shared/components/Button/Button';
-import { AnyLink } from '#shared/components/AnyLink/AnyLink';
-import { ConsoleRoutes } from '#shared/routes';
+import { Button, ButtonProps } from '../../../components/Button/Button';
+import { AnyLink } from '../../../components/AnyLink/AnyLink';
+import { ConsoleRoutes } from '../../../routes/routes';
 import { generatePath } from 'react-router-dom';
-import { AnalyticsAction } from '#shared/utils/analytics';
-import { Tippy } from '#shared/components/Tippy/Tippy';
-import { Branch } from '#api_client/publicv2';
-import { useProjectsItemContext } from '../../../hooks/projectsItem';
-import { getLimitsLabel, useUserBranchesLimit } from '../../../hooks/userLimits';
+import { AnalyticsAction } from '../../../utils/analytics';
+import { Tippy } from '../../../components/Tippy/Tippy';
+import { Branch } from '../../../api/publicv2';
+import { useProjectsItemContext } from '../../../app/hooks/projectsItem';
+import { getLimitsLabel, useUserBranchesLimit } from '../../../app/hooks/userLimits';
 
 interface BranchCreateButtonProps extends ButtonProps {
   parentId?: Branch['id']

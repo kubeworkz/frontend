@@ -6,17 +6,17 @@ import {
 } from 'react-hook-form';
 import {
   AdminUser, internalApiService, UserSettings,
-} from '#api_client/internal';
-import { Alert } from '#shared/components/Alert/Alert';
-import { ToastError } from '#shared/components/Toast/Toast';
-import { apiErrorToaster } from '#api_client/utils';
-import { Tabs } from '#shared/components/Tabs/Tabs';
-import { FormField } from '#shared/components/Form/FormField/FormField';
-import { FormInput } from '#shared/components/Form/FormInput/FormInput';
-import { FormCheckbox } from '#shared/components/Form/FormCheckbox/FormCheckbox';
-import { useConfirmation } from '#shared/components/Confirmation/ConfirmationProvider';
-import { FormRadio } from '#shared/components/Form/FormRadio/FormRadio';
-import { Hint } from '#shared/components/Hint/Hint';
+} from '../../api/internal';
+import { Alert } from '../../components/Alert/Alert';
+import { ToastError } from '../../components/Toast/Toast';
+import { apiErrorToaster } from '../../api/utils';
+import { Tabs } from '../../components/Tabs/Tabs';
+import { FormField } from '../../components/Form/FormField/FormField';
+import { FormInput } from '../../components/Form/FormInput/FormInput';
+import { FormCheckbox } from '../../components/Form/FormCheckbox/FormCheckbox';
+import { useConfirmation } from '../../components/Confirmation/ConfirmationProvider';
+import { FormRadio } from '../../components/Form/FormRadio/FormRadio';
+import { Hint } from '../../components/Hint/Hint';
 import { settingsToJSON } from '../SettingsEditor/utils';
 import { SettingsEditor } from '../SettingsEditor/SettingsEditor';
 

@@ -1,20 +1,20 @@
 import React, { PropsWithChildren } from 'react';
 import { FormProvider, useForm } from 'react-hook-form';
 
-import { Form } from '#shared/components/Form/Form';
+import { Form } from '../../components/Form/Form';
 
-import { useConfirmation } from '#shared/components/Confirmation/ConfirmationProvider';
+import { useConfirmation } from '../../components/Confirmation/ConfirmationProvider';
 import {
   apiService, Project, ProjectCreateRequest,
-} from '#api_client/publicv2';
-import { AnalyticsAction, useAnalytics } from '#shared/utils/analytics';
-import { usePgSettings } from '#shared/hooks/pgSettings';
-import { usePlatforms } from '#shared/hooks/platforms';
-import { ProjectData } from '#shared/hooks/useNewItem';
-import { FormCallbacks } from '#shared/components/Form/types';
+} from '../../api/publicv2';
+import { AnalyticsAction, useAnalytics } from '../../utils/analytics';
+import { usePgSettings } from '../../hooks/pgSettings';
+import { usePlatforms } from '../../hooks/platforms';
+import { ProjectData } from '../../hooks/useNewItem';
+import { FormCallbacks } from '../../components/Form/types';
 
 import { CU_SCALE } from '../CPUUnitsSlider/CPUUnitsSlider';
-import { useAppContext } from '../../../console/hooks/app';
+import { useAppContext } from '../../app/hooks/app';
 
 import './ProjectForm.css';
 

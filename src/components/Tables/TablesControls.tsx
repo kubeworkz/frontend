@@ -1,15 +1,15 @@
 import React, { useMemo } from 'react';
 
-import { FormField } from '#shared/components/Form/FormField/FormField';
-import { FormLabel } from '#shared/components/Form/FormLabel/FormLabel';
-import { FormSelect, SelectOption } from '#shared/components/Form/FormSelect/FormSelect';
-import { BranchSelectOption, useBranches } from '#shared/hooks/projectBranches';
+import { FormField } from '../../components/Form/FormField/FormField';
+import { FormLabel } from '../../components/Form/FormLabel/FormLabel';
+import { FormSelect, SelectOption } from '../../components/Form/FormSelect/FormSelect';
+import { BranchSelectOption, useBranches } from '../../hooks/projectBranches';
 
 import { DatabaseSelect } from '../DatabaseSelect/DatabaseSelect';
-import { useTables } from '../../pages/Tables/tablesContext';
+import { useTables } from '../../app/pages/Tables/tablesContext';
 
 import { BranchSelect } from '../BranchSelect/BranchSelect';
-import { useSelectedBranch } from '../../hooks/selectedBranchProvider';
+import { useSelectedBranch } from '../../app/hooks/selectedBranchProvider';
 import styles from './Tables.module.css';
 
 export const TablesControls = () => {

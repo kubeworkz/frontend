@@ -163,6 +163,11 @@
   "devDependencies": {
     "@babel/core": "^7.21.0",
     "@types/js-cookie": "^3.0.3",
-    "@types/swagger-ui": "^3.52.0"
+    "@types/mustache": "^4.2.2",
+    "@types/react-highlight-words": "^0.16.4",
+    "@types/react-modal": "^3.13.1",
+    "@types/react-resizable": "^3.0.3",
+    "@types/swagger-ui": "^3.52.0",
+    "@types/throttle-debounce": "^5.0.0"
   }
 }

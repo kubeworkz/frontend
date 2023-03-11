@@ -1,8 +1,8 @@
 import React, { createContext, PropsWithChildren } from 'react';
-import { Confirmation, ConfirmationProps } from '#shared/components/Confirmation/Confirmation';
-import { Database, Project, Role } from '#api_client/generated/api';
-import { Alert } from '#shared/components/Alert/Alert';
-import { Branch, Endpoint } from '#api_client/publicv2';
+import { Confirmation, ConfirmationProps } from '../../components/Confirmation/Confirmation';
+import { Database, Project, Role } from '../../api/generated/api';
+import { Alert } from '../../components/Alert/Alert';
+import { Branch, Endpoint } from '../../api/publicv2';
 import { createUseContext } from '../../hooks/utils';
 
 export type ConfirmationOptions = Omit<ConfirmationProps, 'onConfirm' | 'onClose'> | ((...args: any) => Omit<ConfirmationProps, 'onConfirm' | 'onClose'>);

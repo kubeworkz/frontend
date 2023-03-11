@@ -1,11 +1,11 @@
 import React, { useMemo } from 'react';
 import { useLocation } from 'react-router';
 
-import { SvgIcon } from '#shared/components/SvgIcon/SvgIcon';
-import { SettingsDesc, SettingsPageHeader } from '#shared/components/Settings/Settings';
-import { Role } from '#api_client/publicv2';
+import { SvgIcon } from '../../components/SvgIcon/SvgIcon';
+import { SettingsDesc, SettingsPageHeader } from '../../components/Settings/Settings';
+import { Role } from '../../api/publicv2';
 
-import { Button } from '#shared/components/Button/Button';
+import { Button } from '../../components/Button/Button';
 import { RolePassword } from '../RolePassword/RolePassword';
 import styles from './Success.module.css';
 

@@ -2,9 +2,9 @@
 import React, { HTMLAttributes } from 'react';
 import classNames from 'classnames';
 
-import { Button } from '#shared/components/Button/Button';
-import { onboardingDone, saveStep } from '#shared/utils/newProjectOnboarding';
-import { AnalyticsAction, useAnalytics } from '#shared/utils/analytics';
+import { Button } from '../../../components/Button/Button';
+import { onboardingDone, saveStep } from '../../../utils/newProjectOnboarding';
+import { AnalyticsAction, useAnalytics } from '../../../utils/analytics';
 import styles from './Onboarding.module.css';
 
 export type OnboardingContent = Array<[string, React.ReactNode]>;

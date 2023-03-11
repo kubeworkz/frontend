@@ -1,8 +1,8 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
-import { IntegrationsRoutes } from '#shared/routes';
-import { Error } from '#shared/components/Error/Error';
+import { IntegrationsRoutes } from '../../routes/routes';
+import { Error } from '../../components/Error/Error';
 
 import { Vercel } from '../Vercel/Vercel';
 import { IntegrationsProps } from '../../types';

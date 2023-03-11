@@ -1,4 +1,4 @@
-import { IconName } from '#shared/components/SvgIcon/SvgIcon';
+import { IconName } from '../../components/SvgIcon/SvgIcon';
 
 export type AuthProvider = 'github' | 'google' | 'hasura';
 

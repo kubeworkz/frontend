@@ -1,7 +1,7 @@
 import React, { PropsWithChildren } from 'react';
 
-import { SvgIcon } from '#shared/components/SvgIcon/SvgIcon';
-import { Tippy } from '#shared/components/Tippy/Tippy';
+import { SvgIcon } from '../../components/SvgIcon/SvgIcon';
+import { Tippy } from '../../components/Tippy/Tippy';
 
 import styles from './Hint.module.css';
 

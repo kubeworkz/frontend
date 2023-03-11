@@ -1,6 +1,6 @@
 import React from 'react';
-import { Alert } from '#shared/components/Alert/Alert';
-import { AppearanceProps, AppearanceStatus } from '#shared/types/Props';
+import { Alert } from '../../components/Alert/Alert';
+import { AppearanceProps, AppearanceStatus } from '../../types/Props';
 
 export interface ToastProps extends AppearanceProps<AppearanceStatus> {
   header?: React.ReactNode;

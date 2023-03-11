@@ -4,15 +4,15 @@ import {
   FormSelect,
   FormSelectProps,
   useUpdateValueOnOptionsChangeEffect,
-} from '#shared/components/Form/FormSelect/FormSelect';
-import { ProjectScopeProps } from '#shared/types/Props';
-import { SvgIcon } from '#shared/components/SvgIcon/SvgIcon';
-import { BranchSelectOption, useBranches } from '#shared/hooks/projectBranches';
-import { BranchPrimaryBadgeConditional } from '#shared/components/BranchPrimaryBadgeConditional/BranchPrimaryBadgeConditional';
+} from '../../components/Form/FormSelect/FormSelect';
+import { ProjectScopeProps } from '../../types/Props';
+import { SvgIcon } from '../../components/SvgIcon/SvgIcon';
+import { BranchSelectOption, useBranches } from '../../hooks/projectBranches';
+import { BranchPrimaryBadgeConditional } from '../../components/BranchPrimaryBadgeConditional/BranchPrimaryBadgeConditional';
 
 import { OptionProps } from 'react-select';
-import { useProjectsItemContext } from '../../hooks/projectsItem';
-import { useProjectEndpoints } from '../../hooks/projectEndpoints';
+import { useProjectsItemContext } from '../../app/hooks/projectsItem';
+import { useProjectEndpoints } from '../../app/hooks/projectEndpoints';
 import styles from './BranchSelect.module.css';
 
 export const BranchValueComponent = (props: any) => (

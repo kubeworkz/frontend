@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { FormCheckbox } from '#shared/components/Form/FormCheckbox/FormCheckbox';
-import { FormRadio } from '#shared/components/Form/FormRadio/FormRadio';
+import { FormCheckbox } from '../../components/Form/FormCheckbox/FormCheckbox';
+import { FormRadio } from '../../components/Form/FormRadio/FormRadio';
 
 import { ConsentProps, Scope } from '../../types';
 

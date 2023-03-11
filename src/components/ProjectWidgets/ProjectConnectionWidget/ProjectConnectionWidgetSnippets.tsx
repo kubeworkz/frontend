@@ -1,13 +1,13 @@
 import React from 'react';
-import { Tabs } from '#shared/components/Tabs/Tabs';
-import { AnalyticsAction, useAnalytics } from '#shared/utils/analytics';
+import { Tabs } from '../../../components/Tabs/Tabs';
+import { AnalyticsAction, useAnalytics } from '../../../utils/analytics';
 import {
   SNIPPET_TYPE_OPTIONS,
   SnippetConnectionData,
   SnippetsOrder,
   SnippetType,
   Snippet,
-} from '#shared/components/Snippet/Snippet';
+} from '../../../components/Snippet/Snippet';
 
 interface ProjectConnectionWidgetSnippetsProps {
   connectionData: SnippetConnectionData

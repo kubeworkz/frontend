@@ -3,22 +3,22 @@ import React, {
 } from 'react';
 import { toast } from 'react-toastify';
 
-import { Text } from '#shared/components/Text/Text';
-import { useCurrentUser } from '#shared/hooks/currentUser';
-import { AnyLink } from '#shared/components/AnyLink/AnyLink';
-import { Button } from '#shared/components/Button/Button';
-import { getCSRFToken } from '#shared/utils/getCSRFToken';
-import { ToastError } from '#shared/components/Toast/Toast';
-import { UserPic } from '#shared/components/UserPic/UserPic';
+import { Text } from '../../components/Text/Text';
+import { useCurrentUser } from '../../hooks/currentUser';
+import { AnyLink } from '../../components/AnyLink/AnyLink';
+import { Button } from '../../components/Button/Button';
+import { getCSRFToken } from '../../utils/getCSRFToken';
+import { ToastError } from '../../components/Toast/Toast';
+import { UserPic } from '../../components/UserPic/UserPic';
 
 import {
   ModalForm,
   ModalFormActions,
   ModalFormBody, ModalFormCancelButton, ModalFormSubmitButton,
-} from '#shared/components/Modal/ModalForm/ModalForm';
-import { CreateProjectForm } from '#shared/components/ProjectForm/CreateProjectForm';
-import { apiErrorToaster } from '#api_client/utils';
-import { ProjectFormFields } from '#shared/components/ProjectForm/ProjectFormFields/ProjectFormFields';
+} from '../../components/Modal/ModalForm/ModalForm';
+import { CreateProjectForm } from '../../components/ProjectForm/CreateProjectForm';
+import { apiErrorToaster } from '../../api/utils';
+import { ProjectFormFields } from '../../components/ProjectForm/ProjectFormFields/ProjectFormFields';
 import { ProjectsList } from '../ProjectsList/ProjectsList';
 import { ClientLogo } from '../ClientLogo/ClientLogo';
 import { ConsentProps } from '../../types';

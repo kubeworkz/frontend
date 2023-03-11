@@ -1,6 +1,6 @@
 import React, { ButtonHTMLAttributes } from 'react';
-import { Appearance, AppearanceProps, AppearanceStatus } from '#shared/types/Props';
-import { IconName, SvgIcon } from '#shared/components/SvgIcon/SvgIcon';
+import { Appearance, AppearanceProps, AppearanceStatus } from '../../../types/Props';
+import { IconName, SvgIcon } from '../../../components/SvgIcon/SvgIcon';
 import classNames from 'classnames';
 
 import styles from './IconButton.module.css';

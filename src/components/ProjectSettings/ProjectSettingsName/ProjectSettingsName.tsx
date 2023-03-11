@@ -1,16 +1,16 @@
 import React from 'react';
 import { toast } from 'react-toastify';
 
-import { SettingsDesc } from '#shared/components/Settings/Settings';
-import { apiErrorToaster } from '#api_client/utils';
-import { FormInput } from '#shared/components/Form/FormInput/FormInput';
-import { Button } from '#shared/components/Button/Button';
+import { SettingsDesc } from '../../../components/Settings/Settings';
+import { apiErrorToaster } from '../../../api/utils';
+import { FormInput } from '../../../components/Form/FormInput/FormInput';
+import { Button } from '../../../components/Button/Button';
 import { useForm } from 'react-hook-form';
-import { FormField } from '#shared/components/Form/FormField/FormField';
-import { apiService } from '#api_client/publicv2';
-import { ToastSuccess } from '#shared/components/Toast/Toast';
-import { AnalyticsAction, useAnalytics } from '#shared/utils/analytics';
-import { useProjectsItemContext } from '../../../hooks/projectsItem';
+import { FormField } from '../../../components/Form/FormField/FormField';
+import { apiService } from '../../../api/publicv2';
+import { ToastSuccess } from '../../../components/Toast/Toast';
+import { AnalyticsAction, useAnalytics } from '../../../utils/analytics';
+import { useProjectsItemContext } from '../../../app/hooks/projectsItem';
 import { ProjectSettingsSectionProps } from '../types';
 
 const NAME_LENGTH_LIMIT = 64;

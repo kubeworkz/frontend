@@ -1,6 +1,6 @@
 import React, { createContext, ReactNode } from 'react';
 
-import { createUseContext } from '#shared/hooks/utils';
+import { createUseContext } from '../../hooks/utils';
 
 export type QueryResultContextType = {
   currentIndex: number;

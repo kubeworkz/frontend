@@ -1,4 +1,4 @@
-import { DataTableColumnRenderer } from '#shared/components/DataTable/DataTable';
+import { DataTableColumnRenderer } from '../../components/DataTable/DataTable';
 
 export const createActionsCol = <DataItemType>(
   renderer: DataTableColumnRenderer<DataItemType>,

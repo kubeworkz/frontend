@@ -1,23 +1,23 @@
 import React from 'react';
 import { Controller, useFormContext } from 'react-hook-form';
 
-import { FormField } from '#shared/components/Form/FormField/FormField';
-import { FormInput } from '#shared/components/Form/FormInput/FormInput';
-import { FormSelect } from '#shared/components/Form/FormSelect/FormSelect';
-import { usePgSettings } from '#shared/hooks/pgSettings';
-import { BillingSubscriptionType, Project } from '#api_client/publicv2';
+import { FormField } from '../../../components/Form/FormField/FormField';
+import { FormInput } from '../../../components/Form/FormInput/FormInput';
+import { FormSelect } from '../../../components/Form/FormSelect/FormSelect';
+import { usePgSettings } from '../../../hooks/pgSettings';
+import { BillingSubscriptionType, Project } from '../../../api/publicv2';
 
-import { humanizeRam } from '#shared/utils/sizeHelpers';
+import { humanizeRam } from '../../../utils/sizeHelpers';
 import {
   InstanceType, Platform, Region, usePlatforms,
-} from '#shared/hooks/platforms';
-import { AnalyticsAction, useAnalytics } from '#shared/utils/analytics';
-import { isServerless } from '#shared/utils/isServerless';
+} from '../../../hooks/platforms';
+import { AnalyticsAction, useAnalytics } from '../../../utils/analytics';
+import { isServerless } from '../../../utils/isServerless';
 
-import { FormRadio } from '#shared/components/Form/FormRadio/FormRadio';
-import { useCurrentUser } from '#shared/hooks/currentUser';
-import { CPUUnitsSlider, CU_SCALE } from '#shared/components/CPUUnitsSlider/CPUUnitsSlider';
-import { useAppContext } from '../../../../console/hooks/app';
+import { FormRadio } from '../../../components/Form/FormRadio/FormRadio';
+import { useCurrentUser } from '../../../hooks/currentUser';
+import { CPUUnitsSlider, CU_SCALE } from '../../../components/CPUUnitsSlider/CPUUnitsSlider';
+import { useAppContext } from '../../../app/hooks/app';
 import styles from './ProjectFormFields.module.css';
 
 interface ProjectFormFieldsProps {

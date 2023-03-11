@@ -1,16 +1,16 @@
 import React from 'react';
 import { Moment } from 'moment';
-import { FormField } from '#shared/components/Form/FormField/FormField';
-import { FormLabel } from '#shared/components/Form/FormLabel/FormLabel';
-import { FormInput } from '#shared/components/Form/FormInput/FormInput';
-import { FormSelect } from '#shared/components/Form/FormSelect/FormSelect';
-import { OperationAction, OperationStatus } from '#api_client/internal';
-import { DateTimeFormat } from '#shared/utils/formatDate';
-import { findOption } from '#shared/components/Form/FormSelect/utils';
-import { findOptions } from '#shared/components/Form/FormSelect/multiple';
-import { FormDateTime } from '#shared/components/Form/FormDateTime/FormDateTime';
-import { Toggle } from '#shared/components/Toggle/Toggle';
-import { ToggleButton } from '#shared/components/Toggle/ToggleButton/ToggleButton';
+import { FormField } from '../../components/Form/FormField/FormField';
+import { FormLabel } from '../../components/Form/FormLabel/FormLabel';
+import { FormInput } from '../../components/Form/FormInput/FormInput';
+import { FormSelect } from '../../components/Form/FormSelect/FormSelect';
+import { OperationAction, OperationStatus } from '../../api/internal';
+import { DateTimeFormat } from '../../utils/formatDate';
+import { findOption } from '../../components/Form/FormSelect/utils';
+import { findOptions } from '../../components/Form/FormSelect/multiple';
+import { FormDateTime } from '../../components/Form/FormDateTime/FormDateTime';
+import { Toggle } from '../../components/Toggle/Toggle';
+import { ToggleButton } from '../../components/Toggle/ToggleButton/ToggleButton';
 
 import { FilterComponentProps } from '../DataPage/DataPage';
 

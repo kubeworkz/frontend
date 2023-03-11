@@ -1,6 +1,6 @@
 import React from 'react';
-import { CONN_DATA_PLACEHOLDER } from '#shared/utils/connectionString';
-import { HiddenPassword } from '#shared/components/HiddenPassword/HiddenPassword';
+import { CONN_DATA_PLACEHOLDER } from '../../utils/connectionString';
+import { HiddenPassword } from '../../components/HiddenPassword/HiddenPassword';
 
 interface GetConnectionStringOptions {
   user?: string;

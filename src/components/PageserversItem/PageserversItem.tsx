@@ -1,9 +1,9 @@
 import React from 'react';
-import { PageHeader } from '#shared/components/PageHeader/PageHeader';
-import { Text } from '#shared/components/Text/Text';
+import { PageHeader } from '../../components/PageHeader/PageHeader';
+import { Text } from '../../components/Text/Text';
 import { Link } from 'react-router-dom';
-import { AdminPageserver } from '#api_client/generated/api';
-import { AdminRoutes } from '../../config/routes';
+import { AdminPageserver } from '../../api/generated/api';
+import { AdminRoutes } from '../../admin/config/routes';
 import {
   createPageserverInstanceLogsUrl,
   GrafanaLink,

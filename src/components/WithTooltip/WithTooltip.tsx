@@ -2,8 +2,8 @@ import React, {
   useRef, useState,
 } from 'react';
 import { usePopper } from 'react-popper';
-import { PopperArrow } from '#shared/components/Popper/PopperArrow/PopperArrow';
-import { Popper } from '#shared/components/Popper/Popper';
+import { PopperArrow } from '../../components/Popper/PopperArrow/PopperArrow';
+import { Popper } from '../../components/Popper/Popper';
 
 import './WithTooltip.css';
 

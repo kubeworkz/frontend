@@ -1,10 +1,10 @@
 import React from 'react';
 import { useFormContext } from 'react-hook-form';
-import { FormField } from '#shared/components/Form/FormField/FormField';
-import { FormInput } from '#shared/components/Form/FormInput/FormInput';
-import { useBranches } from '#shared/hooks/projectBranches';
+import { FormField } from '../../components/Form/FormField/FormField';
+import { FormInput } from '../../components/Form/FormInput/FormInput';
+import { useBranches } from '../../hooks/projectBranches';
 import { BranchSelect } from '../BranchSelect/BranchSelect';
-import { useSelectedBranch } from '../../hooks/selectedBranchProvider';
+import { useSelectedBranch } from '../../app/hooks/selectedBranchProvider';
 
 import { RoleFormState } from './types';
 

@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import { Controller, useFormContext } from 'react-hook-form';
 import moment from 'moment';
 
-import { FormRadio } from '#shared/components/Form/FormRadio/FormRadio';
-import { FormField } from '#shared/components/Form/FormField/FormField';
-import { FormDateTime } from '#shared/components/Form/FormDateTime/FormDateTime';
-import { Hint } from '#shared/components/Hint/Hint';
+import { FormRadio } from '../../../components/Form/FormRadio/FormRadio';
+import { FormField } from '../../../components/Form/FormField/FormField';
+import { FormDateTime } from '../../../components/Form/FormDateTime/FormDateTime';
+import { Hint } from '../../../components/Hint/Hint';
 
-import { AnalyticsAction, useAnalytics } from '#shared/utils/analytics';
-import { FormInput } from '#shared/components/Form/FormInput/FormInput';
-import { CurrentTimezone } from '#shared/components/CurrentTimezone/CurrentTimezone';
+import { AnalyticsAction, useAnalytics } from '../../../utils/analytics';
+import { FormInput } from '../../../components/Form/FormInput/FormInput';
+import { CurrentTimezone } from '../../../components/CurrentTimezone/CurrentTimezone';
 import styles from './BranchFormStartPoint.module.css';
 
 export type StartFrom =

@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { NavItemConfig } from '#shared/components/Layout/types';
-import { AnyLink, AnyLinkConfig } from '#shared/components/AnyLink/AnyLink';
+import { NavItemConfig } from '../../../components/Layout/types';
+import { AnyLink, AnyLinkConfig } from '../../../components/AnyLink/AnyLink';
 
-import { SvgIcon } from '#shared/components/SvgIcon/SvgIcon';
+import { SvgIcon } from '../../../components/SvgIcon/SvgIcon';
 import styles from './MenuItem.module.css';
 
 export const MenuItem = ({ iconName, children, ...props }: NavItemConfig) => (

@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import { FormInput, FormInputProps } from '#shared/components/Form/FormInput/FormInput';
+import { FormInput, FormInputProps } from '../../components/Form/FormInput/FormInput';
 import { debounce } from 'throttle-debounce';
 
 interface SearchFieldProps extends Omit<FormInputProps, 'onChange'> {

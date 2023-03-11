@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Skeleton } from '#shared/components/Skeleton/Skeleton';
+import { Skeleton } from '../../components/Skeleton/Skeleton';
 
 import styles from './EndpointsListItem.module.css';
 

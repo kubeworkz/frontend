@@ -1,9 +1,9 @@
 import React, { HTMLAttributes } from 'react';
-import { Widget } from '#shared/components/Widget/Widget';
-import { WidgetBody } from '#shared/components/Widget/WidgetBody';
-import { WidgetTable } from '#shared/components/Widget/WidgetTable';
-import { usePlatforms } from '#shared/hooks/platforms';
-import { useProjectsItemContext } from '../../../hooks/projectsItem';
+import { Widget } from '../../../components/Widget/Widget';
+import { WidgetBody } from '../../../components/Widget/WidgetBody';
+import { WidgetTable } from '../../../components/Widget/WidgetTable';
+import { usePlatforms } from '../../../hooks/platforms';
+import { useProjectsItemContext } from '../../../app/hooks/projectsItem';
 import { ProjectWidgetPlaceholder } from '../ProjectWidgetPlaceholder/ProjectWidgetPlaceholder';
 
 import styles from './ProjectComputeWidget.module.css';

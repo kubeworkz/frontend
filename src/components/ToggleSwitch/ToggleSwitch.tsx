@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import React from 'react';
 
-import { SizeProps } from '#shared/types/Props';
+import { SizeProps } from '../../types/Props';
 import styles from './ToggleSwitch.module.css';
 
 export interface ToggleSwitchProps extends Omit<React.ComponentProps<'input'>, 'size'>,

@@ -4,10 +4,10 @@ import React, {
 import { GroupTypeBase, Props as SelectProps } from 'react-select';
 import { ValueContainer } from 'react-select/animated';
 import classNames from 'classnames';
-import { SvgIcon } from '#shared/components/SvgIcon/SvgIcon';
-import { SizeProps } from '#shared/types/Props';
-import { FormInput } from '#shared/components/Form/FormInput/FormInput';
-import { useFormFieldContext } from '#shared/components/Form/FormField/formFieldContext';
+import { SvgIcon } from '../../../components/SvgIcon/SvgIcon';
+import { SizeProps } from '../../../types/Props';
+import { FormInput } from '../../../components/Form/FormInput/FormInput';
+import { useFormFieldContext } from '../../../components/Form/FormField/formFieldContext';
 
 import './FormSelect.css';
 

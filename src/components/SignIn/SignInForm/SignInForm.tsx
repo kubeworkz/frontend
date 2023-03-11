@@ -1,13 +1,13 @@
 import { partition } from 'lodash';
 import React, { ReactNode, useState } from 'react';
 
-import { useCSRFContext } from '#shared/hooks/csrf';
-import { Button } from '#shared/components/Button/Button';
-import { Form } from '#shared/components/Form/Form';
-import { FormFieldset } from '#shared/components/Form/FormFieldset/FormFieldset';
+import { useCSRFContext } from '../../../hooks/csrf';
+import { Button } from '../../../components/Button/Button';
+import { Form } from '../../../components/Form/Form';
+import { FormFieldset } from '../../../components/Form/FormFieldset/FormFieldset';
 
-import { OrDivider } from '#shared/components/OrDivider/OrDivider';
-import { AnalyticsAction, useAnalytics } from '#shared/utils/analytics';
+import { OrDivider } from '../../../components/OrDivider/OrDivider';
+import { AnalyticsAction, useAnalytics } from '../../../utils/analytics';
 import { AuthProvider, AuthProviderDetails, providers } from '../providers';
 import styles from './SignInForm.module.css';
 

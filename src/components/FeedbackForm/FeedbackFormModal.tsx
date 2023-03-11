@@ -1,16 +1,16 @@
 import React from 'react';
-import { ModalProps } from '#shared/components/Modal/Modal';
-import { FeedbackFormFields } from '#shared/components/FeedbackForm/FeedbackFormFields';
-import { FeedbackForm } from '#shared/components/FeedbackForm/FeedbackForm';
+import { ModalProps } from '../../components/Modal/Modal';
+import { FeedbackFormFields } from '../../components/FeedbackForm/FeedbackFormFields';
+import { FeedbackForm } from '../../components/FeedbackForm/FeedbackForm';
 import { toast } from 'react-toastify';
-import { ToastError, ToastSuccess } from '#shared/components/Toast/Toast';
-import { AnyLink } from '#shared/components/AnyLink/AnyLink';
-import { HUBSPOT_ERROR_TOAST_OPTIONS } from '#shared/utils/hubspot';
+import { ToastError, ToastSuccess } from '../../components/Toast/Toast';
+import { AnyLink } from '../../components/AnyLink/AnyLink';
+import { HUBSPOT_ERROR_TOAST_OPTIONS } from '../../utils/hubspot';
 import {
   ModalForm,
   ModalFormActions,
   ModalFormBody, ModalFormCancelButton, ModalFormSubmitButton,
-} from '#shared/components/Modal/ModalForm/ModalForm';
+} from '../../components/Modal/ModalForm/ModalForm';
 
 interface FeedbackFormModalProps extends ModalProps {}
 

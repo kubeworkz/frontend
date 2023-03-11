@@ -1,10 +1,10 @@
 import React, { PropsWithChildren } from 'react';
-import { FormCallbacks } from '#shared/components/Form/types';
-import { Endpoint, EndpointType } from '#api_client/generated/api_public_v2';
-import { Form, FormProps } from '#shared/components/Form/Form';
+import { FormCallbacks } from '../../components/Form/types';
+import { Endpoint, EndpointType } from '../../api/generated/api_public_v2';
+import { Form, FormProps } from '../../components/Form/Form';
 import { FormProvider, useForm } from 'react-hook-form';
-import { apiService } from '#api_client/publicv2';
-import { useAppContext } from '../../hooks/app';
+import { apiService } from '../../api/publicv2';
+import { useAppContext } from '../../app/hooks/app';
 import { EndpointFormInitialData } from './types';
 
 export interface EndpointEditFormProps

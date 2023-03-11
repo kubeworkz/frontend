@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Endpoint } from '#api_client/publicv2';
-import { FormRadio } from '#shared/components/Form/FormRadio/FormRadio';
+import { Endpoint } from '../../api/publicv2';
+import { FormRadio } from '../../components/Form/FormRadio/FormRadio';
 
-import { useBranches } from '#shared/hooks/projectBranches';
+import { useBranches } from '../../hooks/projectBranches';
 import styles from './EndpointsListItem.module.css';
 
 export type EndpointsListItemProps = {

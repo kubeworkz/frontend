@@ -11,6 +11,7 @@ import { createErrorText, useThrottledApiRequest } from '../../api/utils';
 import { useBranches } from '../../hooks/projectBranches';
 import { useResource } from '../../utils/useResource';
 import { useSubscription } from '../../hooks/actionCable';
+import { any } from 'prop-types';
 
 export interface EndpointOption {
   value: Endpoint['id'];

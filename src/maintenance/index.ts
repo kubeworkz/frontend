@@ -2,6 +2,6 @@ import '../styles/basic.css';
 import '../styles/theme.light.scss';
 import { renderComponent } from '../index';
 
-import { Maintenance } from './components/Maintenance';
+import { Maintenance } from '../components/Maintenance/Maintenance';
 
 renderComponent(Maintenance);

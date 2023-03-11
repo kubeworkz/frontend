@@ -240,6 +240,7 @@ const AnalyticsContext = React.createContext<CustomAnalyticsBrowser>({
 AnalyticsContext.displayName = 'AnalyticsContext';
 
 interface AnalyticsProviderProps {
+  children: React.ReactNode;
   userId?: string;
   enabled?: boolean;
   section: string;

@@ -39,7 +39,7 @@ export const apiErrorToaster = (err: AxiosError | any, id?: string) => {
 };
 
 export function debounceApiRequest<T extends (...args: any[]) => any>(fn: T): T {
-  return debounce(100, fn);
+  return debounce(100, fn) as any;
 }
 
 export function useThrottledApiRequest<T extends (...args: any[]) => any>(fn: T, timeout = 1000) {

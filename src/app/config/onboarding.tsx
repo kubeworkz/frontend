@@ -45,7 +45,7 @@ export const CONTENT: OnboardingContent = [
     ),
   ],
   [
-    'Try Neon\'s psql passwordless auth',
+    'Try Cloudrock\'s psql passwordless auth',
     <>
       <p>
         Make sure you have psql, a terminal-based front-end to Postgres, installed.
@@ -61,7 +61,7 @@ export const CONTENT: OnboardingContent = [
     </>,
   ],
   [
-    'Integrate your app with Neon',
+    'Integrate your app with Cloudrock',
     <p>
       Follow one of our
       {' '}

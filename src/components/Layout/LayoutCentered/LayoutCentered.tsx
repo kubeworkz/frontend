@@ -5,7 +5,7 @@ import { ErrorBoundary } from '@sentry/react';
 import { PageError } from '../../../components/PageError/PageError';
 import { AnyLink } from '../../../components/AnyLink/AnyLink';
 import { LimitedPreviewBanner } from '../../../components/Layout/LimitedPreviewBanner/LimitedPreviewBanner';
-import logo from '/images/logo_sidemenu.svg';
+import logo from '../../../assets/images/logo_sidemenu.svg';
 
 import { User } from '../../../components/Layout/User/User';
 import {

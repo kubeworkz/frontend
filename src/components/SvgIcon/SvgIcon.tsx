@@ -110,7 +110,7 @@ const SvgIconC = forwardRef((
     name, size, ...props
   }: SvgIconProps, ref: ForwardedRef<HTMLDivElement>,
 ) => {
-  const Icon = React.lazy(() => import(`/icons/${name}.svg`));
+  const Icon = React.lazy(() => import(`../../assets/icons/${name}.svg`));
 
   const fallback = React.useMemo(() => {
     const chunks = name.split('_');

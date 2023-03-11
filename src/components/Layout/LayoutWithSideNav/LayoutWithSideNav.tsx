@@ -5,7 +5,7 @@ import {
   LayoutNavProps,
   LayoutOnboardingProps, NavItemConfig,
 } from '../../../components/Layout/types';
-import logo from '/images/logo_sidemenu.svg';
+import logo from '../../../assets/images/logo_sidemenu.svg';
 import { AnyLink } from '../../../components/AnyLink/AnyLink';
 import { MenuItem } from '../../../components/Layout/MenuItem/MenuItem';
 import classNames from 'classnames';

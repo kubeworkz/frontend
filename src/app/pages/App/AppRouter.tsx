@@ -11,7 +11,7 @@ import { TrackingRoute } from '../../../utils/analytics';
 import { ConsoleRoutes, ConsoleRoutesObsolete } from '../../../routes/routes';
 import { useNewItemModals } from '../../../hooks/useNewItem';
 import { LayoutWithSideNavProps } from '../../../components/Layout/LayoutWithSideNav/LayoutWithSideNav';
-import notFoundImg from '/assets/images/error_hdd.webp';
+import notFoundImg from '../../../assets/images/error_hdd.webp';
 import { Button } from '../../../components/Button/Button';
 import { useCurrentUser } from '../../../hooks/currentUser';
 import { ConsoleLayout } from '../../../components/ConsoleLayout/ConsoleLayout';

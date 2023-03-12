@@ -19,7 +19,7 @@ export const RolePassword = ({ roleWithPassword }: RolePasswordProps) => (
     {' '}
     <b>primary</b>
     {' '}
-    branch of the Neon project was reset.
+    branch of the Cloudrock project was reset.
     Save the password. You won&apos;t see it again:
     <br />
     <Text appearance="default" className={styles.password}>{roleWithPassword.password}</Text>

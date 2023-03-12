@@ -1607,7 +1607,7 @@ export class HttpClient<SecurityDataType = unknown> {
  * @version v1
  * @baseUrl /api/v1
  *
- * Neon Cloud API
+ * Cloudrock Cloud API
  */
 export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDataType> {
   /**

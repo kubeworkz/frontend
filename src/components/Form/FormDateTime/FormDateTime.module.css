@@ -16,7 +16,7 @@
 /* stylelint-disable */
 :global {
   .rdtPicker td.rdtActive {
-    background-color: var(--neon-green);
+    background-color: var(--cloudrock-green);
     color: var(--text-primary);
     border-radius: 50%;
     height: 30px;
@@ -27,7 +27,7 @@
   }
 
   .rdtPicker td.rdtActive:hover {
-    background-color: var(--neon-green);
+    background-color: var(--cloudrock-green);
     color: var(--text-primary);
   }
 

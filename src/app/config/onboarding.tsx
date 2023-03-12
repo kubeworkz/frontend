@@ -1,7 +1,7 @@
 import { AnyLink } from '../../components/AnyLink/AnyLink';
 import {
   DOCUMENTATION_URL_API_SPEC,
-  DOCUMENTATION_URL_IMPORT_DATA_TO_NEON,
+  DOCUMENTATION_URL_IMPORT_DATA_TO_CLOUDROCK,
   DOCUMENTATION_URL_QUICKSTART_GUIDE,
 } from '../../config/config';
 import { generatePath } from 'react-router-dom';
@@ -38,7 +38,7 @@ const SqlStepContent = () => {
 
 export const CONTENT: OnboardingContent = [
   [
-    'Try Neon\'s SQL Editor',
+    'Try Cloudrock\'s SQL Editor',
     (
       <SqlStepContent />
     ),
@@ -72,21 +72,21 @@ export const CONTENT: OnboardingContent = [
         guides
       </AnyLink>
       {' '}
-      to integrate your application with Neon.
+      to integrate your application with Cloudrock.
     </p>,
   ],
   [
-    'Explore the Neon API',
+    'Explore the Cloudrock API',
     <>
       <p>
-        Integrate Neon into your CI/CD pipeline with
+        Integrate Cloudrock into your CI/CD pipeline with
         {' '}
         <AnyLink
           as="a"
           target="_blank"
           href={DOCUMENTATION_URL_API_SPEC}
         >
-          the Neon API
+          the Cloudrock API
         </AnyLink>
         .
       </p>
@@ -99,13 +99,13 @@ export const CONTENT: OnboardingContent = [
       {' '}
       <AnyLink
         as="a"
-        href={DOCUMENTATION_URL_IMPORT_DATA_TO_NEON}
+        href={DOCUMENTATION_URL_IMPORT_DATA_TO_CLOUDROCK}
         target="_blank"
       >
         guide
       </AnyLink>
       {' '}
-      to import your data to Neon.
+      to import your data to Cloudrock.
     </p>,
   ],
 ];

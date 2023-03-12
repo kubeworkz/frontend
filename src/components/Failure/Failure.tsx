@@ -41,7 +41,7 @@ export const Failure = ({
       {' '}
       <strong>{vercelProject.name}</strong>
       {' '}
-      and Neon project
+      and Cloudrock project
       {' '}
       <strong>{cloudrockProject}</strong>
     </SettingsDesc>

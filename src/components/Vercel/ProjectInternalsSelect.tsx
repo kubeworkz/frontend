@@ -33,7 +33,7 @@ export const ProjectInternalsSelect = () => {
             {' '}
             <code>main</code>
             {' '}
-            branch of your Neon project is the production branch for your database.
+            branch of your Cloudrock project is the production branch for your database.
             Database branches that are created for previews are branched from
             {' '}
             <code>main</code>

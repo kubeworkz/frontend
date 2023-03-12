@@ -75,7 +75,7 @@ type StepState = {
   errorCode?: string;
 };
 
-type NeonSelectOption = {
+type CloudrockSelectOption = {
   label: string;
   value: string;
   type: 'project' | 'create';
@@ -125,16 +125,16 @@ const ProjectProviderConditional = ({
 export const Vercel = ({ projects, connectedProjectsIds }: VercelProps) => {
   const { list, isLoading } = useProjectsContext();
   const { trackUiInteraction } = useAnalytics();
-  const cloudrockOptions: NeonSelectOption[] = useMemo(
+  const cloudrockOptions: CloudrockSelectOption[] = useMemo(
     () => list
       .map(
-        ({ id, name }) => ({ value: id, label: name, type: 'project' } as NeonSelectOption),
+        ({ id, name }) => ({ value: id, label: name, type: 'project' } as CloudrockSelectOption),
       )
       .concat({
         label: 'Create a new project',
         type: 'create',
         value: '',
-      } as NeonSelectOption),
+      } as CloudrockSelectOption),
     [list],
   );
   const vercelOptions = useMemo(
@@ -157,7 +157,7 @@ export const Vercel = ({ projects, connectedProjectsIds }: VercelProps) => {
   );
 
   const csrf = useMemo(getCSRFToken, []);
-  const [cloudrockProjectOpt, setNeonProjectOpt] = React.useState<NeonSelectOption>();
+  const [cloudrockProjectOpt, setCloudrockProjectOpt] = React.useState<CloudrockSelectOption>();
   const [vercelProjectOpt, setVercelProjectOpt] = React.useState(
     vercelOptions[0],
   );
@@ -180,7 +180,7 @@ export const Vercel = ({ projects, connectedProjectsIds }: VercelProps) => {
   useEffect(() => {
     if (isLoading) return;
     if (list.length > 0) {
-      setNeonProjectOpt(cloudrockOptions[0]);
+      setCloudrockProjectOpt(cloudrockOptions[0]);
       setValue('cloudrockProjectId', cloudrockOptions[0].value);
     }
   }, [isLoading, cloudrockOptions, list, setValue]);
@@ -274,7 +274,7 @@ export const Vercel = ({ projects, connectedProjectsIds }: VercelProps) => {
     (p: Project) => {
       setShowCreateProject(false);
       setValue('cloudrockProjectId', p.id);
-      setNeonProjectOpt({ value: p.id, label: p.name, type: 'project' });
+      setCloudrockProjectOpt({ value: p.id, label: p.name, type: 'project' });
     },
     [setValue],
   );
@@ -329,7 +329,7 @@ export const Vercel = ({ projects, connectedProjectsIds }: VercelProps) => {
           <Form id="vercel-form" method="post" onSubmit={onSubmit}>
             {stepState.step === 'pick_vercel_project' && (
             <div>
-              <SettingsPageHeader>Integrate Neon</SettingsPageHeader>
+              <SettingsPageHeader>Integrate Cloudrock</SettingsPageHeader>
               <SettingsDesc>
                 Select a Vercel project to add the integration to.
                 <div className={styles.vercelProjectPick}>
@@ -356,9 +356,9 @@ export const Vercel = ({ projects, connectedProjectsIds }: VercelProps) => {
                           className={styles.projectConnectedAlert}
                           appearance="warning"
                         >
-                          This project is already connected to a Neon
+                          This project is already connected to a Cloudrock
                           project. This connection will be removed if
-                          you connect to another Neon project.
+                          you connect to another Cloudrock project.
                         </Alert>
                       )}
                     </>
@@ -387,31 +387,31 @@ export const Vercel = ({ projects, connectedProjectsIds }: VercelProps) => {
                 For information about resetting the connection, see
                 {' '}
                 <AnyLink as="a" target="_blank" href="https://cloudrock.ca/docs/guides/vercel">
-                  Connect Vercel and Neon.
+                  Connect Vercel and Cloudrock.
                 </AnyLink>
               </HelpBlock>
             </div>
             )}
             {stepState.step === 'pick_cloudrock_project' && (
             <div>
-              <SettingsPageHeader>Integrate Neon</SettingsPageHeader>
+              <SettingsPageHeader>Integrate Cloudrock</SettingsPageHeader>
               <SettingsDesc>
                 Connect Vercel project
                 {' '}
                 <strong>{vercelProjectOpt?.text}</strong>
                 {' '}
-                to a Neon database. Select a Neon project and database, and the
+                to a Cloudrock database. Select a Cloudrock project and database, and the
                 role that Vercel will use to connect.
               </SettingsDesc>
               <FormField
-                label="Neon project"
+                label="Cloudrock project"
                 error={formState.errors.cloudrockProjectId?.message}
               >
                 <FormSelect
                   options={cloudrockOptions}
                   className={styles.cloudrockProjectSelect}
                   {...register('cloudrockProjectId', {
-                    required: { message: 'Pick Neon project', value: true },
+                    required: { message: 'Pick Cloudrock project', value: true },
                   })}
                   value={cloudrockProjectOpt}
                   isLoading={isLoading}
@@ -420,7 +420,7 @@ export const Vercel = ({ projects, connectedProjectsIds }: VercelProps) => {
                       setShowCreateProject(true);
                     } else {
                       setValue('cloudrockProjectId', opt.value);
-                      setNeonProjectOpt(opt);
+                      setCloudrockProjectOpt(opt);
                     }
                   }}
                 />
@@ -458,13 +458,13 @@ export const Vercel = ({ projects, connectedProjectsIds }: VercelProps) => {
             )}
             {stepState.step === 'confirm' && (
             <div>
-              <SettingsPageHeader>Integrate Neon</SettingsPageHeader>
+              <SettingsPageHeader>Integrate Cloudrock</SettingsPageHeader>
               <SettingsDesc>
                 Confirm integration settings between Vercel project
                 {' '}
                 <strong>{vercelProjectOpt?.text}</strong>
                 {' '}
-                and Neon project
+                and Cloudrock project
                 {' '}
                 <strong>{cloudrockProjectOpt?.label}</strong>
                 .

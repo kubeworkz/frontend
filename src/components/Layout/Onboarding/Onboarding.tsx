@@ -73,7 +73,7 @@ export const Onboarding = ({ className, content, onDone }: OnboardingProps) => {
         </ol>
         <div className={styles.content}>
           <div className={styles.title}>
-            Neon onboarding
+            Cloudrock onboarding
           </div>
           <div className={styles.description}>
             {currentStepContent}

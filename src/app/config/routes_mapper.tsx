@@ -5,7 +5,7 @@ import { ProjectItemBreadcrumbLabel } from '../../components/BreadcrumbsLabels/P
 import { BranchItemBreadcrumbLabel } from '../../components/BreadcrumbsLabels/BranchItemBreadcrumbsLabel';
 
 export const ROUTES_NAMES: Record<ConsoleRoutes, React.ReactNode> = {
-  [ConsoleRoutes.Root]: 'Neon',
+  [ConsoleRoutes.Root]: 'Cloudrock',
   [ConsoleRoutes.Home]: 'Management console',
   [ConsoleRoutes.ProjectsList]: 'Projects',
   [ConsoleRoutes.ProjectsItem]: 'Dashboard',

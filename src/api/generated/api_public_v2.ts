@@ -21,7 +21,7 @@ the default start of consumption history period is the 1st day of month.
 */
 export interface ConsumptionHistoryPeriod {
   /**
-   * Neon started collecting consumption for that consumption period at that moment in time.
+   * Cloudrock started collecting consumption for that consumption period at that moment in time.
    *
    * @format date-time
    */
@@ -169,7 +169,7 @@ export interface Invoice {
   issued_at: string;
 
   /**
-   * Neon successfully collected payment for this invoice at this moment in time.
+   * Cloudrock successfully collected payment for this invoice at this moment in time.
    *
    * @format date-time
    */
@@ -211,7 +211,7 @@ export interface ExternalIntegration {
   name: string;
 
   /**
-   * Vercel integration is bound to a Neon branch.
+   * Vercel integration is bound to a Cloudrock branch.
    * User specifies endpoint to expose to each Vercel project.
    *
    */
@@ -237,7 +237,7 @@ export interface VercelIntegrationDetails {
 }
 
 /**
-* Vercel integration is bound to a Neon branch.
+* Vercel integration is bound to a Cloudrock branch.
 User specifies endpoint to expose to each Vercel project.
 */
 export interface VercelIntegration {
@@ -334,7 +334,7 @@ export interface ApiKeyCreateResponse {
    */
   id: number;
 
-  /** The generated 64-bit token required to access the Neon API */
+  /** The generated 64-bit token required to access the Cloudrock API */
   key: string;
 }
 
@@ -397,7 +397,7 @@ export interface Operation {
    */
   id: string;
 
-  /** The Neon project ID */
+  /** The Cloudrock project ID */
   project_id: string;
 
   /** The branch ID */
@@ -505,12 +505,12 @@ export interface Project {
   name: string;
 
   /**
-   * The Neon project provisioner
+   * The Cloudrock project provisioner
    *
    */
   provisioner?: "k8s-pod" | "k8s-cloudrockvm" | "docker";
 
-  /** A collection of settings for a Neon project */
+  /** A collection of settings for a Cloudrock project */
   default_endpoint_settings?: ProjectSettingsData;
   settings?: ProjectSettings;
 
@@ -518,7 +518,7 @@ export interface Project {
   pg_version: PgVersion;
 
   /**
-   * The proxy host for the project. This value combines the `region_id`, the `platform_id`, and the Neon domain (`cloudrock.ca`).
+   * The proxy host for the project. This value combines the `region_id`, the `platform_id`, and the Cloudrock domain (`cloudrock.ca`).
    *
    */
   proxy_host: string;
@@ -531,7 +531,7 @@ export interface Project {
   branch_logical_size_limit: number;
 
   /**
-   * Whether or not passwords are stored for roles in the Neon project. Storing passwords facilitates access to Neon features that require authorization.
+   * Whether or not passwords are stored for roles in the Cloudrock project. Storing passwords facilitates access to Cloudrock features that require authorization.
    *
    */
   store_passwords: boolean;
@@ -621,9 +621,9 @@ export interface ProjectSettings {
   /**
    * The consumption quota of a project.
    * After the quota has been exceeded, it is impossible to use the project until either:
-   * * Neon cloud resets the calculated consumption,
+   * * Cloudrock cloud resets the calculated consumption,
    * * or the user increases quota for the project.
-   * The Neon cloud resets the quota at the beginning of the billing period.
+   * The Cloudrock cloud resets the quota at the beginning of the billing period.
    *
    * If the quota is not set, the project can use as many resources as needed.
    */
@@ -818,7 +818,7 @@ export interface ConnectionURI {
  */
 export interface Endpoint {
   /**
-   * The hostname of the compute endpoint. This is the hostname specified when connecting to a Neon database.
+   * The hostname of the compute endpoint. This is the hostname specified when connecting to a Cloudrock database.
    *
    */
   host: string;
@@ -890,7 +890,7 @@ export interface Endpoint {
   pooler_enabled: boolean;
 
   /**
-   * The connection pooler mode. Neon supports PgBouncer in `transaction` mode only.
+   * The connection pooler mode. Cloudrock supports PgBouncer in `transaction` mode only.
    *
    */
   pooler_mode: EndpointPoolerMode;
@@ -960,7 +960,7 @@ export enum EndpointType {
 }
 
 /**
- * The connection pooler mode. Neon supports PgBouncer in `transaction` mode only.
+ * The connection pooler mode. Cloudrock supports PgBouncer in `transaction` mode only.
  */
 export enum EndpointPoolerMode {
   Transaction = "transaction",
@@ -1149,7 +1149,7 @@ export interface BillingAccount {
   payment_source: PaymentSource;
 
   /**
-   * Type of subscription to Neon Cloud.
+   * Type of subscription to Cloudrock Cloud.
    * Notice that for users without billing account this will be "UNKNOWN"
    *
    */
@@ -1206,7 +1206,7 @@ export interface BillingAccount {
 }
 
 /**
-* Type of subscription to Neon Cloud.
+* Type of subscription to Cloudrock Cloud.
 Notice that for users without billing account this will be "UNKNOWN"
 */
 export enum BillingSubscriptionType {
@@ -1323,9 +1323,9 @@ export interface EndpointSettingsData {
 /**
 * The consumption quota of a project.
 After the quota has been exceeded, it is impossible to use the project until either:
-* Neon cloud resets the calculated consumption,
+* Cloudrock cloud resets the calculated consumption,
 * or the user increases quota for the project.
-The Neon cloud resets the quota at the beginning of the billing period.
+The Cloudrock cloud resets the quota at the beginning of the billing period.
 
 If the quota is not set, the project can use as many resources as needed.
 */
@@ -1340,7 +1340,7 @@ export interface ProjectSettingsQuota {
 }
 
 /**
- * A collection of settings for a Neon project
+ * A collection of settings for a Cloudrock project
  */
 export interface ProjectSettingsData {
   /** A raw representation of PostgreSQL settings */
@@ -1419,7 +1419,7 @@ export interface ListProjectOperationsParams {
    */
   limit?: number;
 
-  /** The Neon project ID */
+  /** The Cloudrock project ID */
   projectId: string;
 }
 
@@ -1562,17 +1562,17 @@ export class HttpClient<SecurityDataType = unknown> {
 }
 
 /**
- * @title Neon API
+ * @title Cloudrock API
  * @version v2
  * @license Proprietary
  * @baseUrl https://console.cloudrock.ca/api/v2
  * @contact <support@cloudrock.ca>
  *
- * The Neon API allows you to access and manage Neon programmatically. You can use the Neon API to manage API keys, projects, branches, endpoints, databases, roles, and operations. For information about these features, refer to the [Neon documentation](https://cloudrock.ca/docs/manage/overview/).
+ * The Cloudrock API allows you to access and manage Cloudrock programmatically. You can use the Cloudrock API to manage API keys, projects, branches, endpoints, databases, roles, and operations. For information about these features, refer to the [Cloudrock documentation](https://cloudrock.ca/docs/manage/overview/).
  *
- * You can run Neon API requests from this API reference using the **Try it out** feature that is provided for each method. Click **Authorize** to enter an API key.
+ * You can run Cloudrock API requests from this API reference using the **Try it out** feature that is provided for each method. Click **Authorize** to enter an API key.
  *
- * You can create and manage API keys in the Neon Console. See [Manage API keys](https://cloudrock.ca/docs/manage/api-keys/) for instructions.
+ * You can create and manage API keys in the Cloudrock Console. See [Manage API keys](https://cloudrock.ca/docs/manage/api-keys/) for instructions.
  */
 export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDataType> {
   /**
@@ -1612,11 +1612,11 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa
     });
 
   /**
-   * @description Unlink all Neon branches of given project from multiple Vercel Projects. This does not delete the whole installation of Vercel integrations. If multiple integrations contain Branches of same Neon Project, all the Branches are unlinked.
+   * @description Unlink all Cloudrock branches of given project from multiple Vercel Projects. This does not delete the whole installation of Vercel integrations. If multiple integrations contain Branches of same Cloudrock Project, all the Branches are unlinked.
    *
    * @tags Frontend, Applications
    * @name UnlinkProjectFromVercelIntegrations
-   * @summary Unlink Vercel integration for given Neon Project.
+   * @summary Unlink Vercel integration for given Cloudrock Project.
    * @request DELETE:/projects/{project_id}/applications/vercel
    * @secure
    */
@@ -1648,7 +1648,7 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa
     });
 
   /**
-   * @description Retrieves the API keys for your Neon account. The response does not include API key tokens. A token is only provided when creating an API key. API keys can also be managed in the Neon Console. For more information, see [Manage API keys](https://cloudrock.ca/docs/manage/api-keys/).
+   * @description Retrieves the API keys for your Cloudrock account. The response does not include API key tokens. A token is only provided when creating an API key. API keys can also be managed in the Cloudrock Console. For more information, see [Manage API keys](https://cloudrock.ca/docs/manage/api-keys/).
    *
    * @tags API Key
    * @name ListApiKeys
@@ -1666,7 +1666,7 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa
     });
 
   /**
-   * @description Creates an API key. The `key_name` is a user-specified name for the key. This method returns an `id` and `key`. The `key` is a randomly generated, 64-bit token required to access the Neon API. API keys can also be managed in the Neon Console. See [Manage API keys](https://cloudrock.ca/docs/manage/api-keys/).
+   * @description Creates an API key. The `key_name` is a user-specified name for the key. This method returns an `id` and `key`. The `key` is a randomly generated, 64-bit token required to access the Cloudrock API. API keys can also be managed in the Cloudrock Console. See [Manage API keys](https://cloudrock.ca/docs/manage/api-keys/).
    *
    * @tags API Key
    * @name CreateApiKey
@@ -1686,7 +1686,7 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa
     });
 
   /**
-   * @description Revokes the specified API key. An API key that is no longer needed can be revoked. This action cannot be reversed. You can obtain `key_id` values by listing the API keys for your Neon account. API keys can also be managed in the Neon Console. See [Manage API keys](https://cloudrock.ca/docs/manage/api-keys/).
+   * @description Revokes the specified API key. An API key that is no longer needed can be revoked. This action cannot be reversed. You can obtain `key_id` values by listing the API keys for your Cloudrock account. API keys can also be managed in the Cloudrock Console. See [Manage API keys](https://cloudrock.ca/docs/manage/api-keys/).
    *
    * @tags API Key
    * @name RevokeApiKey
@@ -1704,7 +1704,7 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa
     });
 
   /**
-   * @description Retrieves details for the specified operation. An operation is an action performed on a Neon project resource. You can obtain a `project_id` by listing the projects for your Neon account. You can obtain a `operation_id` by listing operations for the project.
+   * @description Retrieves details for the specified operation. An operation is an action performed on a Cloudrock project resource. You can obtain a `project_id` by listing the projects for your Cloudrock account. You can obtain a `operation_id` by listing operations for the project.
    *
    * @tags Operation
    * @name GetProjectOperation
@@ -1722,7 +1722,7 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa
     });
 
   /**
-   * @description Retrieves a list of projects for the Neon account. A project is the top-level object in the Neon object hierarchy. For more information, see [Manage projects](https://cloudrock.ca/docs/manage/projects/).
+   * @description Retrieves a list of projects for the Cloudrock account. A project is the top-level object in the Cloudrock object hierarchy. For more information, see [Manage projects](https://cloudrock.ca/docs/manage/projects/).
    *
    * @tags Project
    * @name ListProjects
@@ -1741,7 +1741,7 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa
     });
 
   /**
-   * @description Creates a Neon project. A project is the top-level object in the Neon object hierarchy. Tier limits define how many projects you can create. Neon's Free Tier permits one project per Neon account. For more information, see [Manage projects](https://cloudrock.ca/docs/manage/projects/). You can specify a region and PostgreSQL version in the request body. Neon currently supports PostgreSQL 14 and 15. For supported regions and `region_id` values, see [Regions](https://cloudrock.ca/docs/introduction/regions/).
+   * @description Creates a Cloudrock project. A project is the top-level object in the Cloudrock object hierarchy. Tier limits define how many projects you can create. Cloudrock's Free Tier permits one project per Cloudrock account. For more information, see [Manage projects](https://cloudrock.ca/docs/manage/projects/). You can specify a region and PostgreSQL version in the request body. Cloudrock currently supports PostgreSQL 14 and 15. For supported regions and `region_id` values, see [Regions](https://cloudrock.ca/docs/introduction/regions/).
    *
    * @tags Project
    * @name CreateProject
@@ -1769,7 +1769,7 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa
     });
 
   /**
-   * @description Retrieves information about the specified project. A project is the top-level object in the Neon object hierarchy. You can obtain a `project_id` by listing the projects for your Neon account.
+   * @description Retrieves information about the specified project. A project is the top-level object in the Cloudrock object hierarchy. You can obtain a `project_id` by listing the projects for your Cloudrock account.
    *
    * @tags Project
    * @name GetProject
@@ -1787,7 +1787,7 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa
     });
 
   /**
-   * @description Updates the specified project. You can obtain a `project_id` by listing the projects for your Neon account. Neon permits updating the project name only.
+   * @description Updates the specified project. You can obtain a `project_id` by listing the projects for your Cloudrock account. Cloudrock permits updating the project name only.
    *
    * @tags Project
    * @name UpdateProject
@@ -1807,7 +1807,7 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa
     });
 
   /**
-   * @description Deletes the specified project. You can obtain a `project_id` by listing the projects for your Neon account. Deleting a project is a permanent action. Deleting a project also deletes endpoints, branches, databases, and users that belong to the project.
+   * @description Deletes the specified project. You can obtain a `project_id` by listing the projects for your Cloudrock account. Deleting a project is a permanent action. Deleting a project also deletes endpoints, branches, databases, and users that belong to the project.
    *
    * @tags Project
    * @name DeleteProject
@@ -1825,7 +1825,7 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa
     });
 
   /**
-   * @description Retrieves a list of operations for the specified Neon project. You can obtain a `project_id` by listing the projects for your Neon account. The number of operations returned can be large. To paginate the response, issue an initial request with a `limit` value. Then, add the `cursor` value that was returned in the response to the next request.
+   * @description Retrieves a list of operations for the specified Cloudrock project. You can obtain a `project_id` by listing the projects for your Cloudrock account. The number of operations returned can be large. To paginate the response, issue an initial request with a `limit` value. Then, add the `cursor` value that was returned in the response to the next request.
    *
    * @tags Operation
    * @name ListProjectOperations
@@ -2014,7 +2014,7 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa
     });
 
   /**
-   * @description Creates a branch in the specified project. You can obtain a `project_id` by listing the projects for your Neon account. This method does not require a request body, but you can specify one to create an endpoint for the branch or to select a non-default parent branch. The default behavior is to create a branch from the project's root branch (`main`) with no endpoint, and the branch name is auto-generated. For related information, see [Manage branches](https://cloudrock.ca/docs/manage/branches/).
+   * @description Creates a branch in the specified project. You can obtain a `project_id` by listing the projects for your Cloudrock account. This method does not require a request body, but you can specify one to create an endpoint for the branch or to select a non-default parent branch. The default behavior is to create a branch from the project's root branch (`main`) with no endpoint, and the branch name is auto-generated. For related information, see [Manage branches](https://cloudrock.ca/docs/manage/branches/).
    *
    * @tags Branch
    * @name CreateProjectBranch
@@ -2036,7 +2036,7 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa
     });
 
   /**
-   * @description Retrieves a list of branches for the specified project. You can obtain a `project_id` by listing the projects for your Neon account. Each Neon project has a root branch named `main`. A `branch_id` value has a `br-` prefix. A project may contain child branches that were branched from `main` or from another branch. A parent branch is identified by the `parent_id` value, which is the `id` of the parent branch. For related information, see [Manage branches](https://cloudrock.ca/docs/manage/branches/).
+   * @description Retrieves a list of branches for the specified project. You can obtain a `project_id` by listing the projects for your Cloudrock account. Each Cloudrock project has a root branch named `main`. A `branch_id` value has a `br-` prefix. A project may contain child branches that were branched from `main` or from another branch. A parent branch is identified by the `parent_id` value, which is the `id` of the parent branch. For related information, see [Manage branches](https://cloudrock.ca/docs/manage/branches/).
    *
    * @tags Branch
    * @name ListProjectBranches
@@ -2054,7 +2054,7 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa
     });
 
   /**
-   * @description Retrieves information about the specified branch. You can obtain a `project_id` by listing the projects for your Neon account. You can obtain a `branch_id` by listing the project's branches. A `branch_id` value has a `br-` prefix. Each Neon project has a root branch named `main`. A project may contain child branches that were branched from `main` or from another branch. A parent branch is identified by a `parent_id` value, which is the `id` of the parent branch. For related information, see [Manage branches](https://cloudrock.ca/docs/manage/branches/).
+   * @description Retrieves information about the specified branch. You can obtain a `project_id` by listing the projects for your Cloudrock account. You can obtain a `branch_id` by listing the project's branches. A `branch_id` value has a `br-` prefix. Each Cloudrock project has a root branch named `main`. A project may contain child branches that were branched from `main` or from another branch. A parent branch is identified by a `parent_id` value, which is the `id` of the parent branch. For related information, see [Manage branches](https://cloudrock.ca/docs/manage/branches/).
    *
    * @tags Branch
    * @name GetProjectBranch
@@ -2072,7 +2072,7 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa
     });
 
   /**
-   * @description Deletes the specified branch from a project, and places all endpoints into an idle state, breaking existing client connections. You can obtain a `project_id` by listing the projects for your Neon account. You can obtain a `branch_id` by listing the project's branches. For related information, see [Manage branches](https://cloudrock.ca/docs/manage/branches/). When a successful response status is received, the endpoints are still active, and the branch is not yet deleted from storage. The deletion occurs after all operations finish. You cannot delete a branch if it is the only remaining branch in the project. A project must have at least one branch.
+   * @description Deletes the specified branch from a project, and places all endpoints into an idle state, breaking existing client connections. You can obtain a `project_id` by listing the projects for your Cloudrock account. You can obtain a `branch_id` by listing the project's branches. For related information, see [Manage branches](https://cloudrock.ca/docs/manage/branches/). When a successful response status is received, the endpoints are still active, and the branch is not yet deleted from storage. The deletion occurs after all operations finish. You cannot delete a branch if it is the only remaining branch in the project. A project must have at least one branch.
    *
    * @tags Branch
    * @name DeleteProjectBranch
@@ -2090,7 +2090,7 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa
     });
 
   /**
-   * @description Updates the specified branch. Only changing the branch name is supported. You can obtain a `project_id` by listing the projects for your Neon account. You can obtain the `branch_id` by listing the project's branches. For more information, see [Manage branches](https://cloudrock.ca/docs/manage/branches/).
+   * @description Updates the specified branch. Only changing the branch name is supported. You can obtain a `project_id` by listing the projects for your Cloudrock account. You can obtain the `branch_id` by listing the project's branches. For more information, see [Manage branches](https://cloudrock.ca/docs/manage/branches/).
    *
    * @tags Branch
    * @name UpdateProjectBranch
@@ -2110,7 +2110,7 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa
     });
 
   /**
-   * @description The primary mark is automatically removed from the previous primary branch. You can obtain a `project_id` by listing the projects for your Neon account. You can obtain the `branch_id` by listing the project's branches. For more information, see [Manage branches](https://cloudrock.ca/docs/manage/branches/).
+   * @description The primary mark is automatically removed from the previous primary branch. You can obtain a `project_id` by listing the projects for your Cloudrock account. You can obtain the `branch_id` by listing the project's branches. For more information, see [Manage branches](https://cloudrock.ca/docs/manage/branches/).
    *
    * @tags Branch
    * @name SetPrimaryProjectBranch
@@ -2128,7 +2128,7 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa
     });
 
   /**
-   * @description Retrieves a list of endpoints for the specified branch. Currently, Neon permits only one endpoint per branch. You can obtain a `project_id` by listing the projects for your Neon account. You can obtain the `branch_id` by listing the project's branches.
+   * @description Retrieves a list of endpoints for the specified branch. Currently, Cloudrock permits only one endpoint per branch. You can obtain a `project_id` by listing the projects for your Cloudrock account. You can obtain the `branch_id` by listing the project's branches.
    *
    * @tags Branch
    * @name ListProjectBranchEndpoints
@@ -2146,7 +2146,7 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa
     });
 
   /**
-   * @description Retrieves a list of databases for the specified branch. A branch can have multiple databases. You can obtain a `project_id` by listing the projects for your Neon account. You can obtain the `branch_id` by listing the project's branches. For related information, see [Manage databases](https://cloudrock.ca/docs/manage/databases/).
+   * @description Retrieves a list of databases for the specified branch. A branch can have multiple databases. You can obtain a `project_id` by listing the projects for your Cloudrock account. You can obtain the `branch_id` by listing the project's branches. For related information, see [Manage databases](https://cloudrock.ca/docs/manage/databases/).
    *
    * @tags Branch
    * @name ListProjectBranchDatabases
@@ -2164,7 +2164,7 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa
     });
 
   /**
-   * @description Creates a database in the specified branch. A branch can have multiple databases. You can obtain a `project_id` by listing the projects for your Neon account. You can obtain the `branch_id` by listing the project's branches. For related information, see [Manage databases](https://cloudrock.ca/docs/manage/databases/).
+   * @description Creates a database in the specified branch. A branch can have multiple databases. You can obtain a `project_id` by listing the projects for your Cloudrock account. You can obtain the `branch_id` by listing the project's branches. For related information, see [Manage databases](https://cloudrock.ca/docs/manage/databases/).
    *
    * @tags Branch
    * @name CreateProjectBranchDatabase
@@ -2189,7 +2189,7 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa
     });
 
   /**
-   * @description Retrieves information about the specified database. You can obtain a `project_id` by listing the projects for your Neon account. You can obtain the `branch_id` and `database_name` by listing branch's databases. For related information, see [Manage databases](https://cloudrock.ca/docs/manage/databases/).
+   * @description Retrieves information about the specified database. You can obtain a `project_id` by listing the projects for your Cloudrock account. You can obtain the `branch_id` and `database_name` by listing branch's databases. For related information, see [Manage databases](https://cloudrock.ca/docs/manage/databases/).
    *
    * @tags Branch
    * @name GetProjectBranchDatabase
@@ -2207,7 +2207,7 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa
     });
 
   /**
-   * @description Updates the specified database in the branch. You can obtain a `project_id` by listing the projects for your Neon account. You can obtain the `branch_id` and `database_name` by listing the branch's databases. For related information, see [Manage databases](https://cloudrock.ca/docs/manage/databases/).
+   * @description Updates the specified database in the branch. You can obtain a `project_id` by listing the projects for your Cloudrock account. You can obtain the `branch_id` and `database_name` by listing the branch's databases. For related information, see [Manage databases](https://cloudrock.ca/docs/manage/databases/).
    *
    * @tags Branch
    * @name UpdateProjectBranchDatabase
@@ -2233,7 +2233,7 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa
     });
 
   /**
-   * @description Deletes the specified database from the branch. You can obtain a `project_id` by listing the projects for your Neon account. You can obtain the `branch_id` and `database_name` by listing branch's databases. For related information, see [Manage databases](https://cloudrock.ca/docs/manage/databases/).
+   * @description Deletes the specified database from the branch. You can obtain a `project_id` by listing the projects for your Cloudrock account. You can obtain the `branch_id` and `database_name` by listing branch's databases. For related information, see [Manage databases](https://cloudrock.ca/docs/manage/databases/).
    *
    * @tags Branch
    * @name DeleteProjectBranchDatabase
@@ -2256,7 +2256,7 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa
     });
 
   /**
-   * @description Retrieves a list of roles from the specified branch. You can obtain a `project_id` by listing the projects for your Neon account. You can obtain the `branch_id` by listing the project's branches. In Neon, the terms "role" and "user" are synonymous. For related information, see [Manage users](https://cloudrock.ca/docs/manage/users/).
+   * @description Retrieves a list of roles from the specified branch. You can obtain a `project_id` by listing the projects for your Cloudrock account. You can obtain the `branch_id` by listing the project's branches. In Cloudrock, the terms "role" and "user" are synonymous. For related information, see [Manage users](https://cloudrock.ca/docs/manage/users/).
    *
    * @tags Branch
    * @name ListProjectBranchRoles
@@ -2274,7 +2274,7 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa
     });
 
   /**
-   * @description Creates a role in the specified branch. You can obtain a `project_id` by listing the projects for your Neon account. You can obtain the `branch_id` by listing the project's branches. In Neon, the terms "role" and "user" are synonymous. For related information, see [Manage users](https://cloudrock.ca/docs/manage/users/). Connections established to the active read-write endpoint will be dropped. If the read-write endpoint is idle, the endpoint becomes active for a short period of time and is suspended afterward.
+   * @description Creates a role in the specified branch. You can obtain a `project_id` by listing the projects for your Cloudrock account. You can obtain the `branch_id` by listing the project's branches. In Cloudrock, the terms "role" and "user" are synonymous. For related information, see [Manage users](https://cloudrock.ca/docs/manage/users/). Connections established to the active read-write endpoint will be dropped. If the read-write endpoint is idle, the endpoint becomes active for a short period of time and is suspended afterward.
    *
    * @tags Branch
    * @name CreateProjectBranchRole
@@ -2299,7 +2299,7 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa
     });
 
   /**
-   * @description Retrieves details about the specified role. You can obtain a `project_id` by listing the projects for your Neon account. You can obtain the `branch_id` by listing the project's branches. You can obtain the `role_name` by listing the roles for a branch. In Neon, the terms "role" and "user" are synonymous. For related information, see [Managing users](https://cloudrock.ca/docs/manage/users/).
+   * @description Retrieves details about the specified role. You can obtain a `project_id` by listing the projects for your Cloudrock account. You can obtain the `branch_id` by listing the project's branches. You can obtain the `role_name` by listing the roles for a branch. In Cloudrock, the terms "role" and "user" are synonymous. For related information, see [Managing users](https://cloudrock.ca/docs/manage/users/).
    *
    * @tags Branch
    * @name GetProjectBranchRole
@@ -2317,7 +2317,7 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa
     });
 
   /**
-   * @description Deletes the specified role from the branch. You can obtain a `project_id` by listing the projects for your Neon account. You can obtain the `branch_id` by listing the project's branches. You can obtain the `role_name` by listing the roles for a branch. In Neon, the terms "role" and "user" are synonymous. For related information, see [Managing users](https://cloudrock.ca/docs/manage/users/).
+   * @description Deletes the specified role from the branch. You can obtain a `project_id` by listing the projects for your Cloudrock account. You can obtain the `branch_id` by listing the project's branches. You can obtain the `role_name` by listing the roles for a branch. In Cloudrock, the terms "role" and "user" are synonymous. For related information, see [Managing users](https://cloudrock.ca/docs/manage/users/).
    *
    * @tags Branch
    * @name DeleteProjectBranchRole
@@ -2335,7 +2335,7 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa
     });
 
   /**
-   * @description Retrieves password of the specified role if possible. You can obtain a `project_id` by listing the projects for your Neon account. You can obtain the `branch_id` by listing the project's branches. You can obtain the `role_name` by listing the roles for a branch. In Neon, the terms "role" and "user" are synonymous. For related information, see [Managing users](https://cloudrock.ca/docs/manage/users/).
+   * @description Retrieves password of the specified role if possible. You can obtain a `project_id` by listing the projects for your Cloudrock account. You can obtain the `branch_id` by listing the project's branches. You can obtain the `role_name` by listing the roles for a branch. In Cloudrock, the terms "role" and "user" are synonymous. For related information, see [Managing users](https://cloudrock.ca/docs/manage/users/).
    *
    * @tags Branch
    * @name GetProjectBranchRolePassword
@@ -2353,7 +2353,7 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa
     });
 
   /**
-   * @description Resets the password for the specified role. Returns a new password and operations. The new password is ready to use when the last operation finishes. The old password remains valid until last operation finishes. Connections to the read-write endpoint are dropped. If idle, the read-write endpoint becomes active for a short period of time. You can obtain a `project_id` by listing the projects for your Neon account. You can obtain the `branch_id` by listing the project's branches. You can obtain the `role_name` by listing the roles for a branch. In Neon, the terms "role" and "user" are synonymous. For related information, see [Managing users](https://cloudrock.ca/docs/manage/users/).
+   * @description Resets the password for the specified role. Returns a new password and operations. The new password is ready to use when the last operation finishes. The old password remains valid until last operation finishes. Connections to the read-write endpoint are dropped. If idle, the read-write endpoint becomes active for a short period of time. You can obtain a `project_id` by listing the projects for your Cloudrock account. You can obtain the `branch_id` by listing the project's branches. You can obtain the `role_name` by listing the roles for a branch. In Cloudrock, the terms "role" and "user" are synonymous. For related information, see [Managing users](https://cloudrock.ca/docs/manage/users/).
    *
    * @tags Branch
    * @name ResetProjectBranchRolePassword
@@ -2376,7 +2376,7 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa
     });
 
   /**
-   * @description Creates an endpoint for the specified branch. An endpoint is a Neon compute instance. There is a maximum of one endpoint per branch. If the specified branch already has an endpoint, the operation fails. You can obtain a `project_id` by listing the projects for your Neon account. You can obtain `branch_id` by listing the project's branches. A `branch_id` has a `br-` prefix. Currently, only the `read_write` endpoint type is supported. For supported regions and `region_id` values, see [Regions](https://cloudrock.ca/docs/introduction/regions/). For more information about endpoints, see [Manage endpoints](https://cloudrock.ca/docs/manage/endpoints/).
+   * @description Creates an endpoint for the specified branch. An endpoint is a Cloudrock compute instance. There is a maximum of one endpoint per branch. If the specified branch already has an endpoint, the operation fails. You can obtain a `project_id` by listing the projects for your Cloudrock account. You can obtain `branch_id` by listing the project's branches. A `branch_id` has a `br-` prefix. Currently, only the `read_write` endpoint type is supported. For supported regions and `region_id` values, see [Regions](https://cloudrock.ca/docs/introduction/regions/). For more information about endpoints, see [Manage endpoints](https://cloudrock.ca/docs/manage/endpoints/).
    *
    * @tags Endpoint
    * @name CreateProjectEndpoint
@@ -2396,7 +2396,7 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa
     });
 
   /**
-   * @description Retrieves a list of endpoints for the specified project. An endpoint is a Neon compute instance. You can obtain a `project_id` by listing the projects for your Neon account. For more information about endpoints, see [Manage endpoints](https://cloudrock.ca/docs/manage/endpoints/).
+   * @description Retrieves a list of endpoints for the specified project. An endpoint is a Cloudrock compute instance. You can obtain a `project_id` by listing the projects for your Cloudrock account. For more information about endpoints, see [Manage endpoints](https://cloudrock.ca/docs/manage/endpoints/).
    *
    * @tags Endpoint
    * @name ListProjectEndpoints
@@ -2414,7 +2414,7 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa
     });
 
   /**
-   * @description Retrieves information about the specified endpoint. An endpoint is a Neon compute instance. You can obtain a `project_id` by listing the projects for your Neon account. You can obtain an `endpoint_id` by listing your project's endpoints. An `endpoint_id` has an `ep-` prefix. For more information about endpoints, see [Manage endpoints](https://cloudrock.ca/docs/manage/endpoints/).
+   * @description Retrieves information about the specified endpoint. An endpoint is a Cloudrock compute instance. You can obtain a `project_id` by listing the projects for your Cloudrock account. You can obtain an `endpoint_id` by listing your project's endpoints. An `endpoint_id` has an `ep-` prefix. For more information about endpoints, see [Manage endpoints](https://cloudrock.ca/docs/manage/endpoints/).
    *
    * @tags Endpoint
    * @name GetProjectEndpoint
@@ -2432,7 +2432,7 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa
     });
 
   /**
-   * @description Delete the specified endpoint. An endpoint is a Neon compute instance. Deleting an endpoint drops existing network connections to the endpoint. The deletion is completed when last operation in the chain finishes successfully. You can obtain a `project_id` by listing the projects for your Neon account. You can obtain an `endpoint_id` by listing your project's endpoints. An `endpoint_id` has an `ep-` prefix. For more information about endpoints, see [Manage endpoints](https://cloudrock.ca/docs/manage/endpoints/).
+   * @description Delete the specified endpoint. An endpoint is a Cloudrock compute instance. Deleting an endpoint drops existing network connections to the endpoint. The deletion is completed when last operation in the chain finishes successfully. You can obtain a `project_id` by listing the projects for your Cloudrock account. You can obtain an `endpoint_id` by listing your project's endpoints. An `endpoint_id` has an `ep-` prefix. For more information about endpoints, see [Manage endpoints](https://cloudrock.ca/docs/manage/endpoints/).
    *
    * @tags Endpoint
    * @name DeleteProjectEndpoint
@@ -2450,7 +2450,7 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa
     });
 
   /**
-   * @description Updates the specified endpoint. Currently, only changing the associated branch is supported. The branch that you specify cannot have an existing endpoint. You can obtain a `project_id` by listing the projects for your Neon account. You can obtain an `endpoint_id` and `branch_id` by listing your project's endpoints. An `endpoint_id` has an `ep-` prefix. A `branch_id` has a `br-` prefix. For more information about endpoints, see [Manage endpoints](https://cloudrock.ca/docs/manage/endpoints/). If the returned list of operations is not empty, the endpoint is not ready to use. The client must wait for the last operation to finish before using the endpoint. If the endpoint was idle before the update, the endpoint becomes active for a short period of time, and the control plane suspends it again after the update.
+   * @description Updates the specified endpoint. Currently, only changing the associated branch is supported. The branch that you specify cannot have an existing endpoint. You can obtain a `project_id` by listing the projects for your Cloudrock account. You can obtain an `endpoint_id` and `branch_id` by listing your project's endpoints. An `endpoint_id` has an `ep-` prefix. A `branch_id` has a `br-` prefix. For more information about endpoints, see [Manage endpoints](https://cloudrock.ca/docs/manage/endpoints/). If the returned list of operations is not empty, the endpoint is not ready to use. The client must wait for the last operation to finish before using the endpoint. If the endpoint was idle before the update, the endpoint becomes active for a short period of time, and the control plane suspends it again after the update.
    *
    * @tags Endpoint
    * @name UpdateProjectEndpoint
@@ -2475,7 +2475,7 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa
     });
 
   /**
-   * @description Starts an endpoint. The endpoint is ready to use after the last operation in chain finishes successfully. You can obtain a `project_id` by listing the projects for your Neon account. You can obtain an `endpoint_id` by listing your project's endpoints. An `endpoint_id` has an `ep-` prefix. For more information about endpoints, see [Manage endpoints](https://cloudrock.ca/docs/manage/endpoints/).
+   * @description Starts an endpoint. The endpoint is ready to use after the last operation in chain finishes successfully. You can obtain a `project_id` by listing the projects for your Cloudrock account. You can obtain an `endpoint_id` by listing your project's endpoints. An `endpoint_id` has an `ep-` prefix. For more information about endpoints, see [Manage endpoints](https://cloudrock.ca/docs/manage/endpoints/).
    *
    * @tags Endpoint
    * @name StartProjectEndpoint
@@ -2493,7 +2493,7 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa
     });
 
   /**
-   * @description Suspend the specified endpoint You can obtain a `project_id` by listing the projects for your Neon account. You can obtain an `endpoint_id` by listing your project's endpoints. An `endpoint_id` has an `ep-` prefix. For more information about endpoints, see [Manage endpoints](https://cloudrock.ca/docs/manage/endpoints/).
+   * @description Suspend the specified endpoint You can obtain a `project_id` by listing the projects for your Cloudrock account. You can obtain an `endpoint_id` by listing your project's endpoints. An `endpoint_id` has an `ep-` prefix. For more information about endpoints, see [Manage endpoints](https://cloudrock.ca/docs/manage/endpoints/).
    *
    * @tags Endpoint
    * @name SuspendProjectEndpoint

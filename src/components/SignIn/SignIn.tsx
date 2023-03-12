@@ -92,7 +92,7 @@ const SignIn = (props: SignInProps) => {
                 <SignInForm
                   {...(props.clientId
                     ? {
-                      description: `Log in to Neon to continue to ${capitalize(
+                      description: `Log in to Cloudrock to continue to ${capitalize(
                         props.clientId,
                       )}`,
                     }

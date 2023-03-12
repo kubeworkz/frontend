@@ -314,7 +314,7 @@ export const ProjectConnectionWidget = (
                 </CodeBlock>
               </FormField>
               <Alert>
-                Use the connection string to connect to a Neon
+                Use the connection string to connect to a Cloudrock
                 database from a client or application. See
                 {' '}
                 <Button className={styles.textLink} appearance="default" onClick={onOpenSnippets}>connection examples</Button>

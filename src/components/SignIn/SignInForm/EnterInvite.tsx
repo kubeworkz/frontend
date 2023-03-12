@@ -58,7 +58,7 @@ export const EnterInvite = ({ login }: EnterInviteProps) => {
       <FormFieldset
         title={`Hey, ${login}`}
       >
-        <Text>Use invitation code to get access to a Neon beta</Text>
+        <Text>Use invitation code to get access to a Cloudrock beta</Text>
         <br />
         <FormField id="invite" error={error}>
           <FormInput defaultValue={inviteCodeFromUrl} type="text" placeholder="invite code" name="invite" />

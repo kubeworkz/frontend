@@ -1,4 +1,3 @@
-import React from 'react';
 import { Switch } from 'react-router-dom';
 import { TrackingRoute } from '../../utils/analytics';
 import { LayoutCentered } from '../../components/Layout/LayoutCentered/LayoutCentered';

@@ -31,7 +31,7 @@ export const Success = ({ vercelProject, cloudrockProject, roleWithPassword }: S
         {' '}
         <strong>{vercelProject}</strong>
         {' '}
-        and Neon project
+        and Cloudrock project
         {' '}
         <strong>{cloudrockProject}</strong>
         {' '}

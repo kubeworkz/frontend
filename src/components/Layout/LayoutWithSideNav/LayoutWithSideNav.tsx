@@ -81,7 +81,7 @@ export const LayoutWithSideNav = ({
           <div className={styles.menu}>
             <div className={styles.menuRow}>
               <AnyLink {...logoLinkConfig} className={styles.logo}>
-                <img src={logo} alt="Neon logo" width={83} height={23} />
+                <img src={logo} alt="Cloudrock logo" width={83} height={23} />
               </AnyLink>
             </div>
             <div className={classNames(styles.menuRow, styles.menuRow_wide)}>

@@ -64,9 +64,9 @@
   color: var(--n-text-quaternary);
 }
 
-.neon {
+.cloudrock {
   color: var(--text-primary);
-  background: var(--n-bg-neon-gradient);
+  background: var(--n-bg-cloudrock-gradient);
 }
 
 .beta {

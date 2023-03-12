@@ -23,7 +23,7 @@
   margin-top: 30px;
 }
 
-.neonProjectSelect :global(.FormSelect__option):last-child {
+.cloudrockProjectSelect :global(.FormSelect__option):last-child {
   border-top: var(--border-primary);
 }
 

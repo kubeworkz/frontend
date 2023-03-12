@@ -1,4 +1,3 @@
-import React from 'react';
 import { PageError } from '../../components/PageError/PageError';
 import { Button } from '../../components/Button/Button';
 import { generatePath } from 'react-router-dom';

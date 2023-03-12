@@ -26,10 +26,10 @@ export const AuthLayout = ({ error, children }: PropsWithChildren<AuthProps>) =>
       <div className={styles.info}>
         <div className={styles.infoInner}>
           <div className={styles.logoDesktop}>
-            <img src={logoDesktop} alt="Neon logo" />
+            <img src={logoDesktop} alt="Cloudrock logo" />
           </div>
           <div className={styles.header}>
-            Neon Technical Preview
+            Cloudrock Technical Preview
           </div>
           <hr />
           <div className={styles.freeTier}>
@@ -44,7 +44,7 @@ export const AuthLayout = ({ error, children }: PropsWithChildren<AuthProps>) =>
       </div>
       <div className={styles.form}>
         <div className={styles.logoMobile}>
-          <img src={logoMobile} alt="Neon logo" />
+          <img src={logoMobile} alt="Cloudrock logo" />
         </div>
         <div className={styles.form_inner}>
           {children}

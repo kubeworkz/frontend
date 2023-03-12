@@ -175,19 +175,19 @@
   color: var(--text-primary-inversed);
 }
 
-.button_neon {
+.button_cloudrock {
   background-color: var(--bg-inversed);
   border-color: var(--bg-inversed);
 }
 
-.button_neon:not(:disabled):active,
-.button_neon:not(:disabled):hover {
+.button_cloudrock:not(:disabled):active,
+.button_cloudrock:not(:disabled):hover {
   background-color: var(--bg-inversed-hover);
   border-color: var(--bg-inversed-hover);
 }
 
-.button_neon .body {
-  background: var(--n-bg-neon-gradient);
+.button_cloudrock .body {
+  background: var(--n-bg-cloudrock-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

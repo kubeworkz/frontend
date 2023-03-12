@@ -24,7 +24,7 @@ export const Maintenance = () => (
       title="Under Maintenance"
       subtitle={(
         <>
-          The Neon console is currently under maintenance
+          The Cloudrock console is currently under maintenance
           <br />
           and will be back soon. Check
           {' '}

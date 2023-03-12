@@ -1,6 +1,6 @@
 export const WEBSITE_URL = 'https://cloudrock.ca/ ';
 export const DOCUMENTATION_URL = 'https://cloudrock.ca/docs/cloud/about/';
-export const DOCUMENTATION_URL_IMPORT_DATA_TO_NEON = 'https://cloudrock.ca/docs/how-to-guides/import-an-existing-database/';
+export const DOCUMENTATION_URL_IMPORT_DATA_TO_CLOUDROCK = 'https://cloudrock.ca/docs/how-to-guides/import-an-existing-database/';
 export const DOCUMENTATION_URL_QUICKSTART_GUIDE = 'https://cloudrock.ca/docs/guides/django/';
 export const DOCUMENTATION_URL_API_SPEC = 'https://cloudrock.ca/docs/reference/api-reference/';
 export const COMMUNITY_URL = 'https://community.cloudrock.ca/';

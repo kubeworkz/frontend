@@ -35,7 +35,7 @@ const LayoutCenteredC = ({
       }
     <div className={classNames(styles.header)}>
       <AnyLink {...logoLinkConfig} className={styles.headerLogo}>
-        <img src={logo} alt="Neon logo" width={92} height={26} />
+        <img src={logo} alt="Cloudrock logo" width={92} height={26} />
       </AnyLink>
     </div>
     <div className={styles.main}>

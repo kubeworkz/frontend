@@ -107,7 +107,7 @@ const ConfirmationPresetOptions: Record<ConfirmationPreset, ConfirmationOptions>
     header: 'Revoke the integration?',
     text: (
       <Alert appearance="error">
-        This will permanently unlink the Neon database from the integration.
+        This will permanently unlink the Cloudrock database from the integration.
         Are you sure you want proceed?
       </Alert>
     ),

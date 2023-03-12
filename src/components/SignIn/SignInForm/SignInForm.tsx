@@ -80,7 +80,7 @@ export const SignInForm = ({
       acceptCharset="utf-8"
       id="new_user"
     >
-      <FormFieldset className={styles.title} title="Welcome to Neon">
+      <FormFieldset className={styles.title} title="Welcome to Cloudrock">
         <div className={styles.description}>{description}</div>
         <input type="hidden" name="authenticity_token" value={token} />
         <input type="hidden" name="provider" ref={providerInputRef} />

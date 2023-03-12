@@ -74,7 +74,7 @@ export const ProjectBranches = React.memo(() => {
     },
   ]), [project]);
 
-  const onRowClick = React.useCallback((b, e) => {
+  const onRowClick = React.useCallback((b: { id: any; }, e: { metaKey: any; ctrlKey: any; }) => {
     const path = generatePath(
       ConsoleRoutes.ProjectsItemBranchesItem,
       { branchId: b.id, projectId },

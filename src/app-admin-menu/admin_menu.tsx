@@ -1,4 +1,3 @@
-import React from 'react';
 import ReactDOM from 'react-dom';
 import { AdminMenu } from '../components/AdminMenu/AdminMenu';
 import styles from './components/AdminMenu/AdminMenu.module.css';

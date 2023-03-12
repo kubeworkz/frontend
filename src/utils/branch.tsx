@@ -1,4 +1,3 @@
-import React from 'react';
 import { Branch, Project } from '../api/publicv2';
 import { mbAsGB, bytesAsGB } from '../utils/sizeHelpers';
 import { humanReadableBytes } from '../utils/units';

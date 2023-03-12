@@ -1,7 +1,6 @@
 import { generatePath } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { ToastError } from '../../components/Toast/Toast';
-import React from 'react';
 import { AdminRoutes } from '../config/routes';
 import { api } from '../apiClient';
 import { User } from '../../components/types';

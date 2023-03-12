@@ -1,4 +1,3 @@
-import React from 'react';
 import { SettingsDesc, SettingsDivider } from '../../../components/Settings/Settings';
 import { CenteredLoader } from '../../../components/Loader/Loader';
 import { useCurrentUser } from '../../../hooks/currentUser';

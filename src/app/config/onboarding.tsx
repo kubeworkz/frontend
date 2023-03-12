@@ -6,7 +6,6 @@ import {
 } from '../../config/config';
 import { generatePath } from 'react-router-dom';
 import { CodeBlock, HighlightedCodeBlock } from '../../components/Code/Code';
-import React from 'react';
 import { OnboardingContent } from '../../components/Layout/Onboarding/Onboarding';
 import { ConsoleRoutes } from '../../routes/routes';
 import { useProjectsItemContext } from '../hooks/projectsItem';

@@ -4,7 +4,7 @@ import React, {
 import { createConsumer, Subscription } from '@rails/actioncable';
 import * as Sentry from '@sentry/react';
 
-import { Endpoint, Project, Operation } from '#api_client/publicv2';
+import { Endpoint, Project, Operation } from '../api/publicv2';
 import { createUseContext } from './utils';
 
 interface ActionCableContextInterface {

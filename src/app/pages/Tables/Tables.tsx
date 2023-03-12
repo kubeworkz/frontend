@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { PageError } from '../../../components/PageError/PageError';
 import { CenteredLoader } from '../../../components/Loader/Loader';
 import { useBranches } from '../../../hooks/projectBranches';

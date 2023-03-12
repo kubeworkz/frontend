@@ -1,7 +1,5 @@
 /* eslint-disable react/no-array-index-key */
 /* eslint-disable no-nested-ternary */
-import React from 'react';
-
 import {
   ExternalIntegration,
   OAuthApplication,

@@ -84,7 +84,7 @@ export const Projects = () => {
   ]), []);
 
   const onRowClick = React.useCallback(
-    ({ id }: Project, e) => {
+    ({ id }: Project, e: { metaKey: any; ctrlKey: any; }) => {
       const path = generatePath(ConsoleRoutes.ProjectsItem, { projectId: id });
 
       if (e.metaKey || e.ctrlKey) {

@@ -1,4 +1,3 @@
-import React from 'react';
 import { useNewItemModals } from '../../../hooks/useNewItem';
 import { ProjectComputeWidget } from '../../../components/ProjectWidgets/ProjectComputeWidget/ProjectComputeWidget';
 import { ProjectOperationsWidget } from '../../../components/ProjectWidgets/ProjectOperationsWidget';

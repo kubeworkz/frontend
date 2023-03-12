@@ -1,4 +1,3 @@
-import React from 'react';
 import { DataTable } from '../../../components/DataTable/DataTable';
 import { Text } from '../../../components/Text/Text';
 import { PageError } from '../../../components/PageError/PageError';
